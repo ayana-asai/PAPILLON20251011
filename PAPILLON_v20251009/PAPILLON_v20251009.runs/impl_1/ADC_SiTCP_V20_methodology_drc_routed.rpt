@@ -1,0 +1,2470 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Dec 10 15:18:25 2025
+| Host         : DESKTOP-NG52DIC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file ADC_SiTCP_V20_methodology_drc_routed.rpt -pb ADC_SiTCP_V20_methodology_drc_routed.pb -rpx ADC_SiTCP_V20_methodology_drc_routed.rpx
+| Design       : ADC_SiTCP_V20
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 474
++-----------+------------------+---------------------------------------------------+--------+
+| Rule      | Severity         | Description                                       | Checks |
++-----------+------------------+---------------------------------------------------+--------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks    | 3      |
+| TIMING-7  | Critical Warning | No common node between related clocks             | 3      |
+| TIMING-8  | Critical Warning | No common period between related clocks           | 3      |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                       | 338    |
+| HPDR-1    | Warning          | Port pin direction inconsistency                  | 1      |
+| LUTAR-1   | Warning          | LUT drives async reset alert                      | 5      |
+| TIMING-9  | Warning          | Unknown CDC Logic                                 | 1      |
+| TIMING-10 | Warning          | Missing property on synchronizer                  | 1      |
+| TIMING-11 | Warning          | Inappropriate max delay with datapath only option | 27     |
+| TIMING-18 | Warning          | Missing input or output delay                     | 51     |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects       | 41     |
++-----------+------------------+---------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_SYSCLK0] -to [get_clocks CLK_DIV_OUT]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_SYSCLK0] -to [get_clocks CLK_DIV_OUT_1]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_SYSCLK0] -to [get_clocks CLK_DIV_OUT_2]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_SYSCLK0] -to [get_clocks CLK_DIV_OUT]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT_1 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_SYSCLK0] -to [get_clocks CLK_DIV_OUT_1]
+Related violations: <none>
+
+TIMING-7#3 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT_2 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_SYSCLK0] -to [get_clocks CLK_DIV_OUT_2]
+Related violations: <none>
+
+TIMING-8#1 Critical Warning
+No common period between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT are found related (timed together) but have no common (expandable) period
+Related violations: <none>
+
+TIMING-8#2 Critical Warning
+No common period between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT_1 are found related (timed together) but have no common (expandable) period
+Related violations: <none>
+
+TIMING-8#3 Critical Warning
+No common period between related clocks  
+The clocks clk_out1_SYSCLK0 and CLK_DIV_OUT_2 are found related (timed together) but have no common (expandable) period
+Related violations: <none>
+
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin BUFGCTRL_CLK0/I0 is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/RAM_reg/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/cmpWrAddr_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/lastWe_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWd_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/memWe_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrData_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddrEnb_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrAddr_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#51 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#52 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#53 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#54 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#55 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#56 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#57 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#58 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#59 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#60 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#61 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrDataAddr_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#62 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrInh_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#63 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrNrmlEnd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#64 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#65 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#66 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#67 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#68 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#69 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#70 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#71 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#72 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#73 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#74 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#75 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXBUF/wrStatusAddr_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#76 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RDV/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#77 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_2/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_3/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_4/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_5/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_6/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RD_7/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/IOB_RERR/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/SetPauseTime_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpChk_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpIpAddrCmpOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpTypeLd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpType_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/arpType_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/brdCastFrmDet_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/cmpInitArpIp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/cmpInitIpIp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/cmpLdArpIp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/cmpLdIpIp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/cmpLdMac_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/crcOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRx00Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#108 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRx03Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#109 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRx08Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#110 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRx88Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#111 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#112 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#113 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#114 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#115 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#116 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#118 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxData_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#119 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxEof_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxFfRcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxPrlTim_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxPrlVal_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxSfd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/dlyRxU4Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#139 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#140 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#142 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#143 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#144 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#145 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#146 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#147 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#148 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#149 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#150 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/fcsCal_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/icmpPrtType_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/icmpType_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/icmpType_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipAddrOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipHdCnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipHdCnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#163 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipHdCnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#164 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipHdCnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#165 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipHdCnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#166 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipHdCnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#167 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipHdOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#168 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipIpAddrCmpOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#169 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipPrtclLd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#170 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#171 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#172 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#173 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#174 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#175 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipgCnt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#176 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/ipgOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#177 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/irMacFlowEnb_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#178 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/lay3Type_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#179 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/lay3Type_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#180 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/lay4Code_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#181 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/lay4Code_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#182 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/lay4Wait_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#183 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/longFrmDet_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#184 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macAddrCmpOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#185 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macCntrlEnb_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#186 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowCmpOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#187 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#188 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#189 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#190 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#191 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#192 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#193 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#194 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#195 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#196 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#197 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#198 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#199 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#200 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#201 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#202 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/macFlowPrm_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#203 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#204 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#205 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#206 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#207 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#208 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#209 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#210 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxData_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#211 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxDv_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#212 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxErr_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#213 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/miiRxSfd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#214 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#215 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#216 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#217 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#218 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#219 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#220 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#221 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxData_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#222 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxEof_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#223 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxEow_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#224 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxFlowMac_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#225 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxFlowMac_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#226 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxFlowMac_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#227 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#228 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#229 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#230 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#231 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#232 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#233 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#234 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyIp_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#235 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#236 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#237 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#238 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#239 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#240 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#241 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#242 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxMyMac_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#243 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxSel_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#244 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxSel_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#245 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxSel_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#246 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxSel_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#247 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxSof_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#248 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxTim_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#249 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/muxVal_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#250 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#251 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#252 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#253 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#254 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#255 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#256 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#257 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orData_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#258 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orEof_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#259 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orEow_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#260 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacPause_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#261 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#262 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#263 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#264 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#265 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#266 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#267 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#268 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#269 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#270 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#271 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#272 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#273 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#274 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#275 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#276 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orMacTim_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#277 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orSof_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#278 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orTim_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#279 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/orVal_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#280 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#281 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#282 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#283 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#284 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#285 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#286 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#287 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#288 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#289 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#290 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#291 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#292 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblCunt_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#293 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/payNblZero_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#294 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rcvdMacFlow_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#295 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/recvOk_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#296 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/runtFrmDet_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#297 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#298 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#299 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#300 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#301 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#302 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#303 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#304 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxData_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#305 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxEof_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#306 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxErr_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#307 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLx0Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#308 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLx1Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#309 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLx2Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#310 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLx3Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#311 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLx4Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#312 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLx6Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#313 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLx8Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#314 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxLxFRcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#315 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxPay_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#316 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxPrlTim_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#317 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxPrlVal_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#318 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxSfd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#319 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxUx0Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#320 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxUx1Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#321 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxUx4Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#322 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxUx8Rcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#323 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxUxFRcvd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#324 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/rxVal_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#325 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/soLay4Hd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#326 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/tcpPrtType_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#327 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeArp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#328 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeCode_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#329 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeCode_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#330 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeIp_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#331 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeLenLdDly_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#332 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeLenLdDly_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#333 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeLenLd_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#334 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeMcChk_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#335 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeMcChk_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#336 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeMcChk_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#337 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/typeMcChk_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#338 Critical Warning
+Non-clocked sequential cell  
+The clock pin SiTCP/SiTCP/GMII/GMII_RXCNT/udpPrtType_reg/C is not reached by a timing clock
+Related violations: <none>
+
+HPDR-1#1 Warning
+Port pin direction inconsistency  
+Hierarchical port(pin) ETH_MDIO direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (ETH_MDIO) connected to this Port, but both were not found.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell SiTCP/TIMER/SiTCP_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) SiTCP/TIMER/sTim_reg[9]/CLR, SiTCP/TIMER/usCry_reg/CLR,
+SiTCP/TIMER/usTim_reg[0]/CLR, SiTCP/TIMER/usTim_reg[1]/CLR,
+SiTCP/TIMER/usTim_reg[2]/CLR, SiTCP/TIMER/usTim_reg[3]/CLR,
+SiTCP/TIMER/usTim_reg[4]/CLR, SiTCP/TIMER/usTim_reg[5]/CLR,
+SiTCP/TIMER/usTim_reg[6]/CLR, SiTCP/TIMER/usTim_reg[7]/CLR,
+rstCntr_reg[0]/CLR, rstCntr_reg[1]/CLR, rstCntr_reg[2]/CLR,
+rstCntr_reg[3]/CLR, rstCntr_reg[4]/CLR (the first 15 of 53 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_3_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-11#1 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[0]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#2 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[10]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[10]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#3 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[1]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[1]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#4 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[2]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[2]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#5 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[3]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[3]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#6 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[4]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[4]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#7 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[5]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[5]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#8 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[6]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[6]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#9 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[7]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[7]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#10 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[8]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[8]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#11 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank0LastWrAddr_reg[9]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank0LastWrAddr_reg[9]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#12 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[0]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#13 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[10]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[10]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#14 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[1]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[1]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#15 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[2]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[2]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#16 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[3]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[3]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#17 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[4]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[4]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#18 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[5]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[5]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#19 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[6]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[6]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#20 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[7]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[7]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#21 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[8]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[8]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#22 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/dlyBank1LastWrAddr_reg[9]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpBank1LastWrAddr_reg[9]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#23 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/memRdReq_reg[0]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irMemRdReq_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#24 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/memRdReq_reg[1]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irMemRdReq_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#25 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/muxEndTgl_reg/C and SiTCP/SiTCP/GMII/GMII_TXBUF/rsmpMuxTrnsEnd_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#26 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/orRdAct_reg[0]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irRdAct_reg[0]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-11#27 Warning
+Inappropriate max delay with datapath only option  
+A max delay constraint with -datapath_only has been applied between SiTCP/SiTCP/GMII/GMII_TXBUF/orRdAct_reg[1]/C and SiTCP/SiTCP/GMII/GMII_TXBUF/irRdAct_reg[1]/D. The startpoint(s) and endpoint(s) either belong to the same clock domain or belong to two clock domains that can safely be timed together (without valid synchronizer). It is only recommended to use the -datapath_only option on paths between clocks that do not have a known phase relationship. This DRC is waived when a synchronizer is found on the path endpoint
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[0] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[10] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[11] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[12] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[13] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[14] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[15] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[16] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[17] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[18] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[19] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[1] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[20] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[21] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[22] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[23] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[2] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[3] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[4] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[5] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[6] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[7] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[8] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_N[9] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[0] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[10] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[11] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[12] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[13] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[14] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[15] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[16] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[17] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[18] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[19] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[1] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[20] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[21] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[22] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[23] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[2] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[3] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[4] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[5] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[6] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[7] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[8] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An input delay is missing on ADC_D_P[9] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2].
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An input delay is missing on ADC_FCO_P[1] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An input delay is missing on ADC_FCO_P[2] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An input delay is missing on ADC_FCO_P[3] relative to the rising and/or falling clock edge(s) of ADC_DCO_P[1], ADC_DCO_P[2], ADC_DCO_P[3].
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_RXBUF/cmpWrAddr_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '6' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 707)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_RXCNT/orMacPause_reg/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '24' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 728)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_RXCNT/orMacTim_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '23' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 727)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/dlyBank0LastWrAddr_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '20' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 723)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/dlyBank1LastWrAddr_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '21' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 724)
+Related violations: <none>
+
+XDCB-5#6 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/memRdReq_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '22' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 725)
+Related violations: <none>
+
+XDCB-5#7 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/muxEndTgl_reg/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 709)
+Related violations: <none>
+
+XDCB-5#8 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/orRdAct_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 708)
+Related violations: <none>
+
+XDCB-5#9 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT/SiTCP_RESET_OUT_reg*/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '25' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 730)
+Related violations: <none>
+
+XDCB-5#10 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX10Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 711)
+Related violations: <none>
+
+XDCB-5#11 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX12Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 712)
+Related violations: <none>
+
+XDCB-5#12 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX13Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 713)
+Related violations: <none>
+
+XDCB-5#13 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX14Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 714)
+Related violations: <none>
+
+XDCB-5#14 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX15Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '13' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 715)
+Related violations: <none>
+
+XDCB-5#15 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX16Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '14' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 716)
+Related violations: <none>
+
+XDCB-5#16 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX17Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '15' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 717)
+Related violations: <none>
+
+XDCB-5#17 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX18Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '16' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 718)
+Related violations: <none>
+
+XDCB-5#18 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX19Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '17' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 719)
+Related violations: <none>
+
+XDCB-5#19 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX1AData_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '18' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 720)
+Related violations: <none>
+
+XDCB-5#20 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX1BData_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '19' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 721)
+Related violations: <none>
+
+XDCB-5#21 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '91' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.runs/impl_1/.Xil/Vivado-6240-DESKTOP-NG52DIC/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Related violations: <none>
+
+XDCB-5#22 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXBUF/smpWrStatusAddr_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '6' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 707)
+Related violations: <none>
+
+XDCB-5#23 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/irMacFlowEnb_reg/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '9' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 711)
+Related violations: <none>
+
+XDCB-5#24 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '16' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 718)
+Related violations: <none>
+
+XDCB-5#25 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '17' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 719)
+Related violations: <none>
+
+XDCB-5#26 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '18' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 720)
+Related violations: <none>
+
+XDCB-5#27 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '19' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 721)
+Related violations: <none>
+
+XDCB-5#28 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 712)
+Related violations: <none>
+
+XDCB-5#29 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '11' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 713)
+Related violations: <none>
+
+XDCB-5#30 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 714)
+Related violations: <none>
+
+XDCB-5#31 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '13' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 715)
+Related violations: <none>
+
+XDCB-5#32 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '14' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 716)
+Related violations: <none>
+
+XDCB-5#33 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '15' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 717)
+Related violations: <none>
+
+XDCB-5#34 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/irMemRdReq_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '22' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 725)
+Related violations: <none>
+
+XDCB-5#35 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/irRdAct_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '7' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 708)
+Related violations: <none>
+
+XDCB-5#36 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpBank0LastWrAddr_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '20' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 723)
+Related violations: <none>
+
+XDCB-5#37 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpBank1LastWrAddr_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '21' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 724)
+Related violations: <none>
+
+XDCB-5#38 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpMuxTrnsEnd_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 709)
+Related violations: <none>
+
+XDCB-5#39 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXCNT/irMacPauseExe_reg[0]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '24' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 728)
+Related violations: <none>
+
+XDCB-5#40 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ */GMII_TXCNT/irMacPauseTime_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '23' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 727)
+Related violations: <none>
+
+XDCB-5#41 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '91' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.runs/impl_1/.Xil/Vivado-6240-DESKTOP-NG52DIC/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Related violations: <none>
+
+
