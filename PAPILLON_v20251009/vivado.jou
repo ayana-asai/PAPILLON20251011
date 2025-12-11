@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Dec 10 15:10:39 2025
-# Process ID         : 14608
+# Start of session at: Thu Dec 11 10:01:48 2025
+# Process ID         : 12244
 # Current directory  : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent14360 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251009\PAPILLON_v20251009.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1828 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251009\PAPILLON_v20251009.xpr
 # Log file           : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/vivado.log
 # Journal file       : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009\vivado.jou
 # Running On         : DESKTOP-NG52DIC
@@ -19,9 +19,8 @@
 # Host memory        : 33959 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36106 MB
-# Available Virtual  : 26791 MB
+# Available Virtual  : 28033 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.xpr
-update_compile_order -fileset sources_1rlaunch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
+update_compile_order -fileset sources_1
