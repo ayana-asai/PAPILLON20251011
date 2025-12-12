@@ -1,0 +1,230 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Dec 12 16:43:19 2025
+# Process ID         : 7272
+# Current directory  : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3420 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251212\PAPILLON_v20251212.xpr
+# Log file           : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/vivado.log
+# Journal file       : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212\vivado.jou
+# Running On         : nudaq-win02
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36106 MB
+# Available Virtual  : 26373 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1283.770 ; gain = 165.559
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1652.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4087 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1857.184 ; gain = 14.656
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2537.148 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2537.148 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2547.344 ; gain = 10.195
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2547.344 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.364 . Memory (MB): peak = 2572.086 ; gain = 24.742
+Read Physdb Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2572.086 ; gain = 34.938
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2572.086 ; gain = 34.938
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2572.086 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 109 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 10 instances
+  SRLC32E => SRL16E: 2 instances
+
+open_run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 2999.605 ; gain = 1688.156
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3267.934 ; gain = 247.621
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+close_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-03:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 4048.426 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 12 16:59:04 2025] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/runme.log
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-03:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 4048.426 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-03:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 4048.426 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-03:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 4048.426 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 12 18:12:07 2025...

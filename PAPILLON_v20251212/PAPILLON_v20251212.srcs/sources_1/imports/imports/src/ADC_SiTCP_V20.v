@@ -783,7 +783,7 @@ module ADC_SiTCP_V20(
    wire             RBCP_ACK				;
    wire [7:0]       RBCP_RD				;
    
-   wire             GMII_TX_CLK        ;
+   //wire             GMII_TX_CLK        ;
 
    wire [7:0]       GMII_TXD        ;
    wire [7:0]       GMII_RXD        ;
@@ -889,124 +889,103 @@ module ADC_SiTCP_V20(
 	//------------------------------------------------------------------------------
 // ethernet_pcs_pma
 //------------------------------------------------------------------------------
-   wire     sfp_mdc     ;
-   wire     sfp_mdio_i  ;
-   wire     sfp_gmii_comp ;
+ wire             userclk2;
+   BUFGCE BUF_SGMII(.O(GMII_CLK), .CE(1'b1), .I(userclk2));
 
- mii_initializer mii_initializer(
-      // System
-      .CLK      (CLK125M           ),  // in : system clock (125M)
-      .RST      (SiTCP_RST   ),  // in : system reset
-      // PHY
-      .PHYAD    (5'b00001          ),  // in : [4:0] PHY address
-      // MII
-      .MDC      (sfp_mdc        ),  // out: clock (1/128 system clock)
-      .MDIO_OUT (sfp_mdio_i     ),  // out: connect this to "PCS/PMA + RocketIO" module .mdio?_i()
-      // status
-      .COMPLETE (sfp_gmii_comp  )   // out: initializing sequence has completed (active H)
-);
+   wire [15:0]      CFG_REG;
+   assign CFG_REG[15:0] = 16'b0000_0000_0000_0000; // 
 
-	wire    userclk2;
-//wire    sgmii_clk_en;
-	wire [15:0]  CFG_REG;
-	wire [15:0]   STATUS_VECTOR;
-//wire [1:0]   LINKSpeed;
-//wire [1:0]  SGMII_LINK;
+   wire [15:0]      STATUS_VECTOR;
 
-	BUFGCE BUF_SGMII(.O(GMII_CLK), .CE(1'd1), .I(userclk2));
-//assign CFG_REG[15:0] = 16'b0000_0000_0010_0000; // Use only BASE-X configulation
-	assign CFG_REG[15:0] = 16'b0000_0000_0000_0000; // Use only BASE-X configulation
-	gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_0
-(
-// Transceiver Interface
-//----------------------
-	.gtrefclk_p (GMII_REF_CLK_P), // input OK :
-	.gtrefclk_n (GMII_REF_CLK_N), // input OK :
-	.gtrefclk_out (), // output :
-	.gtrefclk_bufg_out (), // output :
-	.txp (GMII_TXP), // outputOK : Differential +ve of serial transmission from PMA to PMD.
-	.txn (GMII_TXN), // outputOK : Differential -ve of serial transmission from PMA to PMD.
-	.rxp (GMII_RXP), // input OK : Differential +ve for serial reception from PMD to PMA.
-	.rxn (GMII_RXN), // input OK : Differential -ve for serial reception from PMD to PMA.
-	.resetdone (), // output : The GT transceiver has completed its reset cycle
-	.userclk_out () , // output :
-	.userclk2_out (userclk2), // outputOK :
-	.rxuserclk_out (), // output :
-	.rxuserclk2_out (), // output :
-	.independent_clock_bufg (CLK200M), // input OK :
-	.pma_reset_out (), // output : transceiver PMA reset signal
-	.mmcm_locked_out (), // output : MMCM Locked
-// GMII Interface
-//---------------
-	.sgmii_clk_r (), // output :
-	.sgmii_clk_f (), // output :
-	.sgmii_clk_en (sgmii_clk_en), // outputOK : Clock enable for client MAC
-	.gmii_txd (GMII_TXD[7:0]), // input OK : [7:0] Transmit data from client MAC.
-	.gmii_tx_en (GMII_TX_EN), // input OK : Transmit control signal from client MAC.
-	.gmii_tx_er (GMII_TX_ER), // input OK : Transmit control signal from client MAC.
-	.gmii_rxd (GMII_RXD[7:0]), // outputOK: [7:0] Received Data to client MAC.
-	.gmii_rx_dv (GMII_RX_DV), // outputOK : Received control signal to client MAC.
-	.gmii_rx_er (GMII_RX_ER), // outputOK : Received control signal to client MAC.
-	.gmii_isolate (), // output : Tristate control to electrically isolate GMII.
-	
-// Management: MDIO Interface
-//---------------------------
-.mdc(sfp_mdc),                   // Management Data Clock
-.mdio_i(sfp_mdio_i),                // Management Data In
-.mdio_o(),                // Management Data Out
-.mdio_t(),                // Management Data Tristate
-.phyaddr(5'b00001),
-.configuration_vector(5'b00000),  // Alternative to MDIO interface.
-.configuration_valid(1'b0),   // Validation signal for Config vector
-.an_adv_config_val(1'b0),     // Validation signal for AN ADV
+     gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_0
+     (
+      // Transceiver Interface
+      //----------------------
+      .gtrefclk_p (GMII_REF_CLK_P), // input OK :
+      .gtrefclk_n (GMII_REF_CLK_N), // input OK :
+      .gtrefclk_out (), // output :
+      .gtrefclk_bufg_out (), // output :
+      .txp (GMII_TXP), // outputOK : Differential +ve of serial transmission from PMA to PMD.
+      .txn (GMII_TXN), // outputOK : Differential -ve of serial transmission from PMA to PMD.
+      .rxp (GMII_RXP), // input OK : Differential +ve for serial reception from PMD to PMA.
+      .rxn (GMII_RXN), // input OK : Differential -ve for serial reception from PMD to PMA.
+      .resetdone (), // output : The GT transceiver has completed its reset cycle
+      .userclk_out () , // output :
+      .userclk2_out (userclk2), // outputOK :
+      .rxuserclk_out (), // output :
+      .rxuserclk2_out (), // output :
+      .independent_clock_bufg (CLK160M), // input OK :
+      .pma_reset_out (), // output : transceiver PMA reset signal
+      .mmcm_locked_out (), // output : MMCM Locked
+      // GMII Interface
+      //---------------
+      //.sgmii_clk_r (),           
+      //.sgmii_clk_f (),           
+      //.sgmii_clk_en (),          // Clock enable for client MAC
+      .gmii_txd (GMII_TXD[7:0]), // input OK : [7:0] Transmit data from client MAC.
+      .gmii_tx_en (GMII_TX_EN), // input OK : Transmit control signal from client MAC.
+      .gmii_tx_er (GMII_TX_ER), // input OK : Transmit control signal from client MAC.
+      .gmii_rxd (GMII_RXD[7:0]), // outputOK: [7:0] Received Data to client MAC.
+      .gmii_rx_dv (GMII_RX_DV), // outputOK : Received control signal to client MAC.
+      .gmii_rx_er (GMII_RX_ER), // outputOK : Received control signal to client MAC.
+      .gmii_isolate (), // output : Tristate control to electrically isolate GMII.
 
-// Management: Alternative to MDIO Interface
-//------------------------------------------
-//.configuration_vector (5'b10000), // input : [4:0] Alternative to MDIO interface.
+      .mdc                (1'b0),      // 未使用
+      .mdio_i             (1'b1),      // pull-up相当
+      .mdio_o             (),           // 未接続
+      .mdio_t             (),           // 未接続
+      .phyaddr            (5'b00000),   // 未使用
 
-	.an_interrupt (), // output : Interrupt to processor to signal that Auto-Negotiation has completed
-	.an_adv_config_vector (CFG_REG[15:0]), // input OK : [15:0] Alternate interface to program REG4 (AN ADV)
-	.an_restart_config (1'b0), // input : Alternate signal to modify AN restart bit in REG0
-//.basex_or_sgmii (1'b1), // input OK : Reset default for 1000BASE-X (0) or SGMII standard (1)
-// Speed Control
-//--------------
-//1 Gbps Operation
-// set speed_is_10_100 to logic 0
-//100 Mbps Operation
-// set speed_is_10_100 to logic 1
-// set speed_is_100 to logic 1
-//10 Mbps Operation
-// set speed_is_10_100 to logic 1
-// set speed_is_100 to logic 0
-	.speed_is_10_100 (1'b0), // input OK : Core should operate at either 10Mbps or 100Mbps speeds
-	.speed_is_100 (1'b0), // input OK : Core should operate at 100Mbps speed
-// General IO's
-//-------------
-// status vector
-// [15:14] : Pause 
-// [13] : Remote Fault
-// [12] : Duplex mode(1:Full, 0:Half)
-// [11:10] : Speed(11:Reserved, 10:1000Mb/s, 01:100Mb/s, 00:10Mb/s)
-// [ 9: 8] : Remote Fault Encoding
-// [ 7] : PHY Link Status (SGMII mode only)
-// [ 6] : RXNOTINTABLE
-// [ 5] : RXDISPERR
-// [ 4] : RUDI(INVALID)
-// [ 3] : RUDI(/I/)
-// [ 2] : RUDI(/C/)
-// [ 1] : Link Synchronization
-// [ 0] : Link Status
-	.status_vector (STATUS_VECTOR[15:0]), // output : [15:0] Core status.
-	.reset (RST), // input : Asynchronous reset for entire core
-	.signal_detect (1'b1), // input : Input from PMD to indicate presence of optical input.
-	.gt0_pll0lock_out (),
-	.gt0_pll0outclk_out (),
-	.gt0_pll0outrefclk_out (),
-	.gt0_pll0refclklost_out (),
-	.gt0_pll1outclk_out (),
-	.gt0_pll1outrefclk_out ()
-	);
-    
+        // Management: Alternative to MDIO Interface
+      //------------------------------------------
+      .configuration_vector (5'b10000), // input : [4:0] Alternative to MDIO interface. 
+
+      .configuration_valid  (1'b1),     // ★ 必須
+      .an_adv_config_val    (1'b1),     // REG4 を有効にする場合
+
+      .an_interrupt (), // output : Interrupt to processor to signal that Auto-Negotiation has completed
+      .an_adv_config_vector (CFG_REG[15:0]), // input OK : [15:0] Alternate interface to program REG4 (AN ADV)
+      .an_restart_config (1'b0), // input : Alternate signal to modify AN restart bit in REG0
+      //.basex_or_sgmii (1), // input OK : Reset default for 1000BASE-X (0) or SGMII standard (1)
+      // Speed Control
+      //--------------
+      //1 Gbps Operation
+      // set speed_is_10_100 to logic 0
+      //100 Mbps Operation
+      // set speed_is_10_100 to logic 1
+      // set speed_is_100 to logic 1
+      //10 Mbps Operation
+      // set speed_is_10_100 to logic 1
+      // set speed_is_100 to logic 0
+      .speed_is_10_100 (1'b0), // input OK : Core should operate at either 10Mbps or 100Mbps speeds
+      .speed_is_100 (1'b0), // input OK : Core should operate at 100Mbps speed
+      // General IO's
+      //-------------
+      // status vector
+      // [15:14] : Pause 
+      // [13] : Remote Fault
+      // [12] : Duplex mode(1:Full, 0:Half)
+      // [11:10] : Speed(11:Reserved, 10:1000Mb/s, 01:100Mb/s, 00:10Mb/s)
+      // [ 9: 8] : Remote Fault Encoding
+      // [ 7] : PHY Link Status (SGMII mode only)
+      // [ 6] : RXNOTINTABLE
+      // [ 5] : RXDISPERR
+      // [ 4] : RUDI(INVALID)
+      // [ 3] : RUDI(/I/)
+      // [ 2] : RUDI(/C/)
+      // [ 1] : Link Synchronization
+      // [ 0] : Link Status
+      .status_vector (STATUS_VECTOR[15:0]), // output : [15:0] Core status.
+      .reset (RST), // input : Asynchronous reset for entire core
+      .signal_detect (1'b1), // input : Input from PMD to indicate presence of optical input.
+      .gt0_pll0lock_out (),
+      .gt0_pll0outclk_out (),
+      .gt0_pll0outrefclk_out (),
+      .gt0_pll0refclklost_out (),
+      .gt0_pll1outclk_out (),
+      .gt0_pll1outrefclk_out ()
+      );
+
     wire	[4:1]	intAscSdioIn	;//24ch
 	wire			intAscSdioOut	;
 	wire			intAscSdioEn	;

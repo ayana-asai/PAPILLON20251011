@@ -56,7 +56,9 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tfgg484-1
 
@@ -85,7 +87,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.V
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/TIMER.v
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/WRAP_SiTCP_GMII_XC7A_32K.V
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/Downloads/mii_init.v
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v
 }
 read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/SYSCLK0/SYSCLK0.xci
@@ -122,7 +123,7 @@ set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/P
 read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/cordic_0/cordic_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/cordic_0/cordic_0_ooc.xdc]
 
-read_ip -quiet c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_ooc.xdc]

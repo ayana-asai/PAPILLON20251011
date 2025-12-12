@@ -196,19 +196,20 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Downloads/mii_init.v">
+      <File Path="$PSRCDIR/sources_1/imports/imports/src/ADC_SiTCP_V20.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/mii_init.v"/>
-          <Attr Name="ImportTime" Val="1765517643"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v"/>
+          <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/src/ADC_SiTCP_V20.v">
+      <File Path="$PSRCDIR/sources_1/imports/Downloads/mii_init.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v"/>
-          <Attr Name="ImportTime" Val="1759986249"/>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/mii_init.v"/>
+          <Attr Name="ImportTime" Val="1765517643"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
