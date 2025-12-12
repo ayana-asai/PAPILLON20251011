@@ -1,0 +1,3 @@
+SYSCLK0_clk_wiz.v,verilog,xil_defaultlib,../../../../PAPILLON_v20251009.gen/sources_1/ip/SYSCLK0/SYSCLK0_clk_wiz.v,incdir="../../../ipstatic"incdir="../../../ipstatic"
+SYSCLK0.v,verilog,xil_defaultlib,../../../../PAPILLON_v20251009.gen/sources_1/ip/SYSCLK0/SYSCLK0.v,incdir="../../../ipstatic"incdir="../../../ipstatic"
+glbl.v,Verilog,xil_defaultlib,glbl.v

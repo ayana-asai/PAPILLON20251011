@@ -252,12 +252,13 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="SYSCLK0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="SYSCLK2"/>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_generator_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mem_8_4K"/>
   <BlockFileSet Type="BlockSrcs" Name="mult_gen_2"/>
   <BlockFileSet Type="BlockSrcs" Name="divider"/>
