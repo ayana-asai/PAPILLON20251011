@@ -182,6 +182,7 @@ module ADC_SiTCP_V20(
 //------------------------------------------------------------------------------
 //	System management
 //------------------------------------------------------------------------------
+wire            gtrefclk_out        ;
 
 //outside clock
 
@@ -889,7 +890,25 @@ module ADC_SiTCP_V20(
 	//------------------------------------------------------------------------------
 // ethernet_pcs_pma
 //------------------------------------------------------------------------------
- wire             userclk2;
+   wire     sfp_mdc     ;
+   wire     sfp_mdio_i  ;
+   wire     sfp_gmii_comp ;
+
+     mii_initializer mii_initializer(
+      // System
+      .CLK      (gtrefclk_out           ),  // in : system clock (125M)
+      .RST      (SiTCP_RST   ),  // in : system reset
+      // PHY
+      .PHYAD    (5'b00001          ),  // in : [4:0] PHY address
+      // MII
+      .MDC      (sfp_mdc        ),  // out: clock (1/128 system clock)
+      .MDIO_OUT (sfp_mdio_i     ),  // out: connect this to "PCS/PMA + RocketIO" module .mdio?_i()
+      // status
+      .COMPLETE (sfp_gmii_comp  )   // out: initializing sequence has completed (active H)
+     );
+
+   wire             userclk2;
+   wire         sgmii_clk_en;
    BUFGCE BUF_SGMII(.O(GMII_CLK), .CE(1'b1), .I(userclk2));
 
    wire [15:0]      CFG_REG;
@@ -904,7 +923,7 @@ module ADC_SiTCP_V20(
       .gtrefclk_p (GMII_REF_CLK_P), // input OK :
       .gtrefclk_n (GMII_REF_CLK_N), // input OK :
       .gtrefclk_out (), // output :
-      .gtrefclk_bufg_out (), // output :
+      .gtrefclk_bufg_out (gtrefclk_out), // output :
       .txp (GMII_TXP), // outputOK : Differential +ve of serial transmission from PMA to PMD.
       .txn (GMII_TXN), // outputOK : Differential -ve of serial transmission from PMA to PMD.
       .rxp (GMII_RXP), // input OK : Differential +ve for serial reception from PMD to PMA.
@@ -919,9 +938,9 @@ module ADC_SiTCP_V20(
       .mmcm_locked_out (), // output : MMCM Locked
       // GMII Interface
       //---------------
-      //.sgmii_clk_r (),           
-      //.sgmii_clk_f (),           
-      //.sgmii_clk_en (),          // Clock enable for client MAC
+      .sgmii_clk_r (),           
+      .sgmii_clk_f (),           
+      .sgmii_clk_en (sgmii_clk_en),          // Clock enable for client MAC
       .gmii_txd (GMII_TXD[7:0]), // input OK : [7:0] Transmit data from client MAC.
       .gmii_tx_en (GMII_TX_EN), // input OK : Transmit control signal from client MAC.
       .gmii_tx_er (GMII_TX_ER), // input OK : Transmit control signal from client MAC.
@@ -930,18 +949,27 @@ module ADC_SiTCP_V20(
       .gmii_rx_er (GMII_RX_ER), // outputOK : Received control signal to client MAC.
       .gmii_isolate (), // output : Tristate control to electrically isolate GMII.
 
-      .mdc                (1'b0),      // 未使用
-      .mdio_i             (1'b1),      // pull-up相当
-      .mdio_o             (),           // 未接続
-      .mdio_t             (),           // 未接続
-      .phyaddr            (5'b00000),   // 未使用
+//      .mdc                (1'b0),      // 未使用
+//      .mdio_i             (1'b1),      // pull-up相当
+//      .mdio_o             (),           // 未接続
+//      .mdio_t             (),           // 未接続
+//      .phyaddr            (5'b00000),   // 未使用
+
+// Management: MDIO Interface
+//---------------------------
+      .mdc(sfp_mdc),                   // Management Data Clock
+      .mdio_i(sfp_mdio_i),                // Management Data In
+      .mdio_o(),                // Management Data Out
+      .mdio_t(),                // Management Data Tristate
+      .phyaddr(5'b00001),
 
         // Management: Alternative to MDIO Interface
       //------------------------------------------
       .configuration_vector (5'b10000), // input : [4:0] Alternative to MDIO interface. 
-
-      .configuration_valid  (1'b1),     // ★ 必須
-      .an_adv_config_val    (1'b1),     // REG4 を有効にする場合
+      .configuration_valid(1'b0),   // Validation signal for Config vector
+      .an_adv_config_val(1'b0),     // Validation signal for AN ADV
+//      .configuration_valid  (1'b1),     // ★ 必須
+//      .an_adv_config_val    (1'b1),     // REG4 を有効にする場合
 
       .an_interrupt (), // output : Interrupt to processor to signal that Auto-Negotiation has completed
       .an_adv_config_vector (CFG_REG[15:0]), // input OK : [15:0] Alternate interface to program REG4 (AN ADV)
