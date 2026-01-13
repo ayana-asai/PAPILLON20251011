@@ -87,6 +87,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.V
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/TIMER.v
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/WRAP_SiTCP_GMII_XC7A_32K.V
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/Downloads/mii_init.v
   C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v
 }
 read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/SYSCLK0/SYSCLK0.xci

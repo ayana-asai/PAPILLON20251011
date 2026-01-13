@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Dec 12 20:11:23 2025
+| Date         : Tue Jan 13 15:09:37 2026
 | Host         : nudaq-win02 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ADC_SiTCP_V20_methodology_drc_routed.rpt -pb ADC_SiTCP_V20_methodology_drc_routed.pb -rpx ADC_SiTCP_V20_methodology_drc_routed.rpx
 | Design       : ADC_SiTCP_V20
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 196
+             Checks found: 244
 +-----------+------------------+---------------------------------------------------+--------+
 | Rule      | Severity         | Description                                       | Checks |
 +-----------+------------------+---------------------------------------------------+--------+
 | TIMING-6  | Critical Warning | No common primary clock between related clocks    | 3      |
 | TIMING-7  | Critical Warning | No common node between related clocks             | 3      |
 | TIMING-8  | Critical Warning | No common period between related clocks           | 3      |
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                       | 76     |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                       | 124    |
 | LUTAR-1   | Warning          | LUT drives async reset alert                      | 6      |
 | PDRC-190  | Warning          | Suboptimally placed synchronized register chain   | 10     |
 | TIMING-9  | Warning          | Unknown CDC Logic                                 | 1      |
@@ -467,6 +467,246 @@ Non-clocked sequential cell
 The clock pin gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_rxpmaresetdone/data_sync_reg6/C is not reached by a timing clock
 Related violations: <none>
 
+TIMING-17#77 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/MDC_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#78 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntMdc_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#79 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntMdc_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#80 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntMdc_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#81 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntMdc_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#82 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntMdc_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#83 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntMdc_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#84 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntMdc_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#85 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#86 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#87 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#88 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#89 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#90 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#91 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#92 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/cntResets_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#93 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/gWaitn_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#94 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[14]_srl2_mii_initializer_mdioData_reg_c_0/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[15]_mii_initializer_mdioData_reg_c_1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[20]_srl3_mii_initializer_mdioData_reg_c_1/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[21]_mii_initializer_mdioData_reg_c_2/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[25]_srl2_mii_initializer_mdioData_reg_c_0/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[26]_mii_initializer_mdioData_reg_c_1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#108 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#109 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#110 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#111 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#112 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[32]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#113 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[3]_srl4_mii_initializer_mdioData_reg_c_2/CLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#114 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[4]_mii_initializer_mdioData_reg_c_3/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#115 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#116 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#118 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#119 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg_c/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg_c_0/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg_c_1/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg_c_2/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Critical Warning
+Non-clocked sequential cell  
+The clock pin mii_initializer/mdioData_reg_c_3/C is not reached by a timing clock
+Related violations: <none>
+
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell SiTCP/TIMER/SiTCP_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) SiTCP/TIMER/usTim_reg[2]/CLR, SiTCP/TIMER/usTim_reg[3]/CLR,
@@ -516,52 +756,52 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X63Y176 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync5 in site SLICE_X64Y180 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SYNC_ASYNC_RESET/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/sgmii_logic/gen_sync_reset/reset_sync5 in site SLICE_X79Y164 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/sgmii_logic/gen_sync_reset/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/sgmii_logic/gen_sync_reset/reset_sync5 in site SLICE_X63Y182 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/sgmii_logic/gen_sync_reset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_gtrxreset_in/reset_sync5 in site SLICE_X59Y173 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_gtrxreset_in/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_gtrxreset_in/reset_sync5 in site SLICE_X75Y187 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_gtrxreset_in/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_rst/reset_sync5 in site SLICE_X72Y174 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_rst/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_rst/reset_sync5 in site SLICE_X77Y178 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtrxreset_seq_i/sync_rst/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X80Y176 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync5 in site SLICE_X75Y177 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_encommaalign/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X79Y171 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync5 in site SLICE_X76Y179 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset_indclk/reset_sync5 in site SLICE_X64Y176 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset_indclk/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset_indclk/reset_sync5 in site SLICE_X75Y185 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_rxreset_indclk/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X65Y171 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
+The FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync5 in site SLICE_X71Y176 is part of a synchronized register chain that is suboptimally placed as the load FDPE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/reclock_txreset/reset_sync6 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X67Y178 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_PIPE_reg in site SLICE_X68Y185 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/gig_ethernet_pcs_pma_0_core/gpcs_pma_inst/MGT_RESET.SRESET_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X73Y180 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
+The FDRE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg2 in site SLICE_X66Y187 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_data_valid/data_sync_reg3 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning
@@ -957,7 +1197,7 @@ Related violations: <none>
 XDCB-5#21 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '111' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/.Xil/Vivado-15740-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/.Xil/Vivado-25816-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
 Related violations: <none>
 
 XDCB-5#22 Warning
@@ -1077,7 +1317,7 @@ Related violations: <none>
 XDCB-5#41 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '111' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/.Xil/Vivado-15740-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/.Xil/Vivado-25816-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
 Related violations: <none>
 
 

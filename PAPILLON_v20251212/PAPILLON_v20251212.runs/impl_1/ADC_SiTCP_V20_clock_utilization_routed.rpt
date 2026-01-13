@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Dec 12 20:11:37 2025
+| Date         : Tue Jan 13 15:09:52 2026
 | Host         : nudaq-win02 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file ADC_SiTCP_V20_clock_utilization_routed.rpt
 | Design       : ADC_SiTCP_V20
@@ -67,17 +67,17 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+----------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                                                      | Driver Pin                                                           | Net                                                       |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+----------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y21 | n/a          |                 8 |       35004 |               0 |        6.250 | clk_out1_SYSCLK0                                                                                                           | SYSCLK0/inst/clkout1_buf/O                                           | SYSCLK0/inst/clk_out1                                     |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y19 | n/a          |                 2 |         727 |               0 |        8.000 | clkout0                                                                                                                    | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_userclk2/O          | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2      |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y21 | n/a          |                 8 |       35001 |               0 |        6.250 | clk_out1_SYSCLK0                                                                                                           | SYSCLK0/inst/clkout1_buf/O                                           | SYSCLK0/inst/clk_out1                                     |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y19 | n/a          |                 2 |         725 |               0 |        8.000 | clkout0                                                                                                                    | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_userclk2/O          | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2      |
 | g2        | src1      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y20 | n/a          |                 2 |         617 |               0 |        8.000 | clkout0                                                                                                                    | BUF_SGMII/O                                                          | GMII_CLK                                                  |
 | g2        | src2      | BUFGCTRL/O      | None       | BUFGCTRL_X0Y20 | n/a          |                 2 |         617 |               0 |        8.000 | clkout0                                                                                                                    | BUF_SGMII/O                                                          | GMII_CLK                                                  |
-| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 1 |         461 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                    |
+| g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 3 |         461 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                    |
 | g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 1 |         187 |               0 |       16.000 | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtpe2_i/RXOUTCLK | gig_ethernet_pcs_pma_0/inst/core_clocking_i/rxrecclkbufg/O           | gig_ethernet_pcs_pma_0/inst/core_clocking_i/rxuserclk2    |
 | g5        | src5      | BUFR/O          | None       | BUFR_X0Y1      | X0Y0         |                 1 |         185 |               0 |        6.249 | CLK_DIV_OUT                                                                                                                | ADC1_IF/adc/inst/clkout_buf_inst/O                                   | ADC1_IF/adc/inst/clkout_buf_inst_0                        |
 | g6        | src6      | BUFR/O          | None       | BUFR_X1Y5      | X1Y1         |                 1 |         185 |               0 |        6.249 | CLK_DIV_OUT_1                                                                                                              | ADC2_IF/adc/inst/clkout_buf_inst/O                                   | ADC2_IF/adc/inst/clkout_buf_inst_0                        |
 | g7        | src7      | BUFR/O          | None       | BUFR_X1Y9      | X1Y2         |                 1 |         185 |               0 |        6.249 | CLK_DIV_OUT_2                                                                                                              | ADC3_IF/adc/inst/clkout_buf_inst/O                                   | ADC3_IF/adc/inst/clkout_buf_inst_0                        |
-| g8        | src8      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 1 |          76 |               0 |              |                                                                                                                            | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_gtrefclk/O          | gig_ethernet_pcs_pma_0/inst/core_clocking_i/gtrefclk_bufg |
-| g9        | src9      | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |                 2 |          63 |               0 |       16.000 | clkout1                                                                                                                    | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_userclk/O           | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk       |
+| g8        | src8      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 1 |         124 |               0 |              |                                                                                                                            | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_gtrefclk/O          | gig_ethernet_pcs_pma_0/inst/core_clocking_i/gtrefclk_bufg |
+| g9        | src9      | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |                 1 |          63 |               0 |       16.000 | clkout1                                                                                                                    | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_userclk/O           | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk       |
 | g10       | src10     | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 3 |           3 |               0 |        5.000 | clk_out1_SYSCLK2                                                                                                           | SYSCLK2/inst/clkout1_buf/O                                           | SYSCLK2/inst/clk_out1                                     |
 | g11       | src11     | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 3 |           3 |               0 |       12.500 | clk_out2_SYSCLK2                                                                                                           | SYSCLK2/inst/clkout2_buf/O                                           | SYSCLK2/inst/clk_out2                                     |
 | g12       | src12     | BUFG/O          | None       | BUFGCTRL_X0Y23 | n/a          |                 1 |           1 |               0 |       10.000 | clk_out3_SYSCLK0                                                                                                           | SYSCLK0/inst/clkout3_buf/O                                           | SYSCLK0/inst/clk_out3                                     |
@@ -97,7 +97,7 @@ Table of Contents
 +-----------+-----------+------------------------+--------------------+--------------------+--------------+-------------+-----------------+---------------------+----------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+
 | src0      | g0        | MMCME2_ADV/CLKOUT0     | None               | MMCME2_ADV_X1Y2    | X1Y2         |           1 |               0 |               6.250 | clk_out1_SYSCLK0                                                                                                           | SYSCLK0/inst/mmcm_adv_inst/CLKOUT0                                                                                         | SYSCLK0/inst/clk_out1_SYSCLK0                                                                                          |
 | src1      | g1        | MMCME2_ADV/CLKOUT0     | None               | MMCME2_ADV_X0Y3    | X0Y3         |           1 |               0 |               8.000 | clkout0                                                                                                                    | gig_ethernet_pcs_pma_0/inst/core_clocking_i/mmcm_adv_inst/CLKOUT0                                                          | gig_ethernet_pcs_pma_0/inst/core_clocking_i/clkout0                                                                    |
-| src1      | g2        | BUFG/O                 | None               | BUFGCTRL_X0Y19     | n/a          |         727 |               0 |               8.000 | clkout0                                                                                                                    | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_userclk2/O                                                                | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2                                                                   |
+| src1      | g2        | BUFG/O                 | None               | BUFGCTRL_X0Y19     | n/a          |         725 |               0 |               8.000 | clkout0                                                                                                                    | gig_ethernet_pcs_pma_0/inst/core_clocking_i/bufg_userclk2/O                                                                | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2                                                                   |
 | src2      | g2        | VCC/P                  | None               |                    | n/a          |           0 |               0 |                     |                                                                                                                            | VCC_1/P                                                                                                                    | VCC_2                                                                                                                  |
 | src3      | g3        | BSCANE2/TCK            | None               | BSCAN_X0Y0         | X0Y1         |           1 |               0 |              33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                                 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TCK                                                      |
 | src4      | g4        | GTPE2_CHANNEL/RXOUTCLK | GTPE2_CHANNEL_X0Y4 | GTPE2_CHANNEL_X0Y4 | X1Y3         |           1 |               0 |              16.000 | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtpe2_i/RXOUTCLK | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/gtpe2_i/RXOUTCLK | gig_ethernet_pcs_pma_0/inst/pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxoutclk_out |
@@ -134,20 +134,20 @@ Table of Contents
 5. Clock Regions: Key Resource Utilization
 ------------------------------------------
 
-+-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E2   |
-+-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
-+-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    7 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    1 |    50 |  393 |  2600 |  208 |   600 |    0 |    20 |    7 |    10 |    0 |    20 |
-| X1Y0              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 |  130 |  1500 |   41 |   550 |    0 |    40 |   15 |    20 |    0 |    40 |
-| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 6665 |  2000 | 2063 |   600 |    0 |    20 |   10 |    10 |    0 |    20 |
-| X1Y1              |    5 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    1 |    50 | 5796 |  1900 | 2033 |   650 |    0 |    60 |   29 |    30 |    4 |    40 |
-| X0Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 9244 |  2000 | 2920 |   600 |    0 |    20 |    4 |    10 |    1 |    20 |
-| X1Y2              |    7 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    1 |    50 | 9766 |  1900 | 3371 |   650 |    1 |    60 |   16 |    30 |    3 |    40 |
-| X0Y3              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 2160 |  2600 |  543 |   600 |    0 |    20 |    2 |    10 |    0 |    20 |
-| X1Y3              |    6 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    1 |     4 |    0 |     1 |    0 |     0 |    0 |     0 | 2936 |  1350 | 1124 |   500 |    0 |    30 |    2 |    15 |    0 |    40 |
-+-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+---------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |       FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E2   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used  | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    7 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    1 |    50 |   373 |  2600 |  144 |   600 |    0 |    20 |    7 |    10 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 |    75 |  1500 |   37 |   550 |    0 |    40 |   12 |    20 |    0 |    40 |
+| X0Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   677 |  2000 |  179 |   600 |    0 |    20 |   10 |    10 |    0 |    20 |
+| X1Y1              |    5 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    1 |    50 |  2909 |  1900 | 1028 |   650 |    0 |    60 |   28 |    30 |    0 |    40 |
+| X0Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 10226 |  2000 | 3020 |   600 |    0 |    20 |    6 |    10 |    0 |    20 |
+| X1Y2              |    6 |    12 |    1 |     4 |    0 |     2 |    1 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    9 |    50 |    1 |    50 | 10708 |  1900 | 3882 |   650 |    0 |    60 |   13 |    30 |    7 |    40 |
+| X0Y3              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  7403 |  2600 | 1695 |   600 |    1 |    20 |    5 |    10 |    1 |    20 |
+| X1Y3              |    6 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    1 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |  4758 |  1350 | 1796 |   500 |    1 |    30 |    4 |    15 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+-------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
 
@@ -171,7 +171,7 @@ All Modules
 +-----------+-----------------+-------------------+------------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock            | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                   |
 +-----------+-----------------+-------------------+------------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------+
-| g0        | BUFG/O          | n/a               | clk_out1_SYSCLK0 |       6.250 | {0.000 3.125} |       34912 |        0 |              0 |        1 | SYSCLK0/inst/clk_out1 |
+| g0        | BUFG/O          | n/a               | clk_out1_SYSCLK0 |       6.250 | {0.000 3.125} |       34909 |        0 |              0 |        1 | SYSCLK0/inst/clk_out1 |
 +-----------+-----------------+-------------------+------------------+-------------+---------------+-------------+----------+----------------+----------+-----------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -179,14 +179,14 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-------+-------+-----------------------+
-|    | X0    | X1    | HORIZONTAL PROG DELAY |
-+----+-------+-------+-----------------------+
-| Y3 |  2137 |  1572 |                     0 |
-| Y2 |  8924 |  9498 |                     0 |
-| Y1 |  6675 |  5725 |                     0 |
-| Y0 |   237 |   145 |                     0 |
-+----+-------+-------+-----------------------+
++----+--------+--------+-----------------------+
+|    | X0     | X1     | HORIZONTAL PROG DELAY |
++----+--------+--------+-----------------------+
+| Y3 |   7040 |   3236 |                     0 |
+| Y2 |  10256 |  10695 |                     0 |
+| Y1 |    605 |   2774 |                     0 |
+| Y0 |    217 |     87 |                     0 |
++----+--------+--------+-----------------------+
 
 
 8. Device Cell Placement Summary for Global Clock g1
@@ -195,7 +195,7 @@ All Modules
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock   | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                  |
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+------------------------------------------------------+
-| g1        | BUFG/O          | n/a               | clkout0 |       8.000 | {0.000 4.000} |         726 |        0 |              1 |        0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2 |
+| g1        | BUFG/O          | n/a               | clkout0 |       8.000 | {0.000 4.000} |         724 |        0 |              1 |        0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2 |
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -206,7 +206,7 @@ All Modules
 +----+----+------+-----------------------+
 |    | X0 | X1   | HORIZONTAL PROG DELAY |
 +----+----+------+-----------------------+
-| Y3 |  0 |  726 |                     0 |
+| Y3 |  0 |  724 |                     0 |
 | Y2 |  0 |    0 |                     - |
 | Y1 |  0 |    0 |                     - |
 | Y0 |  0 |    0 |                     - |
@@ -227,14 +227,14 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----+------+-----------------------+
-|    | X0 | X1   | HORIZONTAL PROG DELAY |
-+----+----+------+-----------------------+
-| Y3 |  0 |  391 |                     0 |
-| Y2 |  0 |  226 |                     0 |
-| Y1 |  0 |    0 |                     - |
-| Y0 |  0 |    0 |                     - |
-+----+----+------+-----------------------+
++----+------+------+-----------------------+
+|    | X0   | X1   | HORIZONTAL PROG DELAY |
++----+------+------+-----------------------+
+| Y3 |  142 |  475 |                     0 |
+| Y2 |    0 |    0 |                     - |
+| Y1 |    0 |    0 |                     - |
+| Y0 |    0 |    0 |                     - |
++----+------+------+-----------------------+
 
 
 10. Device Cell Placement Summary for Global Clock g3
@@ -254,9 +254,9 @@ All Modules
 +----+------+----+-----------------------+
 |    | X0   | X1 | HORIZONTAL PROG DELAY |
 +----+------+----+-----------------------+
-| Y3 |    0 |  0 |                     - |
-| Y2 |  458 |  0 |                     0 |
-| Y1 |    0 |  0 |                     - |
+| Y3 |  299 |  0 |                     0 |
+| Y2 |   77 |  0 |                     0 |
+| Y1 |   82 |  0 |                     0 |
 | Y0 |    0 |  0 |                     - |
 +----+------+----+-----------------------+
 
@@ -363,7 +363,7 @@ All Modules
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                       |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------------------+
-| g8        | BUFG/O          | n/a               |       |             |               |          75 |        0 |              0 |        1 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/gtrefclk_bufg |
+| g8        | BUFG/O          | n/a               |       |             |               |         123 |        0 |              0 |        1 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/gtrefclk_bufg |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -371,14 +371,14 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----+-----+-----------------------+
-|    | X0 | X1  | HORIZONTAL PROG DELAY |
-+----+----+-----+-----------------------+
-| Y3 |  0 |  76 |                     0 |
-| Y2 |  0 |   0 |                     - |
-| Y1 |  0 |   0 |                     - |
-| Y0 |  0 |   0 |                     - |
-+----+----+-----+-----------------------+
++----+----+------+-----------------------+
+|    | X0 | X1   | HORIZONTAL PROG DELAY |
++----+----+------+-----------------------+
+| Y3 |  0 |  124 |                     0 |
+| Y2 |  0 |    0 |                     - |
+| Y1 |  0 |    0 |                     - |
+| Y0 |  0 |    0 |                     - |
++----+----+------+-----------------------+
 
 
 16. Device Cell Placement Summary for Global Clock g9
@@ -395,14 +395,14 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-----+-----+-----------------------+
-|    | X0  | X1  | HORIZONTAL PROG DELAY |
-+----+-----+-----+-----------------------+
-| Y3 |  32 |  31 |                     0 |
-| Y2 |   0 |   0 |                     - |
-| Y1 |   0 |   0 |                     - |
-| Y0 |   0 |   0 |                     - |
-+----+-----+-----+-----------------------+
++----+----+-----+-----------------------+
+|    | X0 | X1  | HORIZONTAL PROG DELAY |
++----+----+-----+-----------------------+
+| Y3 |  0 |  63 |                     0 |
+| Y2 |  0 |   0 |                     - |
+| Y1 |  0 |   0 |                     - |
+| Y0 |  0 |   0 |                     - |
++----+----+-----+-----------------------+
 
 
 17. Device Cell Placement Summary for Global Clock g10
@@ -555,7 +555,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         237 |               0 | 228 |           1 |    7 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1              |
+| g0        | n/a   | BUFG/O          | None       |         217 |               0 | 208 |           1 |    7 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1              |
 | g5        | n/a   | BUFR/O          | None       |         185 |               0 | 165 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | ADC1_IF/adc/inst/clkout_buf_inst_0 |
 | g10       | n/a   | BUFG/O          | None       |           1 |               0 |   0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out1              |
 | g11       | n/a   | BUFG/O          | None       |           1 |               0 |   0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out2              |
@@ -570,11 +570,11 @@ All Modules
 24. Clock Region Cell Placement per Global Clock: Region X1Y0
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                   |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------+
-| g0        | n/a   | BUFG/O          | None       |         145 |               0 | 130 |           0 |   15 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1 |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+-----------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-----------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                   |
++-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-----------------------+
+| g0        | n/a   | BUFG/O          | None       |          87 |               0 | 75 |           0 |   12 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1 |
++-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-----------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -583,11 +583,12 @@ All Modules
 25. Clock Region Cell Placement per Global Clock: Region X0Y1
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                   |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------+
-| g0        | n/a   | BUFG/O          | None       |        6675 |               0 | 6665 |           0 |   10 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1 |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+----------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                    |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+----------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         605 |               0 | 595 |           0 |   10 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1                  |
+| g3        | n/a   | BUFG/O          | None       |          82 |               0 |  82 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+----------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -599,7 +600,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        5725 |               0 | 5631 |          60 |   29 |   4 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1              |
+| g0        | n/a   | BUFG/O          | None       |        2774 |               0 | 2744 |           1 |   28 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1              |
 | g6        | n/a   | BUFR/O          | None       |         185 |               0 |  165 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | ADC2_IF/adc/inst/clkout_buf_inst_0 |
 | g10       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out1              |
 | g11       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out2              |
@@ -612,12 +613,12 @@ All Modules
 27. Clock Region Cell Placement per Global Clock: Region X0Y2
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+----------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                    |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+----------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        8924 |               0 | 8786 |         132 |    4 |   1 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1                  |
-| g3        | n/a   | BUFG/O          | None       |         458 |               0 |  458 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+----------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+----------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                    |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+----------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |       10256 |               0 | 10149 |         100 |    6 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1                  |
+| g3        | n/a   | BUFG/O          | None       |          77 |               0 |    77 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+----------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -626,16 +627,15 @@ All Modules
 28. Clock Region Cell Placement per Global Clock: Region X1Y2
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        9498 |               0 | 9378 |          97 |   16 |   3 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1              |
-| g2        | n/a   | BUFGCTRL/O      | None       |         226 |               0 |  223 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | GMII_CLK                           |
-| g7        | n/a   | BUFR/O          | None       |         185 |               0 |  165 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | ADC3_IF/adc/inst/clkout_buf_inst_0 |
-| g10       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out1              |
-| g11       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out2              |
-| g13       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |           0 |    0 |   0 |  0 |    1 |   0 |       0 | SYSCLK0/inst/clkfbout_buf_SYSCLK0  |
-+-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF    | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |       10695 |               0 | 10543 |         131 |   13 |   7 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1              |
+| g7        | n/a   | BUFR/O          | None       |         185 |               0 |   165 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | ADC3_IF/adc/inst/clkout_buf_inst_0 |
+| g10       | n/a   | BUFG/O          | None       |           1 |               0 |     0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out1              |
+| g11       | n/a   | BUFG/O          | None       |           1 |               0 |     0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | SYSCLK2/inst/clk_out2              |
+| g13       | n/a   | BUFG/O          | None       |           1 |               0 |     0 |           0 |    0 |   0 |  0 |    1 |   0 |       0 | SYSCLK0/inst/clkfbout_buf_SYSCLK0  |
++-----------+-------+-----------------+------------+-------------+-----------------+-------+-------------+------+-----+----+------+-----+---------+------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -647,8 +647,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2137 |               0 | 2128 |           7 |    2 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1                                     |
-| g9        | n/a   | BUFG/O          | None       |          32 |               0 |   32 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk       |
+| g0        | n/a   | BUFG/O          | None       |        7040 |               0 | 6962 |          70 |    6 |   1 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1                                     |
+| g2        | n/a   | BUFGCTRL/O      | None       |         142 |               0 |  142 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | GMII_CLK                                                  |
+| g3        | n/a   | BUFG/O          | None       |         299 |               0 |  299 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                    |
 | g15       | n/a   | BUFG/O          | None       |           1 |               0 |    0 |           0 |    0 |   0 |  0 |    1 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/txoutclk_bufg |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
@@ -662,12 +663,12 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1572 |               0 | 1554 |          14 |    2 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1                                     |
-| g1        | n/a   | BUFG/O          | None       |         726 |               0 |  718 |           8 |    0 |   0 |  0 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2      |
-| g2        | n/a   | BUFGCTRL/O      | None       |         391 |               0 |  390 |           0 |    1 |   0 |  0 |    0 |   0 |       0 | GMII_CLK                                                  |
+| g0        | n/a   | BUFG/O          | None       |        3236 |               0 | 3221 |           8 |    5 |   0 |  0 |    0 |   0 |       0 | SYSCLK0/inst/clk_out1                                     |
+| g1        | n/a   | BUFG/O          | None       |         724 |               0 |  716 |           8 |    0 |   0 |  0 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk2      |
+| g2        | n/a   | BUFGCTRL/O      | None       |         475 |               0 |  471 |           0 |    2 |   0 |  0 |    0 |   0 |       0 | GMII_CLK                                                  |
 | g4        | n/a   | BUFG/O          | None       |         177 |               0 |  176 |           0 |    0 |   0 |  1 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/rxuserclk2    |
-| g8        | n/a   | BUFG/O          | None       |          76 |               0 |   68 |           7 |    0 |   0 |  1 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/gtrefclk_bufg |
-| g9        | n/a   | BUFG/O          | None       |          31 |               0 |   30 |           0 |    0 |   0 |  1 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk       |
+| g8        | n/a   | BUFG/O          | None       |         124 |               0 |  112 |          11 |    0 |   0 |  1 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/gtrefclk_bufg |
+| g9        | n/a   | BUFG/O          | None       |          63 |               0 |   62 |           0 |    0 |   0 |  1 |    0 |   0 |       0 | gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -725,7 +726,7 @@ resize_pblock [get_pblocks {CLKAG_gig_ethernet_pcs_pma_0/inst/core_clocking_i/us
 #startgroup
 create_pblock {CLKAG_gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk}
 add_cells_to_pblock [get_pblocks  {CLKAG_gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk"}]]]
-resize_pblock [get_pblocks {CLKAG_gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk}] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+resize_pblock [get_pblocks {CLKAG_gig_ethernet_pcs_pma_0/inst/core_clocking_i/userclk}] -add {CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
 # Clock net "gig_ethernet_pcs_pma_0/inst/core_clocking_i/rxuserclk2" driven by instance "gig_ethernet_pcs_pma_0/inst/core_clocking_i/rxrecclkbufg" located at site "BUFGCTRL_X0Y16"
@@ -746,7 +747,7 @@ resize_pblock [get_pblocks {CLKAG_gig_ethernet_pcs_pma_0/inst/core_clocking_i/gt
 #startgroup
 create_pblock {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}
 add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i"}]]]
-resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X0Y3:CLOCKREGION_X0Y3}
 #endgroup
 
 # Clock net "SYSCLK2/inst/clk_out2" driven by instance "SYSCLK2/inst/clkout2_buf" located at site "BUFGCTRL_X0Y0"
@@ -774,7 +775,7 @@ resize_pblock [get_pblocks {CLKAG_SYSCLK0/inst/clk_out1}] -add {CLOCKREGION_X0Y0
 #startgroup
 create_pblock {CLKAG_GMII_CLK}
 add_cells_to_pblock [get_pblocks  {CLKAG_GMII_CLK}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="GMII_CLK"}]]]
-resize_pblock [get_pblocks {CLKAG_GMII_CLK}] -add {CLOCKREGION_X1Y2:CLOCKREGION_X1Y2 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
+resize_pblock [get_pblocks {CLKAG_GMII_CLK}] -add {CLOCKREGION_X0Y3:CLOCKREGION_X0Y3 CLOCKREGION_X1Y3:CLOCKREGION_X1Y3}
 #endgroup
 
 # Clock net "ADC3_IF/adc/inst/clkout_buf_inst_0" driven by instance "ADC3_IF/adc/inst/clkout_buf_inst" located at site "BUFR_X1Y9"

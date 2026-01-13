@@ -21,7 +21,7 @@
 //   Reset is REG_INTERLOCK=0d2
 // - The number exceeds the threshold is implemented
 //////////////////////////////////////
-`define SYN_DATE	32'h2025_1010
+`define SYN_DATE	32'h2025_1212
 `define FPGA_VER	8'h01
 
 
