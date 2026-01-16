@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Jan 15 17:48:10 2026
-# Process ID         : 9988
+# Start of session at: Thu Jan 15 17:45:07 2026
+# Process ID         : 6508
 # Current directory  : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16632 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20260115\PAPILLON_v20260115.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21232 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20260115\PAPILLON_v20260115.xpr
 # Log file           : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/vivado.log
 # Journal file       : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115\vivado.jou
 # Running On         : nudaq-win02
@@ -19,8 +19,16 @@
 # Host memory        : 33959 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36106 MB
-# Available Virtual  : 24864 MB
+# Available Virtual  : 24867 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212_copy/PAPILLON_v20260115' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 15 17:45:40 2026...

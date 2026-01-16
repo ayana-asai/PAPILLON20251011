@@ -63,12 +63,12 @@ module ADC_SiTCP_V20(
 	//ETH_MDC				,	// out	: Clock for MDIO
 	//ETH_MDIO		    ,	// in		: data in
 // GMII interface
-    GMII_REF_CLK_P        ,    // in    : Reference Clock
-    GMII_REF_CLK_N        ,    // in    : Reference Clock
-    GMII_TXP                ,    // out    : Tx signal line
-    GMII_TXN                ,    // out    : 
-    GMII_RXP                ,    // in    : Rx signal line (Inverted)
-    GMII_RXN                ,    // in    : 
+  GMII_REF_CLK_P        ,    // in    : Reference Clock
+  GMII_REF_CLK_N        ,    // in    : Reference Clock
+  GMII_TXP                ,    // out    : Tx signal line
+  GMII_TXN                ,    // out    : 
+  GMII_RXP                ,    // in    : Rx signal line (Inverted)
+  GMII_RXN                ,    // in    : 
 // ADC Interface 
 	ADC_D_P				,   // Data (+) [31:0] 2016/9/13 change[23:0]?
 	ADC_D_N				,   // Data (-) [31:0] 2016/9/13 change[23:0]?
@@ -120,10 +120,10 @@ module ADC_SiTCP_V20(
 	//input          LED_1000         ;
     input                GMII_REF_CLK_P; // in    : Reference Clock
     input                GMII_REF_CLK_N; // in    : Reference Clock
-    output               GMII_TXP;       // out    : Tx signal line
-    output               GMII_TXN;       // out    : 
-    input                GMII_RXP;       // in    : Rx signal line (Inverted)
-    input                GMII_RXN;       // in    : 
+    output               [1:0] GMII_TXP;       // out    : Tx signal line
+    output               [1:0] GMII_TXN;       // out    : 
+    input                [1:0] GMII_RXP;       // in    : Rx signal line (Inverted)
+    input                [1:0] GMII_RXN;       // in    : 
 
 
 	input	[23:0]	ADC_D_P			;
@@ -619,7 +619,7 @@ wire            gtrefclk_out        ;
 
 	wire				 RAW_SOD;
 	wire	[31:0]       RAW_TRG_NUM;
-    wire   [12*24-1:0]  RAW_ADC;//24ch
+  wire  [12*24-1:0]  RAW_ADC;//24ch
 
 
 	ADC_SiTCP_RING		ADC_SiTCP_RING(
@@ -786,14 +786,22 @@ wire            gtrefclk_out        ;
    
    //wire             GMII_TX_CLK        ;
 
-   wire [7:0]       GMII_TXD        ;
-   wire [7:0]       GMII_RXD        ;
+   wire [7:0]       GMII_TXD1        ;
+   wire [7:0]       GMII_RXD1       ;
+
+   wire [7:0]       GMII_TXD2        ;
+   wire [7:0]       GMII_RXD2        ;
    
-   wire             GMII_TX_EN      ;
-   wire             GMII_TX_ER      ;
-   wire             GMII_RX_DV      ;
-   wire             GMII_RX_ER      ;
+   wire             GMII_TX_EN1      ;
+   wire             GMII_TX_ER1      ;
+   wire             GMII_RX_DV1      ;
+   wire             GMII_RX_ER1      ;
    
+   wire             GMII_TX_EN2      ;
+   wire             GMII_TX_ER2      ;
+   wire             GMII_RX_DV2      ;
+   wire             GMII_RX_ER2      ;
+
 //   BUFGMUX #(
 //             )
 //   BUFGMUX_inst (
@@ -810,11 +818,11 @@ wire            gtrefclk_out        ;
 
    //	 WRAP_SiTCP_MII_XC6S_8K	#(.TIM_PERIOD (8'd25))
    WRAP_SiTCP_GMII_XC7A_32K	#(.TIM_PERIOD (8'd160))   //MII?  g?  p
-   SiTCP(
+   SiTCP1(
 		 .CLK					(CLK160M			),	// in	: System Clock >15MHz
 		 .RST					(RST				),	// in	: System reset
 		 .TIM_1MS				(TIM_1MS			),	// out	:
-		 .TIM_1US                (TIM_1US            ),
+		 .TIM_1US        (TIM_1US            ),
 	     // Configuration parameters
 		 .FORCE_DEFAULTn		(FORCE_DEFAULTn	),	// in	: Load default parameters
 		 .EXT_IP_ADDR			(32'h0          ),	// in	: External IP address[31:0]
@@ -828,10 +836,10 @@ wire            gtrefclk_out        ;
 		 //.EXT_RBCP_PORT			(16'h0			),	// in	: RBCP port #[15:0]
 		 //.PHY_ADDR				(5'd0				),	// in	: PHY-device MIF address[4:0]
 	     // EEPROM
-		 .EEPROM_CS				(EEPROM_CS		),	// out	: Chip select
-		 .EEPROM_SK				(EEPROM_SK		),	// out	: Serial data clock
-		 .EEPROM_DI				(EEPROM_DI		),	// out	: Serial write data
-		 .EEPROM_DO				(EEPROM_DO		),	// in	: Serial read data
+		 .EEPROM_CS				(),    	// out	: Chip select
+		 .EEPROM_SK				(),    	// out	: Serial data clock
+		 .EEPROM_DI				(),    	// out	: Serial write data
+		 .EEPROM_DO				(1'b0),	// in	: Serial read data
 		 // user data, intialial values are stored in the EEPROM, 0xFFFF_FC3C-3F
 		 .USR_REG_X3C			(),	// out	: Stored at 0xFFFF_FF3C
 		 .USR_REG_X3D			(),	// out	: Stored at 0xFFFF_FF3D
@@ -843,15 +851,15 @@ wire            gtrefclk_out        ;
 		 // TX
 		 // .GMII_TX_CLK			(GMII_TX_CLK	),	// in	: Tx clock
 		 .GMII_TX_CLK			(GMII_CLK	),	// in	: Tx clock
-		 .GMII_TX_EN			(GMII_TX_EN		),	// out	: Tx enable
-		 .GMII_TXD				(GMII_TXD[7:0]	),	// out	: Tx data[3:0]
-		 .GMII_TX_ER			(GMII_TX_ER		),	// out	: TX error
+		 .GMII_TX_EN			(GMII_TX_EN1		 ),	// out	: Tx enable
+		 .GMII_TXD				(GMII_TXD1[7:0]	),	// out	: Tx data[3:0]
+		 .GMII_TX_ER			(GMII_TX_ER1		),	// out	: TX error
 		 // RX
 		 // .GMII_RX_CLK			(ETH_RX_CLK		),	// in	: Rx clock
 		 .GMII_RX_CLK			(GMII_CLK		),	// in	: Rx clock
-		 .GMII_RX_DV			(GMII_RX_DV		),	// in	: Rx data valid
-		 .GMII_RXD				(GMII_RXD[7:0]	),	// in	: Rx data[3:0]
-		 .GMII_RX_ER			(GMII_RX_ER		),	// in	: Rx error
+		 .GMII_RX_DV			(GMII_RX_DV1		),	// in	: Rx data valid
+		 .GMII_RXD				(GMII_RXD1[7:0] ),	// in	: Rx data[3:0]
+		 .GMII_RX_ER			(GMII_RX_ER1		),	// in	: Rx error
 		 .GMII_CRS				(1'b0	    	),	// in	: Carrier sense
 		 .GMII_COL				(1'b0   		),	// in	: Collision detected
 
@@ -886,25 +894,114 @@ wire            gtrefclk_out        ;
 		 .RBCP_ACK				(RBCP_ACK				),	// in	: Access acknowledge
 		 .RBCP_RD				(RBCP_RD[7:0]			)	// in	: Read data[7:0]
 	     );
-	     
+
+   WRAP_SiTCP_GMII_XC7A_32K	#(.TIM_PERIOD (8'd160))   //MII?  g?  p
+   SiTCP2(
+		 .CLK					(CLK160M			),	// in	: System Clock >15MHz
+		 .RST					(RST				  ),	// in	: System reset
+		 .TIM_1MS				(TIM_1MS			),	// out	:
+		 .TIM_1US        (TIM_1US      ),
+	    // Configuration parameters
+		 .FORCE_DEFAULTn		(FORCE_DEFAULTn	),	// in	: Load default parameters
+		 .EXT_IP_ADDR			(32'h0       ),	// in	: External IP address[31:0]
+		 .EXT_TCP_PORT			(16'h0			),	// in	: TCP port #[15:0]
+		 .EXT_RBCP_PORT			(16'h0		),	// in	: RBCP port #[15:0]
+		 .PHY_ADDR				(5'd0				),	// in	: PHY-device MIF address[4:0]
+	    // EEPROM
+		 .EEPROM_CS				(EEPROM_CS		),	// out	: Chip select
+		 .EEPROM_SK				(EEPROM_SK		),	// out	: Serial data clock
+		 .EEPROM_DI				(EEPROM_DI		),	// out	: Serial write data
+		 .EEPROM_DO				(EEPROM_DO		),	// in	: Serial read data
+		 // user data, intialial values are stored in the EEPROM, 0xFFFF_FC3C-3F
+		 .USR_REG_X3C			(),	// out	: Stored at 0xFFFF_FF3C
+		 .USR_REG_X3D			(),	// out	: Stored at 0xFFFF_FF3D
+		 .USR_REG_X3E			(),	// out	: Stored at 0xFFFF_FF3E
+		 .USR_REG_X3F			(),	// out	: Stored at 0xFFFF_FF3F
+	     // MII interface
+		 .GMII_RSTn				(		),	// out	: PHY reset
+		 .GMII_1000M			(1'b1),//DIP_SW[3]			), // in    : GMII mode(1000Mbps) 
+		 // TX
+		 // .GMII_TX_CLK			(GMII_TX_CLK	),	// in	: Tx clock
+		 .GMII_TX_CLK			(GMII_CLK	),	// in	: Tx clock
+		 .GMII_TX_EN			(GMII_TX_EN2		),	// out	: Tx enable
+		 .GMII_TXD				(GMII_TXD2[7:0] ),	// out	: Tx data[3:0]
+		 .GMII_TX_ER			(GMII_TX_ER2		),	// out	: TX error
+		 // RX
+		 // .GMII_RX_CLK			(ETH_RX_CLK		),	// in	: Rx clock
+		 .GMII_RX_CLK			(GMII_CLK		),	// in	: Rx clock
+		 .GMII_RX_DV			(GMII_RX_DV2		),	// in	: Rx data valid
+		 .GMII_RXD				(GMII_RXD2[7:0] ),	// in	: Rx data[3:0]
+		 .GMII_RX_ER			(GMII_RX_ER2		),	// in	: Rx error
+		 .GMII_CRS				(1'b0	    	),	// in	: Carrier sense
+		 .GMII_COL				(1'b0   		),	// in	: Collision detected
+
+		 // Management IF
+		 .GMII_MDC				   (),	// out	: Clock for MDIO
+		 .GMII_MDIO_IN			 (1'b1),	// in	: Data
+		 .GMII_MDIO_OUT			(),	// out	: Data
+		 .GMII_MDIO_OE			 (),	// out	: MDIO output enable
+
+	     // User I/F
+		 .SiTCP_RST				(SiTCP_RST		),	// out	: Reset for SiTCP and related circuits
+		 // TCP connection control
+		 .TCP_OPEN_REQ			(1'b0				),	// in	: Reserved input, shoud be 0
+		 .TCP_OPEN_ACK			(SiTCP_ACTIVE	),	// out	: Acknowledge for open (=Socket busy)
+		 .TCP_ERROR				(),	// out	: TCP error, its active period is equal to MSL
+		 .TCP_CLOSE_REQ			(SiTCP_CLOSE_REQ		),	// out	: Connection close request
+		 .TCP_CLOSE_ACK			(SiTCP_CLOSE_REQ		),	// in	: Acknowledge for closing
+
+		 // FIFO I/F
+		 .TCP_RX_WC				(16'h0			),	// in	: Rx FIFO write count[15:0] (Unused bits should be set 1)
+		 .TCP_RX_WR				(),	// out	: Write enable
+		 .TCP_RX_DATA			(),	// out	: Write data[7:0]
+		 .TCP_TX_FULL			(SiTCP_TX_AFULL			),	// out	: Almost full flag
+		 .TCP_TX_WR				(SiTCP_TX_WE			),	// in	: Write enable
+		 .TCP_TX_DATA			(SiTCP_TX_WD[7:0]		),	// in	: Write data[7:0]
+		 // RBCP
+		 .RBCP_ACT				(),	// out	: RBCP active
+		 .RBCP_ADDR				(RBCP_ADDR[31:0]		),	// out	: Address[31:0]
+		 .RBCP_WD				(RBCP_WD[7:0]			),	// out	: Data[7:0]
+		 .RBCP_WE				(RBCP_WE				),	// out	: Write enable
+		 .RBCP_RE				(RBCP_RE				),	// out	: Read enable
+		 .RBCP_ACK				(RBCP_ACK				),	// in	: Access acknowledge
+		 .RBCP_RD				(RBCP_RD[7:0]			)	// in	: Read data[7:0]
+	     );
+
 	//------------------------------------------------------------------------------
 // ethernet_pcs_pma
 //------------------------------------------------------------------------------
-   wire     sfp_mdc     ;
-   wire     sfp_mdio_i  ;
-   wire     sfp_gmii_comp ;
+   wire     sfp_mdc1     ;
+   wire     sfp_mdio_i1  ;
+   wire     sfp_gmii_comp1 ;
 
-     mii_initializer mii_initializer(
+   wire     sfp_mdc2     ;
+   wire     sfp_mdio_i2  ;
+   wire     sfp_gmii_comp2 ;
+
+     mii_initializer mii_initializer1(
       // System
       .CLK      (gtrefclk_out           ),  // in : system clock (125M)
       .RST      (SiTCP_RST   ),  // in : system reset
       // PHY
       .PHYAD    (5'b00001          ),  // in : [4:0] PHY address
       // MII
-      .MDC      (sfp_mdc        ),  // out: clock (1/128 system clock)
-      .MDIO_OUT (sfp_mdio_i     ),  // out: connect this to "PCS/PMA + RocketIO" module .mdio?_i()
+      .MDC      (sfp_mdc1        ),  // out: clock (1/128 system clock)
+      .MDIO_OUT (sfp_mdio_i1     ),  // out: connect this to "PCS/PMA + RocketIO" module .mdio?_i()
       // status
-      .COMPLETE (sfp_gmii_comp  )   // out: initializing sequence has completed (active H)
+      .COMPLETE (sfp_gmii_comp1  )   // out: initializing sequence has completed (active H)
+     );
+
+     mii_initializer mii_initializer2(
+      // System
+      .CLK      (gtrefclk_out           ),  // in : system clock (125M)
+      .RST      (SiTCP_RST   ),  // in : system reset
+      // PHY
+      .PHYAD    (5'b00010          ),  // in : [4:0] PHY address
+      // MII
+      .MDC      (sfp_mdc2        ),  // out: clock (1/128 system clock)
+      .MDIO_OUT (sfp_mdio_i2     ),  // out: connect this to "PCS/PMA + RocketIO" module .mdio?_i()
+      // status
+      .COMPLETE (sfp_gmii_comp2  )   // out: initializing sequence has completed (active H)
      );
 
    wire             userclk2;
@@ -916,7 +1013,7 @@ wire            gtrefclk_out        ;
 
    wire [15:0]      STATUS_VECTOR;
 
-     gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_0
+     gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_01
      (
       // Transceiver Interface
       //----------------------
@@ -924,10 +1021,10 @@ wire            gtrefclk_out        ;
       .gtrefclk_n (GMII_REF_CLK_N), // input OK :
       .gtrefclk_out (), // output :
       .gtrefclk_bufg_out (gtrefclk_out), // output :
-      .txp (GMII_TXP), // outputOK : Differential +ve of serial transmission from PMA to PMD.
-      .txn (GMII_TXN), // outputOK : Differential -ve of serial transmission from PMA to PMD.
-      .rxp (GMII_RXP), // input OK : Differential +ve for serial reception from PMD to PMA.
-      .rxn (GMII_RXN), // input OK : Differential -ve for serial reception from PMD to PMA.
+      .txp (GMII_TXP[0]), // outputOK : Differential +ve of serial transmission from PMA to PMD.
+      .txn (GMII_TXN[0]), // outputOK : Differential -ve of serial transmission from PMA to PMD.
+      .rxp (GMII_RXP[0]), // input OK : Differential +ve for serial reception from PMD to PMA.
+      .rxn (GMII_RXN[0]), // input OK : Differential -ve for serial reception from PMD to PMA.
       .resetdone (), // output : The GT transceiver has completed its reset cycle
       .userclk_out () , // output :
       .userclk2_out (userclk2), // outputOK :
@@ -941,29 +1038,115 @@ wire            gtrefclk_out        ;
       .sgmii_clk_r (),           
       .sgmii_clk_f (),           
       .sgmii_clk_en (sgmii_clk_en),          // Clock enable for client MAC
-      .gmii_txd (GMII_TXD[7:0]), // input OK : [7:0] Transmit data from client MAC.
-      .gmii_tx_en (GMII_TX_EN), // input OK : Transmit control signal from client MAC.
-      .gmii_tx_er (GMII_TX_ER), // input OK : Transmit control signal from client MAC.
-      .gmii_rxd (GMII_RXD[7:0]), // outputOK: [7:0] Received Data to client MAC.
-      .gmii_rx_dv (GMII_RX_DV), // outputOK : Received control signal to client MAC.
-      .gmii_rx_er (GMII_RX_ER), // outputOK : Received control signal to client MAC.
+      .gmii_txd (GMII_TXD1[7:0]), // input OK : [7:0] Transmit data from client MAC.
+      .gmii_tx_en (GMII_TX_EN1), // input OK : Transmit control signal from client MAC.
+      .gmii_tx_er (GMII_TX_ER1), // input OK : Transmit control signal from client MAC.
+      .gmii_rxd (GMII_RXD1[7:0]), // outputOK: [7:0] Received Data to client MAC.
+      .gmii_rx_dv (GMII_RX_DV1), // outputOK : Received control signal to client MAC.
+      .gmii_rx_er (GMII_RX_ER1), // outputOK : Received control signal to client MAC.
       .gmii_isolate (), // output : Tristate control to electrically isolate GMII.
 
-//      .mdc                (1'b0),      // 未使用
-//      .mdio_i             (1'b1),      // pull-up相当
-//      .mdio_o             (),           // 未接続
-//      .mdio_t             (),           // 未接続
-//      .phyaddr            (5'b00000),   // 未使用
-
-// Management: MDIO Interface
-//---------------------------
-      .mdc(sfp_mdc),                   // Management Data Clock
-      .mdio_i(sfp_mdio_i),                // Management Data In
+      // Management: MDIO Interface
+      //---------------------------
+      .mdc(sfp_mdc1),                   // Management Data Clock
+      .mdio_i(sfp_mdio_i1),                // Management Data In
       .mdio_o(),                // Management Data Out
       .mdio_t(),                // Management Data Tristate
       .phyaddr(5'b00001),
 
-        // Management: Alternative to MDIO Interface
+      // Management: Alternative to MDIO Interface
+      //------------------------------------------
+      .configuration_vector (5'b10000), // input : [4:0] Alternative to MDIO interface. 
+      .configuration_valid(1'b0),   // Validation signal for Config vector
+      .an_adv_config_val(1'b0),     // Validation signal for AN ADV
+//      .configuration_valid  (1'b1),     // ★ 必須
+//      .an_adv_config_val    (1'b1),     // REG4 を有効にする場合
+
+      .an_interrupt (), // output : Interrupt to processor to signal that Auto-Negotiation has completed
+      .an_adv_config_vector (CFG_REG[15:0]), // input OK : [15:0] Alternate interface to program REG4 (AN ADV)
+      .an_restart_config (1'b0), // input : Alternate signal to modify AN restart bit in REG0
+      //.basex_or_sgmii (1), // input OK : Reset default for 1000BASE-X (0) or SGMII standard (1)
+      // Speed Control
+      //--------------
+      //1 Gbps Operation
+      // set speed_is_10_100 to logic 0
+      //100 Mbps Operation
+      // set speed_is_10_100 to logic 1
+      // set speed_is_100 to logic 1
+      //10 Mbps Operation
+      // set speed_is_10_100 to logic 1
+      // set speed_is_100 to logic 0
+      .speed_is_10_100 (1'b0), // input OK : Core should operate at either 10Mbps or 100Mbps speeds
+      .speed_is_100 (1'b0), // input OK : Core should operate at 100Mbps speed
+      // General IO's
+      //-------------
+      // status vector
+      // [15:14] : Pause 
+      // [13] : Remote Fault
+      // [12] : Duplex mode(1:Full, 0:Half)
+      // [11:10] : Speed(11:Reserved, 10:1000Mb/s, 01:100Mb/s, 00:10Mb/s)
+      // [ 9: 8] : Remote Fault Encoding
+      // [ 7] : PHY Link Status (SGMII mode only)
+      // [ 6] : RXNOTINTABLE
+      // [ 5] : RXDISPERR
+      // [ 4] : RUDI(INVALID)
+      // [ 3] : RUDI(/I/)
+      // [ 2] : RUDI(/C/)
+      // [ 1] : Link Synchronization
+      // [ 0] : Link Status
+      .status_vector (STATUS_VECTOR[15:0]), // output : [15:0] Core status.
+      .reset (RST), // input : Asynchronous reset for entire core
+      .signal_detect (1'b1), // input : Input from PMD to indicate presence of optical input.
+      .gt0_pll0lock_out (),
+      .gt0_pll0outclk_out (),
+      .gt0_pll0outrefclk_out (),
+      .gt0_pll0refclklost_out (),
+      .gt0_pll1outclk_out (),
+      .gt0_pll1outrefclk_out ()
+      );
+
+     gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_02
+     (
+      // Transceiver Interface
+      //----------------------
+      .gtrefclk_p (GMII_REF_CLK_P), // input OK :
+      .gtrefclk_n (GMII_REF_CLK_N), // input OK :
+      .gtrefclk_out (), // output :
+      .gtrefclk_bufg_out (gtrefclk_out), // output :
+      .txp (GMII_TXP[1]), // outputOK : Differential +ve of serial transmission from PMA to PMD.
+      .txn (GMII_TXN[1]), // outputOK : Differential -ve of serial transmission from PMA to PMD.
+      .rxp (GMII_RXP[1]), // input OK : Differential +ve for serial reception from PMD to PMA.
+      .rxn (GMII_RXN[1]), // input OK : Differential -ve for serial reception from PMD to PMA.
+      .resetdone (), // output : The GT transceiver has completed its reset cycle
+      .userclk_out () , // output :
+      .userclk2_out (userclk2), // outputOK :
+      .rxuserclk_out (), // output :
+      .rxuserclk2_out (), // output :
+      .independent_clock_bufg (CLK160M), // input OK :
+      .pma_reset_out (), // output : transceiver PMA reset signal
+      .mmcm_locked_out (), // output : MMCM Locked
+      // GMII Interface
+      //---------------
+      .sgmii_clk_r (),           
+      .sgmii_clk_f (),           
+      .sgmii_clk_en (sgmii_clk_en),          // Clock enable for client MAC
+      .gmii_txd (GMII_TXD2[7:0]), // input OK : [7:0] Transmit data from client MAC.
+      .gmii_tx_en (GMII_TX_EN2), // input OK : Transmit control signal from client MAC.
+      .gmii_tx_er (GMII_TX_ER2), // input OK : Transmit control signal from client MAC.
+      .gmii_rxd (GMII_RXD2[7:0]), // outputOK: [7:0] Received Data to client MAC.
+      .gmii_rx_dv (GMII_RX_DV2), // outputOK : Received control signal to client MAC.
+      .gmii_rx_er (GMII_RX_ER2), // outputOK : Received control signal to client MAC.
+      .gmii_isolate (), // output : Tristate control to electrically isolate GMII.
+
+      // Management: MDIO Interface
+      //---------------------------
+      .mdc(sfp_mdc2),                   // Management Data Clock
+      .mdio_i(sfp_mdio_i2),                // Management Data In
+      .mdio_o(),                // Management Data Out
+      .mdio_t(),                // Management Data Tristate
+      .phyaddr(5'b00010),
+
+      // Management: Alternative to MDIO Interface
       //------------------------------------------
       .configuration_vector (5'b10000), // input : [4:0] Alternative to MDIO interface. 
       .configuration_valid(1'b0),   // Validation signal for Config vector
@@ -1015,8 +1198,8 @@ wire            gtrefclk_out        ;
       );
 
     wire	[4:1]	intAscSdioIn	;//24ch
-	wire			intAscSdioOut	;
-	wire			intAscSdioEn	;
+    wire			intAscSdioOut	;
+    wire			intAscSdioEn	;
 
      //24ch
     assign  ADC_SDIO[1] = (intAscSdioEn ? 1'bz : intAscSdioOut);
