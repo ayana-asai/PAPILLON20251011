@@ -999,7 +999,7 @@ module ADC_SiTCP_V20(
     wire             userclk2_1;
     wire             userclk2_2;
     wire           sgmii_clk_en;
-    BUFGCE BUF_SGMII1.O(GMII_CLK1), .CE(1'b1), .I(userclk2_1));
+    BUFGCE BUF_SGMII1(.O(GMII_CLK1), .CE(1'b1), .I(userclk2_1));
     BUFGCE BUF_SGMII2(.O(GMII_CLK2), .CE(1'b1), .I(userclk2_2));
  
     wire [15:0]      CFG_REG;
