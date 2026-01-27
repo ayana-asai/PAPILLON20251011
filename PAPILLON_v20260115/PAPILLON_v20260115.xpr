@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212_copy/PAPILLON_v20260115/PAPILLON_v20260115.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5060a390ed5242ec8e5d083a29a55de7"/>
@@ -99,7 +99,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/ADC_IF.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/new/ADC_IF.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/new/ADC_IF.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -108,7 +108,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/ADC_INT.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/new/ADC_INT.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -117,7 +117,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RAW.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -126,7 +126,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/imports/src/ADC_SiTCP_RING.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_RING.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -135,7 +135,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/imports/src/AD_ADC_SPI.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SPI.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SPI.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -144,7 +144,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/imports/src/LOC_REG.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/LOC_REG.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -153,7 +153,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/SIF_IF2_TEST.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_TEST.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_TEST.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -162,7 +162,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/SIF_IF2_selectio_wiz_TEST.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_selectio_wiz_TEST.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/new/SIF_IF2_selectio_wiz_TEST.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -198,7 +198,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/mii_init.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/mii_init.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/mii_init.v"/>
           <Attr Name="ImportTime" Val="1765517643"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -207,7 +207,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/imports/src/ADC_SiTCP_V20.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/ADC_SiTCP_V20.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -217,7 +217,7 @@
       <File Path="$PSRCDIR/sources_1/imports/firmware/LEDSet.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/firmware/LEDSet.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/firmware/LEDSet.v"/>
           <Attr Name="ImportTime" Val="1759986248"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -227,7 +227,7 @@
       <File Path="$PSRCDIR/sources_1/imports/imports/src/AD_ADC_SIF.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SIF.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/sources_1/imports/sources_1/imports/src/AD_ADC_SIF.v"/>
           <Attr Name="ImportTime" Val="1759986249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -244,7 +244,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/papillon_24ch/constrs_1.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_tairafune/PAPILLON_FW-main/PAPILLON_v20231225/PAPILLON_v20231225.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc"/>
           <Attr Name="ImportTime" Val="1759986248"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -292,7 +292,7 @@
     <FileSet Name="SYSCLK0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/SYSCLK0" RelGenDir="$PGENDIR/SYSCLK0">
       <File Path="$PSRCDIR/sources_1/ip/SYSCLK0/SYSCLK0.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/SYSCLK0/SYSCLK0.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/SYSCLK0/SYSCLK0.xci"/>
           <Attr Name="ImportTime" Val="1759987718"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -307,7 +307,7 @@
     <FileSet Name="SYSCLK2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/SYSCLK2" RelGenDir="$PGENDIR/SYSCLK2">
       <File Path="$PSRCDIR/sources_1/ip/SYSCLK2/SYSCLK2.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/SYSCLK2/SYSCLK2.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/SYSCLK2/SYSCLK2.xci"/>
           <Attr Name="ImportTime" Val="1759987852"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -322,7 +322,7 @@
     <FileSet Name="fifo_generator_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_generator_1" RelGenDir="$PGENDIR/fifo_generator_1">
       <File Path="$PSRCDIR/sources_1/ip/fifo_generator_1/fifo_generator_1.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xci"/>
           <Attr Name="ImportTime" Val="1759988071"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -337,7 +337,7 @@
     <FileSet Name="mem_8_4K" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mem_8_4K" RelGenDir="$PGENDIR/mem_8_4K">
       <File Path="$PSRCDIR/sources_1/ip/mem_8_4K/mem_8_4K.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mem_8_4K/mem_8_4K.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mem_8_4K/mem_8_4K.xci"/>
           <Attr Name="ImportTime" Val="1759988353"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -352,7 +352,7 @@
     <FileSet Name="mult_gen_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_gen_0" RelGenDir="$PGENDIR/mult_gen_0">
       <File Path="$PSRCDIR/sources_1/ip/mult_gen_0/mult_gen_0.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci"/>
           <Attr Name="ImportTime" Val="1759988515"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -367,7 +367,7 @@
     <FileSet Name="mult_gen_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_gen_1" RelGenDir="$PGENDIR/mult_gen_1">
       <File Path="$PSRCDIR/sources_1/ip/mult_gen_1/mult_gen_1.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mult_gen_1/mult_gen_1.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mult_gen_1/mult_gen_1.xci"/>
           <Attr Name="ImportTime" Val="1759988586"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -382,7 +382,7 @@
     <FileSet Name="mult_gen_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_gen_2" RelGenDir="$PGENDIR/mult_gen_2">
       <File Path="$PSRCDIR/sources_1/ip/mult_gen_2/mult_gen_2.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mult_gen_2/mult_gen_2.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/mult_gen_2/mult_gen_2.xci"/>
           <Attr Name="ImportTime" Val="1759988648"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -397,7 +397,7 @@
     <FileSet Name="divider" Type="BlockSrcs" RelSrcDir="$PSRCDIR/divider" RelGenDir="$PGENDIR/divider">
       <File Path="$PSRCDIR/sources_1/ip/divider/divider.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/divider/divider.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/divider/divider.xci"/>
           <Attr Name="ImportTime" Val="1759988743"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -412,7 +412,7 @@
     <FileSet Name="cordic_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cordic_0" RelGenDir="$PGENDIR/cordic_0">
       <File Path="$PSRCDIR/sources_1/ip/cordic_0/cordic_0.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/cordic_0/cordic_0.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PAPILLON_v20251009/PAPILLON_v20251009.srcs/sources_1/ip/cordic_0/cordic_0.xci"/>
           <Attr Name="ImportTime" Val="1759988884"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

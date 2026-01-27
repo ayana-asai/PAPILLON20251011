@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jan 15 17:48:10 2026
+# Process ID         : 9988
+# Current directory  : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16632 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20260115\PAPILLON_v20260115.xpr
+# Log file           : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/vivado.log
+# Journal file       : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115\vivado.jou
+# Running On         : nudaq-win02
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36106 MB
+# Available Virtual  : 24864 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212_copy/PAPILLON_v20260115' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 16 20:08:13 2026...

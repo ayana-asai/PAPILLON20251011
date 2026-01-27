@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/ADC_SiTCP_V20.tcl"
+  variable script "C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,9 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tfgg484-1
 
@@ -66,70 +64,70 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.cache/wt [current_project]
-set_property parent.project_path C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.cache/wt [current_project]
+set_property parent.project_path C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.cache/ip [current_project]
+set_property ip_output_repo c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/new/ADC_IF.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/new/ADC_INT.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/imports/src/ADC_SiTCP_RING.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/imports/src/AD_ADC_SPI.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/imports/src/LOC_REG.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/new/SIF_IF2_TEST.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/new/SIF_IF2_selectio_wiz_TEST.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.V
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/TIMER.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/WRAP_SiTCP_GMII_XC7A_32K.V
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/Downloads/mii_init.v
-  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_IF.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_INT.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_RING.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/AD_ADC_SPI.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/LOC_REG.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/SIF_IF2_TEST.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/SIF_IF2_selectio_wiz_TEST.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.V
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/TIMER.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/WRAP_SiTCP_GMII_XC7A_32K.V
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/Downloads/mii_init.v
+  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v
 }
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/SYSCLK0/SYSCLK0.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/SYSCLK0/SYSCLK0.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/SYSCLK2/SYSCLK2.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/SYSCLK2/SYSCLK2.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/mem_8_4K/mem_8_4K.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mem_8_4K/mem_8_4K_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/mem_8_4K/mem_8_4K.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/mult_gen_1/mult_gen_1.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mult_gen_1/mult_gen_1_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/mult_gen_1/mult_gen_1.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/mult_gen_2/mult_gen_2.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mult_gen_2/mult_gen_2_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/mult_gen_2/mult_gen_2.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/divider/divider.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/divider/divider_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/divider/divider.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/cordic_0/cordic_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/cordic_0/cordic_0_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/cordic_0/cordic_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0_ooc.xdc]
 
-read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_ooc.xdc]
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_ooc.xdc]
 
-read_edif C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.edf
+read_edif C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.edf
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -139,12 +137,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc
-set_property used_in_implementation false [get_files C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+read_xdc C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc
+set_property used_in_implementation false [get_files C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

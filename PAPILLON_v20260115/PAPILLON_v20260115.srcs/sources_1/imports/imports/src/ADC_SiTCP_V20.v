@@ -940,7 +940,7 @@ module ADC_SiTCP_V20(
  		 .GMII_MDIO_OUT         (),                   // out: Data
  		 .GMII_MDIO_OE          (),                   // out: MDIO output enable
  	     // User I/F
- 		 .SiTCP_RST2            (SiTCP_RST2       ),  // out: Reset for SiTCP and related circuits
+ 		 .SiTCP_RST             (SiTCP_RST2       ),  // out: Reset for SiTCP and related circuits
  		 // TCP connection control
  		 .TCP_OPEN_REQ          (1'b0),               // in : Reserved input, shoud be 0
  		 .TCP_OPEN_ACK          (SiTCP_ACTIVE2    ),  // out: Acknowledge for open (=Socket busy)
@@ -1003,14 +1003,16 @@ module ADC_SiTCP_V20(
  
     wire             userclk2_1;
     wire             userclk2_2;
-    wire           sgmii_clk_en;
+    wire          sgmii_clk_en1;
+    wire          sgmii_clk_en2;
     BUFGCE BUF_SGMII1(.O(GMII_CLK1), .CE(1'b1), .I(userclk2_1));
     BUFGCE BUF_SGMII2(.O(GMII_CLK2), .CE(1'b1), .I(userclk2_2));
  
     wire [15:0]      CFG_REG;
     assign CFG_REG[15:0] = 16'b0000_0000_0000_0000; // 
  
-    wire [15:0]     STATUS_VECTOR;
+    wire [15:0]     STATUS_VECTOR1;
+    wire [15:0]     STATUS_VECTOR2;
  
       gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_01
       (
@@ -1036,7 +1038,7 @@ module ADC_SiTCP_V20(
        //---------------
        .sgmii_clk_r            (),           
        .sgmii_clk_f            (),           
-       .sgmii_clk_en           (sgmii_clk_en    ),  // Clock enable for client MAC
+       .sgmii_clk_en           (sgmii_clk_en1   ),  // Clock enable for client MAC
        .gmii_txd               (GMII_TXD1[7:0]  ),  // input OK : [7:0] Transmit data from client MAC.
        .gmii_tx_en             (GMII_TX_EN1     ),  // input OK : Transmit control signal from client MAC.
        .gmii_tx_er             (GMII_TX_ER1     ),  // input OK : Transmit control signal from client MAC.
@@ -1093,9 +1095,9 @@ module ADC_SiTCP_V20(
        // [ 2] : RUDI(/C/)
        // [ 1] : Link Synchronization
        // [ 0] : Link Status
-       .status_vector          (STATUS_VECTOR[15:0]), // output : [15:0] Core status.
-       .reset                  (RST),                 // input : Asynchronous reset for entire core
-       .signal_detect          (1'b1),                // input : Input from PMD to indicate presence of optical input.
+       .status_vector          (STATUS_VECTOR1[15:0]), // output : [15:0] Core status.
+       .reset                  (RST),                  // input : Asynchronous reset for entire core
+       .signal_detect          (1'b1),                 // input : Input from PMD to indicate presence of optical input.
        .gt0_pll0lock_out       (),
        .gt0_pll0outclk_out     (),
        .gt0_pll0outrefclk_out  (),
@@ -1128,7 +1130,7 @@ module ADC_SiTCP_V20(
        //---------------
        .sgmii_clk_r            (),           
        .sgmii_clk_f            (),           
-       .sgmii_clk_en           (sgmii_clk_en    ),  // Clock enable for client MAC
+       .sgmii_clk_en           (sgmii_clk_en2   ),  // Clock enable for client MAC
        .gmii_txd               (GMII_TXD2[7:0]  ),  // input OK : [7:0] Transmit data from client MAC.
        .gmii_tx_en             (GMII_TX_EN2     ),  // input OK : Transmit control signal from client MAC.
        .gmii_tx_er             (GMII_TX_ER2     ),  // input OK : Transmit control signal from client MAC.
@@ -1185,9 +1187,9 @@ module ADC_SiTCP_V20(
        // [ 2] : RUDI(/C/)
        // [ 1] : Link Synchronization
        // [ 0] : Link Status
-       .status_vector          (STATUS_VECTOR[15:0]), // output : [15:0] Core status.
-       .reset                  (RST),                 // input : Asynchronous reset for entire core
-       .signal_detect          (1'b1),                // input : Input from PMD to indicate presence of optical input.
+       .status_vector          (STATUS_VECTOR2[15:0]), // output : [15:0] Core status.
+       .reset                  (RST),                  // input : Asynchronous reset for entire core
+       .signal_detect          (1'b1),                 // input : Input from PMD to indicate presence of optical input.
        .gt0_pll0lock_out       (),
        .gt0_pll0outclk_out     (),
        .gt0_pll0outrefclk_out  (),

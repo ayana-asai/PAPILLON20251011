@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1'
+HD_PWD='C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
