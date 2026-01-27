@@ -182,7 +182,8 @@ module ADC_SiTCP_V20(
 //------------------------------------------------------------------------------
 //	System management
 //------------------------------------------------------------------------------
-    wire            gtrefclk_out        ;
+    wire            gtrefclk_out1       ;
+    wire            gtrefclk_out2       ;
 
 //outside clock
 
@@ -611,33 +612,35 @@ module ADC_SiTCP_V20(
 												//?��T?��?��?��v?��?��?��?��?��A?��?��?��W?��X?��^?��̑�?��?��ŕύX?��\?��B
 
 `ifdef SIM								//?��_?��?��?��V?��~?��?��?��?��?��[?��V?��?��?��?��?��?��?��s?��?��?��Ƃ�SIM?��?��?��`?��?��?��?��Ɗy?��H
-	reg				SiTCP_ACTIVE;
+	reg				SiTCP_ACTIVE1;
+	reg				SiTCP_ACTIVE2;
 `else
-	wire			SiTCP_ACTIVE;
+	wire			SiTCP_ACTIVE1;
+	wire			SiTCP_ACTIVE2;
 
 `endif
 
-	wire				 RAW_SOD;
-	wire	[31:0]       RAW_TRG_NUM;
-  wire  [12*24-1:0]  RAW_ADC;//24ch
+    wire				 RAW_SOD;
+    wire	[31:0]       RAW_TRG_NUM;
+    wire  [12*24-1:0]  RAW_ADC;//24ch
 
 
 	ADC_SiTCP_RING		ADC_SiTCP_RING(
 	// System
-		.SYSCLK				(CLK160M			),	// in	: System clock
-		.sRST				(~SiTCP_ACTIVE		),	// in	: System reset
+		.SYSCLK             (CLK160M            ),  // in : System clock
+		.sRST               (~SiTCP_ACTIVE1     ),  // in : System reset
 	// Parameters
-		.REG_DELAY			(REG_DELAY[15:0]	),	// in	: TRG delay [15:0]
+		.REG_DELAY          (REG_DELAY[15:0]    ),  // in : TRG delay [15:0]
     // Enable
-		.ENABLE		        (clk_enable	),	// in	: Enable
+		.ENABLE             (clk_enable         ),  // in : Enable
 	// ADC I/F
-        .ADC_DATA           (Data[12*24-1:0]),    // in    : ADC data[767:0]  24ch
+        .ADC_DATA           (Data[12*24-1:0]    ),  // in : ADC data[767:0]  24ch
 	// Trigger I/F
-		.TRIGGER			(intTrgIn			),	// in	: Trigger
+		.TRIGGER            (intTrgIn           ),  // in : Trigger
 	// Event buffer module I/F
-		.RAW_SOD			(RAW_SOD			),	// out	: Start of data
-		.RAW_TRG_NUM		(RAW_TRG_NUM[31:0]	),	// out	: Trigger Number[31:0]
-        .RAW_ADC            (RAW_ADC[12*24-1:0] )    // out    : Delayed ADC data[767:0] 24ch
+		.RAW_SOD            (RAW_SOD            ),  // out: Start of data
+		.RAW_TRG_NUM        (RAW_TRG_NUM[31:0]  ),  // out: Trigger Number[31:0]
+        .RAW_ADC            (RAW_ADC[12*24-1:0] )   // out: Delayed ADC data[767:0] 24ch
     );
 
 
@@ -686,61 +689,61 @@ module ADC_SiTCP_V20(
 //	Data Formatter
 //-----------------------------------------------------------------------------
 
-	wire				SiTCP_TX_AFULL	;
-	wire				SiTCP_TX_WE		;
-	wire	[7:0]		SiTCP_TX_WD		;
+	wire				SiTCP_TX_AFULL     ;
+	wire				SiTCP_TX_WE        ;
+	wire	[7:0]		SiTCP_TX_WD        ;
 
 	wire	[23:0]		REG_HD_ID		;
 	wire	[15:0]		REG_LEN			;
 	wire	[15:0]  	REG_WINDOW      ;
 	wire	[1:0]		REG_MODE		;
 	
-	wire 	[47:0]		REG_ATT_MUX	;
-    wire	[16*24-1:0]	REG_STRIP_POSITION;
-    wire	[8*24-1:0]	REG_ADC_PDSTL;
-    wire	[15:0]		REG_THRESHOLD;
+	wire 	[47:0]		REG_ATT_MUX        ;
+    wire	[16*24-1:0]	REG_STRIP_POSITION ;
+    wire	[8*24-1:0]	REG_ADC_PDSTL      ;
+    wire	[15:0]		REG_THRESHOLD      ;
 	wire	[23:0]		REG_THRESHOLD_WIDTH;
-    wire	[7:0]		REG_INT_NUM;
-    wire	[15:0]		REG_OFFSET;
+    wire	[7:0]		REG_INT_NUM        ;
+    wire	[15:0]		REG_OFFSET         ;
     wire	[1:0]		REG_INTERLOCK;
-	wire	[7:0]		REG_TAG_COUNT;
-	wire				RAW_INTERLOCK;
+	wire	[7:0]		REG_TAG_COUNT      ;
+	wire				RAW_INTERLOCK      ;
 
 
 	ADC_SiTCP_RAW		ADC_SiTCP_RAW(
 	// System
-		.SYSCLK				(CLK160M				),	// in	: System clock
-		.sRST				(~SiTCP_ACTIVE		),	// in	: System reset
-        //.sRST				(sRST),	// in	: System reset
+		.SYSCLK             (CLK160M            ),  // in : System clock
+		.sRST               (~SiTCP_ACTIVE1     ),  // in : System reset
+        //.sRST             (sRST),                 // in : System reset
 		.tag_mode           (tag_mode),
     //receive trigger tag
-        .RAW_TRG_TAG        (RAW_TRG_TAG),
-        .RAW_NUM_TAG        (RAW_NUM_TAG[2:0]),
+        .RAW_TRG_TAG        (RAW_TRG_TAG        ),
+        .RAW_NUM_TAG        (RAW_NUM_TAG[2:0]   ),
 	// Parameters
-		.REG_HD_ID			(REG_HD_ID[23:0]	),	// in	: Header ID[23:0]
-		.REG_WINDOW			(REG_WINDOW[15:0]	),	// in	: Window size [7:0] sample count
-		.REG_LEN            (REG_LEN[15:0]      ),//data length
-		.REG_MODE			(REG_MODE[1:0]		),	// in	: Mode [1:0]
-		.REG_ADC_PDSTL      (REG_ADC_PDSTL[8*24-1:0]),
-		.REG_STRIP_POSITION	(REG_STRIP_POSITION[16*24-1:0]),//in SSEM strip position
-		.REG_THRESHOLD		(REG_THRESHOLD[15:0]),//in beam position threshold level
-		.REG_THRESHOLD_WIDTH(REG_THRESHOLD_WIDTH[23:0]),//in beam width threshold level
-        .REG_INT_NUM        (REG_INT_NUM[3:0]),
-		.REG_OFFSET			(REG_OFFSET[15:0]),//in beam position offset
-		.REG_INTERLOCK		(REG_INTERLOCK[1:0]),//in interlock signal control
-		.REG_TAG_COUNT		(REG_TAG_COUNT[7:0]),
+		.REG_HD_ID          (REG_HD_ID[23:0]              ),  // in : Header ID[23:0]
+		.REG_WINDOW         (REG_WINDOW[15:0]             ),  // in : Window size [7:0] sample count
+		.REG_LEN            (REG_LEN[15:0]                ),  //data length
+		.REG_MODE           (REG_MODE[1:0]                ),  // in : Mode [1:0]
+		.REG_ADC_PDSTL      (REG_ADC_PDSTL[8*24-1:0]      ),
+		.REG_STRIP_POSITION (REG_STRIP_POSITION[16*24-1:0]),  //in SSEM strip position
+		.REG_THRESHOLD      (REG_THRESHOLD[15:0]          ),  //in beam position threshold level
+		.REG_THRESHOLD_WIDTH(REG_THRESHOLD_WIDTH[23:0]    ),  //in beam width threshold level
+        .REG_INT_NUM        (REG_INT_NUM[3:0]             ),
+		.REG_OFFSET         (REG_OFFSET[15:0]             ),  //in beam position offset
+		.REG_INTERLOCK      (REG_INTERLOCK[1:0]           ),  //in interlock signal control
+		.REG_TAG_COUNT      (REG_TAG_COUNT[7:0]           ),
 	// Enable
-        .ENABLE		        (clk_enable         ),	// in	: Enable
+        .ENABLE             (clk_enable         ),  // in : Enable
 	// BUF_DELAY I/F
-		.RING_SOD			(RAW_SOD			),	// in	: Start of data
-		.RING_TRG_NUM		(RAW_TRG_NUM[31:0]	),	// in	: Trigger Number[31:0]
-		.RING_ADC			(RAW_ADC[12*24-1:0]	),	// in	: Delayed ADC data
+		.RING_SOD           (RAW_SOD            ),  // in : Start of data
+		.RING_TRG_NUM       (RAW_TRG_NUM[31:0]  ),  // in : Trigger Number[31:0]
+		.RING_ADC           (RAW_ADC[12*24-1:0] ),  // in : Delayed ADC data
 	// SiTCP I/F
-		.SiTCP_TX_AFULL	    (SiTCP_TX_AFULL	    ),	// in	: Almost full flag of a TCP Tx FIFO
-		.SiTCP_TX_WE		(SiTCP_TX_WE		),	// out	: TCP Tx Data write enable
-		.SiTCP_TX_WD		(SiTCP_TX_WD[7:0]	),	// out	: TCP Tx Data[7:0]
+		.SiTCP_TX_AFULL     (SiTCP_TX_AFULL     ),  // in : Almost full flag of a TCP Tx FIFO
+		.SiTCP_TX_WE        (SiTCP_TX_WE        ),  // out: TCP Tx Data write enable
+		.SiTCP_TX_WD        (SiTCP_TX_WD[7:0]   ),  // out: TCP Tx Data[7:0]
 		
-		.RAW_INTERLOCK		(RAW_INTERLOCK)//out interlock signal shot
+		.RAW_INTERLOCK      (RAW_INTERLOCK      )   //out interlock signal shot
 	);
 	
 	
@@ -769,12 +772,14 @@ module ADC_SiTCP_V20(
 /*******************************************************************************
 *     Network Processor, Tomohisa Uchida                                       *
 *******************************************************************************/
-	wire             SiTCP_CLOSE_REQ	;
-    //wire             TIM_1US				;
+	wire             SiTCP_CLOSE_REQ1   ;
+	wire             SiTCP_CLOSE_REQ2   ;
+    //wire             TIM_1US          ;
     wire             TIM_1MS            ;
-    wire             DAC_SDI             ;
+    wire             DAC_SDI            ;
 
-    wire             SiTCP_RST			;
+    wire             SiTCP_RST1			;
+    wire             SiTCP_RST2			;
     wire             reg_RST              ;    //?  ?  ?  W?  X?  ^?   ?  ?  Z?  b?  g
 
     wire [31:0]      RBCP_ADDR			;
@@ -864,13 +869,13 @@ module ADC_SiTCP_V20(
  		 .GMII_MDIO_OUT         (),                   // out: Data
  		 .GMII_MDIO_OE          (),                   // out: MDIO output enable
  	     // User I/F
- 		 .SiTCP_RST             (SiTCP_RST        ),  // out: Reset for SiTCP and related circuits
+ 		 .SiTCP_RST             (SiTCP_RST1       ),  // out: Reset for SiTCP and related circuits
  		 // TCP connection control
  		 .TCP_OPEN_REQ          (1'b0),               // in : Reserved input, shoud be 0
- 		 .TCP_OPEN_ACK          (SiTCP_ACTIVE     ),  // out: Acknowledge for open (=Socket busy)
+ 		 .TCP_OPEN_ACK          (SiTCP_ACTIVE1    ),  // out: Acknowledge for open (=Socket busy)
  		 .TCP_ERROR             (),                   // out: TCP error, its active period is equal to MSL
- 		 .TCP_CLOSE_REQ         (SiTCP_CLOSE_REQ  ),  // out: Connection close request
- 		 .TCP_CLOSE_ACK         (SiTCP_CLOSE_REQ  ),  // in : Acknowledge for closing
+ 		 .TCP_CLOSE_REQ         (SiTCP_CLOSE_REQ1 ),  // out: Connection close request
+ 		 .TCP_CLOSE_ACK         (SiTCP_CLOSE_REQ1 ),  // in : Acknowledge for closing
  		 // FIFO I/F
  		 .TCP_RX_WC             (16'h0),              // in : Rx FIFO write count[15:0] (Unused bits should be set 1)
  		 .TCP_RX_WR             (),                   // out: Write enable
@@ -935,20 +940,20 @@ module ADC_SiTCP_V20(
  		 .GMII_MDIO_OUT         (),                   // out: Data
  		 .GMII_MDIO_OE          (),                   // out: MDIO output enable
  	     // User I/F
- 		 .SiTCP_RST             (SiTCP_RST        ),  // out: Reset for SiTCP and related circuits
+ 		 .SiTCP_RST2            (SiTCP_RST2       ),  // out: Reset for SiTCP and related circuits
  		 // TCP connection control
  		 .TCP_OPEN_REQ          (1'b0),               // in : Reserved input, shoud be 0
- 		 .TCP_OPEN_ACK          (SiTCP_ACTIVE     ),  // out: Acknowledge for open (=Socket busy)
+ 		 .TCP_OPEN_ACK          (SiTCP_ACTIVE2    ),  // out: Acknowledge for open (=Socket busy)
  		 .TCP_ERROR             (),                   // out: TCP error, its active period is equal to MSL
- 		 .TCP_CLOSE_REQ         (SiTCP_CLOSE_REQ  ),  // out: Connection close request
- 		 .TCP_CLOSE_ACK         (SiTCP_CLOSE_REQ  ),  // in : Acknowledge for closing
+ 		 .TCP_CLOSE_REQ         (SiTCP_CLOSE_REQ2 ),  // out: Connection close request
+ 		 .TCP_CLOSE_ACK         (SiTCP_CLOSE_REQ2 ),  // in : Acknowledge for closing
  		 // FIFO I/F
  		 .TCP_RX_WC             (16'h0),              // in : Rx FIFO write count[15:0] (Unused bits should be set 1)
  		 .TCP_RX_WR             (),                   // out: Write enable
  		 .TCP_RX_DATA           (),                   // out: Write data[7:0]
- 		 .TCP_TX_FULL           (SiTCP_TX_AFULL   ),  // out: Almost full flag
- 		 .TCP_TX_WR             (SiTCP_TX_WE      ),  // in : Write enable
- 		 .TCP_TX_DATA           (SiTCP_TX_WD[7:0] ),  // in : Write data[7:0]
+ 		 .TCP_TX_FULL           (),                   // out: Almost full flag
+ 		 .TCP_TX_WR             (1'b0),               // in : Write enable
+ 		 .TCP_TX_DATA           (8'b0),               // in : Write data[7:0]
  		 // RBCP
  		 .RBCP_ACT              (),                   // out: RBCP active
  		 .RBCP_ADDR             (RBCP_ADDR[31:0]  ),  // out: Address[31:0]
@@ -972,8 +977,8 @@ module ADC_SiTCP_V20(
  
       mii_initializer mii_initializer1(
        // System
-       .CLK      (gtrefclk_out    ),  // in : system clock (125M)
-       .RST      (SiTCP_RST       ),  // in : system reset
+       .CLK      (gtrefclk_out1   ),  // in : system clock (125M)
+       .RST      (SiTCP_RST1      ),  // in : system reset
        // PHY
        .PHYAD    (5'b00001        ),  // in : [4:0] PHY address
        // MII
@@ -985,8 +990,8 @@ module ADC_SiTCP_V20(
  
       mii_initializer mii_initializer2(
        // System
-       .CLK      (gtrefclk_out    ),  // in : system clock (125M)
-       .RST      (SiTCP_RST       ),  // in : system reset
+       .CLK      (gtrefclk_out2   ),  // in : system clock (125M)
+       .RST      (SiTCP_RST2      ),  // in : system reset
        // PHY
        .PHYAD    (5'b00010        ),  // in : [4:0] PHY address
        // MII
@@ -1014,7 +1019,7 @@ module ADC_SiTCP_V20(
        .gtrefclk_p             (GMII_REF_CLK_P  ),  // input OK :
        .gtrefclk_n             (GMII_REF_CLK_N  ),  // input OK :
        .gtrefclk_out           (),                  // output :
-       .gtrefclk_bufg_out      (gtrefclk_out    ),  // output :
+       .gtrefclk_bufg_out      (gtrefclk_out1   ),  // output :
        .txp                    (GMII_TXP[0]     ),  // outputOK : Differential +ve of serial transmission from PMA to PMD.
        .txn                    (GMII_TXN[0]     ),  // outputOK : Differential -ve of serial transmission from PMA to PMD.
        .rxp                    (GMII_RXP[0]     ),  // input OK : Differential +ve for serial reception from PMD to PMA.
@@ -1106,7 +1111,7 @@ module ADC_SiTCP_V20(
        .gtrefclk_p             (GMII_REF_CLK_P  ),  // input OK :
        .gtrefclk_n             (GMII_REF_CLK_N  ),  // input OK :
        .gtrefclk_out           (),                  // output :
-       .gtrefclk_bufg_out      (gtrefclk_out    ),  // output :
+       .gtrefclk_bufg_out      (gtrefclk_out2   ),  // output :
        .txp                    (GMII_TXP[1]     ),  // outputOK : Differential +ve of serial transmission from PMA to PMD.
        .txn                    (GMII_TXN[1]     ),  // outputOK : Differential -ve of serial transmission from PMA to PMD.
        .rxp                    (GMII_RXP[1]     ),  // input OK : Differential +ve for serial reception from PMD to PMA.
@@ -1202,7 +1207,7 @@ module ADC_SiTCP_V20(
          
  	LOC_REG				LOC_REG(
  		.CLK					(CLK160M),	// in	: System clock
- 		.RST					(SiTCP_RST),// in	: System reset
+ 		.RST					(SiTCP_RST2),// in	: System reset
  		.TIM_1MS				(TIM_1MS),	// in	: 1us interrupt
         .TIM_1US                (TIM_1US), 	
  		// ADC I/F		
@@ -1240,29 +1245,29 @@ module ADC_SiTCP_V20(
  		.REG_STRIP_POSITION		(REG_STRIP_POSITION[16*24-1:0]),//out SSEM strip position
  		.REG_THRESHOLD			(REG_THRESHOLD[15:0]),			//out beam position threshold level
  		.REG_THRESHOLD_WIDTH    (REG_THRESHOLD_WIDTH[23:0]),
-         .REG_INT_NUM            (REG_INT_NUM[7:0]),
+        .REG_INT_NUM            (REG_INT_NUM[7:0]),
  		.adc1_if_en       		(adc1_if_en   ),
-         .adc1_if_reset    		(adc1_if_reset),
-         .adc2_if_en       		(adc2_if_en   ),
-         .adc2_if_reset    		(adc2_if_reset),
-         .adc3_if_en       		(adc3_if_en   ),
-         .adc3_if_reset    		(adc3_if_reset),
+        .adc1_if_reset    		(adc1_if_reset),
+        .adc2_if_en       		(adc2_if_en   ),
+        .adc2_if_reset    		(adc2_if_reset),
+        .adc3_if_en       		(adc3_if_en   ),
+        .adc3_if_reset    		(adc3_if_reset),
  		.REG_OFFSET				(REG_OFFSET[15:0]),				//out beam position offset
  		.REG_INTERLOCK			(REG_INTERLOCK[1:0]),			//out interlock signal control
  		.in_delay_reset_1       (in_delay_reset_1[1:0]),                            
-         .tap_fco_1     			(delay_tap_in_fco_1[4:0]) ,             
-         .in_delay_reset_2       (in_delay_reset_2[1:0]),                                
-         .tap_fco_2     			(delay_tap_in_fco_2[4:0]),              
-         .in_delay_reset_3       (in_delay_reset_3[1:0]),                   
-         .tap_fco_3     			(delay_tap_in_fco_3[4:0]),
+        .tap_fco_1     			(delay_tap_in_fco_1[4:0]) ,             
+        .in_delay_reset_2       (in_delay_reset_2[1:0]),                                
+        .tap_fco_2     			(delay_tap_in_fco_2[4:0]),              
+        .in_delay_reset_3       (in_delay_reset_3[1:0]),                   
+        .tap_fco_3     			(delay_tap_in_fco_3[4:0]),
  		.tap_1         		(delay_tap_in_1[4:0]),              
-         .tap_2         		(delay_tap_in_2[4:0] ),                                  
-         .tap_3         		(delay_tap_in_3[4:0] ),                                  
-         .tap_4         		(delay_tap_in_4[4:0] ),                                  
-         .tap_5         		(delay_tap_in_5[4:0] ),                                  
-         .tap_6         		(delay_tap_in_6[4:0] ),                                  
-         .tap_7         		(delay_tap_in_7[4:0] ),                                  
-         .tap_8         		(delay_tap_in_8[4:0] ),  
+        .tap_2         		(delay_tap_in_2[4:0] ),                                  
+        .tap_3         		(delay_tap_in_3[4:0] ),                                  
+        .tap_4         		(delay_tap_in_4[4:0] ),                                  
+        .tap_5         		(delay_tap_in_5[4:0] ),                                  
+        .tap_6         		(delay_tap_in_6[4:0] ),                                  
+        .tap_7         		(delay_tap_in_7[4:0] ),                                  
+        .tap_8         		(delay_tap_in_8[4:0] ),  
  		.REG_TAG_COUNT			(REG_TAG_COUNT[7:0])
  	);
  
