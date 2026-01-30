@@ -1,0 +1,1071 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jan 27 18:03:26 2026
+# Process ID         : 27140
+# Current directory  : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1048 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20260115\PAPILLON_v20260115.xpr
+# Log file           : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/vivado.log
+# Journal file       : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115\vivado.jou
+# Running On         : nudaq-win02
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36106 MB
+# Available Virtual  : 22725 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1610.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4613 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2418.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 2631.082 ; gain = 1381.820
+set_property OFFCHIP_TERM FP_VTT_50 [get_ports [list INTERLOCK]]
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Tue Jan 27 19:08:40 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Tue Jan 27 19:09:49 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2700.512 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4613 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2775.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 2775.301 ; gain = 74.789
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2775.301 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4613 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2847.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 2847.742 ; gain = 72.441
+set_property iostandard LVDS_25 [get_ports [list {ADC_D_N[20]}]]
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Wed Jan 28 12:17:46 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Jan 28 12:19:00 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Wed Jan 28 12:46:34 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Jan 28 12:47:59 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3946.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4613 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3946.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 3946.113 ; gain = 0.000
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Wed Jan 28 14:08:47 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Jan 28 14:27:36 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Jan 28 14:28:42 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3946.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4613 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3946.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 3946.113 ; gain = 0.000
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : SGMII
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : SGMII
+create_ip -name gig_ethernet_pcs_pma -vendor xilinx.com -library ip -version 16.2 -module_name gig_ethernet_pcs_pma_1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : 1000BASEX
+set_property -dict [list \
+  CONFIG.Standard {SGMII} \
+  CONFIG.SupportLevel {Include_Shared_Logic_in_Core} \
+] [get_ips gig_ethernet_pcs_pma_1]
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: ARCHITECTURE : artix7
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: PART : xc7a100tfgg484-1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: SPEEDGRADE : -1
+INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_1: Standard : SGMII
+generate_target {instantiation_template} [get_files c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gig_ethernet_pcs_pma_1'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gig_ethernet_pcs_pma_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gig_ethernet_pcs_pma_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'gig_ethernet_pcs_pma_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gig_ethernet_pcs_pma_1'...
+catch { config_ip_cache -export [get_ips -all gig_ethernet_pcs_pma_1] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gig_ethernet_pcs_pma_1
+export_ip_user_files -of_objects [get_files c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1.xci]
+launch_runs gig_ethernet_pcs_pma_1_synth_1 -jobs 6
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gig_ethernet_pcs_pma_1
+[Wed Jan 28 15:57:48 2026] Launched gig_ethernet_pcs_pma_1_synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/gig_ethernet_pcs_pma_1_synth_1/runme.log
+export_simulation -lib_map_path [list {modelsim=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.cache/compile_simlib/modelsim} {questa=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.cache/compile_simlib/questa} {riviera=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.cache/compile_simlib/riviera} {activehdl=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.cache/compile_simlib/activehdl}] -of_objects [get_files c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1.xci] -directory C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.ip_user_files -ipstatic_source_dir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Wed Jan 28 16:07:01 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Jan 28 16:08:15 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1.dcp' for cell 'gig_ethernet_pcs_pma_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3946.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4613 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_1/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_1/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_1/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1_board.xdc] for cell 'gig_ethernet_pcs_pma_2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1_board.xdc] for cell 'gig_ethernet_pcs_pma_2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc] for cell 'gig_ethernet_pcs_pma_2/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc] for cell 'gig_ethernet_pcs_pma_2/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3946.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 3946.113 ; gain = 0.000
+close_design
+file mkdir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/new
+close [ open C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/new/GMII_CLK_FANOUT.v w ]
+add_files C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/new/GMII_CLK_FANOUT.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Thu Jan 29 11:40:05 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Jan 29 11:41:39 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4617 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds0' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds1' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE2 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE2 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE3 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE3 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, GMII_CLK_OFAN/u_ibufds. Illegal to place instance GMII_CLK_OFAN/u_ibufds on site F6. The location site type (IPAD) and bel type (BUFFER) do not match the cell type (IBUFDS). Instance GMII_CLK_OFAN/u_ibufds belongs to a shape with reference instance GMII_CLK_OFAN/u_ibufds. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:894]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 4196.379 ; gain = 0.000
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4617 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds0' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds1' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE2 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE2 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE3 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+CRITICAL WARNING: [Shape Builder 18-151] Instance GMII_CLK_OFAN/u_oddr failed to join an OLOGICE3 group as required. Instance GMII_CLK_OFAN/u_oddr cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+.
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, GMII_CLK_OFAN/u_ibufds. Illegal to place instance GMII_CLK_OFAN/u_ibufds on site F6. The location site type (IPAD) and bel type (BUFFER) do not match the cell type (IBUFDS). Instance GMII_CLK_OFAN/u_ibufds belongs to a shape with reference instance GMII_CLK_OFAN/u_ibufds. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:894]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 4196.379 ; gain = 0.000
+close_design
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Thu Jan 29 12:31:36 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Jan 29 12:32:57 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4618 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds0' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds1' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, GMII_CLK_OFAN/u_ibufds. Illegal to place instance GMII_CLK_OFAN/u_ibufds on site F6. The location site type (IPAD) and bel type (BUFFER) do not match the cell type (IBUFDS). Instance GMII_CLK_OFAN/u_ibufds belongs to a shape with reference instance GMII_CLK_OFAN/u_ibufds. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:894]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.019 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 4196.379 ; gain = 0.000
+close_design
+get_cells -hier *GTPE2_COMMON*
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4618 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds0' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'GMII_CLK_OFAN/u_obufds1' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database.
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, GMII_CLK_OFAN/u_ibufds. Illegal to place instance GMII_CLK_OFAN/u_ibufds on site F6. The location site type (IPAD) and bel type (BUFFER) do not match the cell type (IBUFDS). Instance GMII_CLK_OFAN/u_ibufds belongs to a shape with reference instance GMII_CLK_OFAN/u_ibufds. Shape elements have relative placement respect to each other. The invalid location might results from a constraint on any of the instance in the shape. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:894]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:28 . Memory (MB): peak = 4196.379 ; gain = 0.000
+get_cells -hier *GTPE2_COMMON*
+WARNING: [Vivado 12-180] No cells matched '*GTPE2_COMMON*'.
+close_design
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Thu Jan 29 13:55:01 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_01'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4613 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_01/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_02/inst'
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 20 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 4196.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 43 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  OBUFDS => OBUFDS: 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 20 instances
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 4196.379 ; gain = 0.000
+get_cells -hier *GTPE2_COMMON*
+WARNING: [Vivado 12-180] No cells matched '*GTPE2_COMMON*'.
+get_cells -hier *GTPE2_CHANNEL*
+WARNING: [Vivado 12-180] No cells matched '*GTPE2_CHANNEL*'.
+get_cells -hier *GTPE2_CHANNEL*
+WARNING: [Vivado 12-180] No cells matched '*GTPE2_CHANNEL*'.
+get_sites GTEP2_COMMON*
+WARNING: [Vivado 12-3731] No sites matched 'GTEP2_COMMON*'
+get_sites GTPE2_CHANNEL*
+GTPE2_CHANNEL_X0Y7 GTPE2_CHANNEL_X0Y6 GTPE2_CHANNEL_X0Y5 GTPE2_CHANNEL_X0Y4 GTPE2_CHANNEL_X0Y3 GTPE2_CHANNEL_X0Y2 GTPE2_CHANNEL_X0Y1 GTPE2_CHANNEL_X0Y0
+get_sites GTPE2_COMMON*
+GTPE2_COMMON_X0Y1 GTPE2_COMMON_X0Y0
+get_property SITE [get_ports *RXP*]
+IPAD_X1Y43 IPAD_X1Y37
+get_property SITE [get_ports *TXP*]
+OPAD_X0Y11 OPAD_X0Y9
+get_property SITE [get_ports *TXN*]
+OPAD_X0Y10 OPAD_X0Y8
+get_property SITE [get_ports *RXN*]
+IPAD_X1Y42 IPAD_X1Y36
+get_sites -of_objects [get_ports RXP*]
+WARNING: [Vivado 12-584] No ports matched 'RXP*'.
+WARNING: [Vivado 12-3731] No sites matched '*'
+get_sites -of_objects [get_ports *RXP*]
+IPAD_X1Y43 IPAD_X1Y37
+get_bels -of_objects [get_ports *RXP*]
+ERROR: [Common 17-679] Invalid object type, 'unknown', used with '-of_objects' switch. Supported types are: 'slr, tiles, sites, cells, clock_regions, nets or pseudo pips'.
+get_bels -of_objects [get_ports *RXP*]
+ERROR: [Common 17-679] Invalid object type, 'unknown', used with '-of_objects' switch. Supported types are: 'slr, tiles, sites, cells, clock_regions, nets or pseudo pips'.
+report_property [get_ports *RXP*]
+ERROR: [Common 17-56] 'report_property' expects exactly one object got '2'.
+report_property [get_ports RXP0]
+WARNING: [Vivado 12-584] No ports matched 'RXP0'.
+ERROR: [Common 17-56] 'report_property' expects exactly one object got '0'.
+report_property [get_ports GMII_RXP[0]]
+Property            Type         Read-only  Value
+BUS_DIRECTION       enum         true       IN
+BUS_NAME            string       true       GMII_RXP
+BUS_START           int          true       1
+BUS_STOP            int          true       0
+BUS_WIDTH           int          true       2
+CLASS               string       true       port
+DIRECTION           enum         false      IN
+HD.ASSIGNED_PPLOCS  string*      true       
+HD.TANDEM           int          false      0
+HOLD_SLACK          double       true       needs timing update***
+IS_GT_TERM          bool         true       1
+IS_LOC_FIXED        bool         false      1
+IS_REUSED           bool         true       0
+LOC                 site         false      IPAD_X1Y37
+LOGIC_VALUE         string       true       needs timing update***
+NAME                string       false      GMII_RXP[0]
+PACKAGE_PIN         package_pin  false      B8
+PARTITION_ID        int          true       0
+SETUP_SLACK         double       true       needs timing update***
+UNCONNECTED         bool         true       0
+get_sites -of_objects [get_ports GMII_RXP[0]]
+IPAD_X1Y37
+get_tiles -of_objects [get_sites -of_objects [get_ports GMII_RXP[0]]]
+GTP_CHANNEL_0_X130Y162
+report_property [get_tiles -of_objects [get_sites -of_objects [get_ports GMII_RXP[0]]]]
+Property               Type    Read-only  Value
+CLASS                  string  true       tile
+COLUMN                 int     true       130
+DEVICE_ID              int     true       0
+FIRST_SITE_ID          int     true       6379
+GRID_POINT_X           int     true       130
+GRID_POINT_Y           int     true       46
+GRID_X                 int     true       130
+GRID_Y                 int     true       162
+INDEX                  int     true       6938
+INT_TILE_X             int     true       51
+INT_TILE_Y             int     true       44
+IS_CENTER_TILE         bool    true       0
+IS_DCM_TILE            bool    true       0
+IS_GT_CLOCK_SITE_TILE  bool    true       0
+IS_GT_SITE_TILE        bool    true       1
+NAME                   string  true       GTP_CHANNEL_0_X130Y162
+NUM_ARCS               int     true       577
+NUM_SITES              int     true       5
+REGION_NAME            string  true       FSR
+ROW                    int     true       46
+SLR_REGION_ID          int     true       0
+TILE_PATTERN_IDX       int     true       1476
+TILE_TYPE              enum    true       GTP_CHANNEL_0
+TILE_TYPE_INDEX        int     true       48
+TILE_X                 int     true       107184
+TILE_Y                 int     true       179120
+TYPE                   string  true       GTP_CHANNEL_0
+report_property [get_tiles -of_objects [get_sites -of_objects [get_ports GMII_RXP[1]]]]
+Property               Type    Read-only  Value
+CLASS                  string  true       tile
+COLUMN                 int     true       130
+DEVICE_ID              int     true       0
+FIRST_SITE_ID          int     true       4859
+GRID_POINT_X           int     true       130
+GRID_POINT_Y           int     true       35
+GRID_X                 int     true       130
+GRID_Y                 int     true       173
+INDEX                  int     true       5310
+INT_TILE_X             int     true       51
+INT_TILE_Y             int     true       33
+IS_CENTER_TILE         bool    true       0
+IS_DCM_TILE            bool    true       0
+IS_GT_CLOCK_SITE_TILE  bool    true       0
+IS_GT_SITE_TILE        bool    true       1
+NAME                   string  true       GTP_CHANNEL_1_X130Y173
+NUM_ARCS               int     true       577
+NUM_SITES              int     true       5
+REGION_NAME            string  true       FSR
+ROW                    int     true       35
+SLR_REGION_ID          int     true       0
+TILE_PATTERN_IDX       int     true       1148
+TILE_TYPE              enum    true       GTP_CHANNEL_1
+TILE_TYPE_INDEX        int     true       51
+TILE_X                 int     true       107184
+TILE_Y                 int     true       214320
+TYPE                   string  true       GTP_CHANNEL_1
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 14:32:43 2026...

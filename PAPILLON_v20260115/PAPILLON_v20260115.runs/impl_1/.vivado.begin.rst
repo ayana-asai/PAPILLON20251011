@@ -1,5 +1,50 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="20388" HostCore="12" HostMemory="033959370752">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="24556" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="22828" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="15112" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="21196" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="26924" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="24296" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="16392" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="29580" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="7524" HostCore="12" HostMemory="033959370752">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="32024" HostCore="12" HostMemory="033959370752">
     </Process>
 </ProcessHandle>

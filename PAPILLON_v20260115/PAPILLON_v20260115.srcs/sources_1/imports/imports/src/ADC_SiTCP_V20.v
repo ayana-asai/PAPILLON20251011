@@ -182,8 +182,9 @@ module ADC_SiTCP_V20(
 //------------------------------------------------------------------------------
 //	System management
 //------------------------------------------------------------------------------
-    wire            gtrefclk_out1       ;
-    wire            gtrefclk_out2       ;
+    wire            gtrefclk_out       ;
+    wire            gtrefclk_bufg_out  ;
+    //wire            gtrefclk_out2       ;
 
 //outside clock
 
@@ -818,8 +819,8 @@ module ADC_SiTCP_V20(
 
     //assign		NIM_OUT = DAC_STRI; 
     
-    wire             GMII_CLK1        ;
-    wire             GMII_CLK2        ;
+    wire             GMII_CLK         ;
+    //wire             GMII_CLK2        ;
     
  
     //   for data
@@ -851,13 +852,13 @@ module ADC_SiTCP_V20(
  		 .GMII_1000M            (1'b1),               //DIP_SW[3]        ), // in : GMII mode(1000Mbps)
  		 // TX
  		 // .GMII_TX_CLK        (GMII_TX_CLK      ),  // in : Tx clock
- 		 .GMII_TX_CLK           (GMII_CLK1        ),  // in : Tx clock
+ 		 .GMII_TX_CLK           (GMII_CLK         ),  // in : Tx clock
  		 .GMII_TX_EN            (GMII_TX_EN1      ),  // out: Tx enable
  		 .GMII_TXD              (GMII_TXD1[7:0]   ),  // out: Tx data[3:0]
  		 .GMII_TX_ER            (GMII_TX_ER1      ),  // out: TX error
  		 // RX
  		 // .GMII_RX_CLK        (ETH_RX_CLK       ),  // in : Rx clock
- 		 .GMII_RX_CLK           (GMII_CLK1        ),  // in : Rx clock
+ 		 .GMII_RX_CLK           (GMII_CLK         ),  // in : Rx clock
  		 .GMII_RX_DV            (GMII_RX_DV1      ),  // in : Rx data valid
  		 .GMII_RXD              (GMII_RXD1[7:0]   ),  // in : Rx data[3:0]
  		 .GMII_RX_ER            (GMII_RX_ER1      ),  // in : Rx error
@@ -922,13 +923,13 @@ module ADC_SiTCP_V20(
  		 .GMII_1000M            (1'b1),               //DIP_SW[3]        ), // in : GMII mode(1000Mbps)
  		 // TX
  		 // .GMII_TX_CLK        (GMII_TX_CLK      ),  // in : Tx clock
- 		 .GMII_TX_CLK           (GMII_CLK2        ),  // in : Tx clock
+ 		 .GMII_TX_CLK           (GMII_CLK         ),  // in : Tx clock
  		 .GMII_TX_EN            (GMII_TX_EN2      ),  // out: Tx enable
  		 .GMII_TXD              (GMII_TXD2[7:0]   ),  // out: Tx data[3:0]
  		 .GMII_TX_ER            (GMII_TX_ER2      ),  // out: TX error
  		 // RX
  		 // .GMII_RX_CLK        (ETH_RX_CLK       ),  // in : Rx clock
- 		 .GMII_RX_CLK           (GMII_CLK2        ),  // in : Rx clock
+ 		 .GMII_RX_CLK           (GMII_CLK         ),  // in : Rx clock
  		 .GMII_RX_DV            (GMII_RX_DV2      ),  // in : Rx data valid
  		 .GMII_RXD              (GMII_RXD2[7:0]   ),  // in : Rx data[3:0]
  		 .GMII_RX_ER            (GMII_RX_ER2      ),  // in : Rx error
@@ -970,14 +971,14 @@ module ADC_SiTCP_V20(
     wire     sfp_mdc1     ;
     wire     sfp_mdio_i1  ;
     wire     sfp_gmii_comp1 ;
- 
+
     wire     sfp_mdc2     ;
     wire     sfp_mdio_i2  ;
     wire     sfp_gmii_comp2 ;
  
       mii_initializer mii_initializer1(
        // System
-       .CLK      (gtrefclk_out1   ),  // in : system clock (125M)
+       .CLK      (gtrefclk_bufg_out),  // in : system clock (125M)
        .RST      (SiTCP_RST1      ),  // in : system reset
        // PHY
        .PHYAD    (5'b00001        ),  // in : [4:0] PHY address
@@ -990,7 +991,7 @@ module ADC_SiTCP_V20(
  
       mii_initializer mii_initializer2(
        // System
-       .CLK      (gtrefclk_out2   ),  // in : system clock (125M)
+       .CLK      (gtrefclk_bufg_out),  // in : system clock (125M)
        .RST      (SiTCP_RST2      ),  // in : system reset
        // PHY
        .PHYAD    (5'b00010        ),  // in : [4:0] PHY address
@@ -1001,39 +1002,64 @@ module ADC_SiTCP_V20(
        .COMPLETE (sfp_gmii_comp2  )   // out: initializing sequence has completed (active H)
       );
  
-    wire             userclk2_1;
-    wire             userclk2_2;
+    wire               userclk2;
+    wire                userclk;
     wire          sgmii_clk_en1;
     wire          sgmii_clk_en2;
-    BUFGCE BUF_SGMII1(.O(GMII_CLK1), .CE(1'b1), .I(userclk2_1));
-    BUFGCE BUF_SGMII2(.O(GMII_CLK2), .CE(1'b1), .I(userclk2_2));
- 
+    wire         gmii_refclk_p1;
+    wire         gmii_refclk_n1;
+    wire         gmii_refclk_p2;
+    wire         gmii_refclk_n2;
+
+    BUFGCE BUF_SGMII1(.O(GMII_CLK), .CE(1'b1), .I(userclk2));
+    //BUFGCE BUF_SGMII2(.O(GMII_CLK2), .CE(1'b1), .I(userclk2_2));
+/*
+    GMII_CLK_FANOUT  GMII_CLK_OFAN(
+        .O1 (gmii_refclk_p1),
+        .OB1(gmii_refclk_n1),
+        .O2 (gmii_refclk_p2),
+        .OB2(gmii_refclk_n2),
+        .I  (GMII_REF_CLK_P),
+        .IB (GMII_REF_CLK_N)
+    );
+*/ 
     wire [15:0]      CFG_REG;
     assign CFG_REG[15:0] = 16'b0000_0000_0000_0000; // 
  
     wire [15:0]     STATUS_VECTOR1;
     wire [15:0]     STATUS_VECTOR2;
+    wire                 pma_reset;
+    wire               mmcm_locked;
+    wire                  pll0lock;
+    wire                pll0outclk;
+    wire             pll0outrefclk;
+    wire            pll0refclklost;
+    wire                pll1outclk;
+    wire             pll1outrefclk;
  
-      gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_01
+      gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_0
       (
        // Transceiver Interface
        //----------------------
+       //.gtrefclk_p             (gmii_refclk_p1  ),  // input OK :
+       //.gtrefclk_n             (gmii_refclk_n1  ),  // input OK :
        .gtrefclk_p             (GMII_REF_CLK_P  ),  // input OK :
        .gtrefclk_n             (GMII_REF_CLK_N  ),  // input OK :
-       .gtrefclk_out           (),                  // output :
-       .gtrefclk_bufg_out      (gtrefclk_out1   ),  // output :
+       .gtrefclk_out           (gtrefclk_out    ),  // output :125MHz reflkc from IBUFDS
+       .gtrefclk_bufg_out      (gtrefclk_bufg_out),  // output :refclk for transciver
        .txp                    (GMII_TXP[0]     ),  // outputOK : Differential +ve of serial transmission from PMA to PMD.
        .txn                    (GMII_TXN[0]     ),  // outputOK : Differential -ve of serial transmission from PMA to PMD.
        .rxp                    (GMII_RXP[0]     ),  // input OK : Differential +ve for serial reception from PMD to PMA.
        .rxn                    (GMII_RXN[0]     ),  // input OK : Differential -ve for serial reception from PMD to PMA.
        .resetdone              (),                  // output : The GT transceiver has completed its reset cycle
-       .userclk_out            () ,                 // output :
-       .userclk2_out           (userclk2_1      ),  // outputOK :
+       .userclk_out            (userclk         ),  // output :
+       .userclk2_out           (userclk2        ),  // outputOK :
        .rxuserclk_out          (),                  // output :
        .rxuserclk2_out         (),                  // output :
        .independent_clock_bufg (CLK160M         ),  // input OK :
-       .pma_reset_out          (),                  // output : transceiver PMA reset signal
-       .mmcm_locked_out        (),                  // output : MMCM Locked
+       .pma_reset_out          (pma_reset       ),  // output : transceiver PMA reset signal
+       .mmcm_locked_out        (mmcm_locked     ),  // output : MMCM Locked
+
        // GMII Interface
        //---------------
        .sgmii_clk_r            (),           
@@ -1095,37 +1121,44 @@ module ADC_SiTCP_V20(
        // [ 2] : RUDI(/C/)
        // [ 1] : Link Synchronization
        // [ 0] : Link Status
-       .status_vector          (STATUS_VECTOR1[15:0]), // output : [15:0] Core status.
-       .reset                  (RST),                  // input : Asynchronous reset for entire core
-       .signal_detect          (1'b1),                 // input : Input from PMD to indicate presence of optical input.
-       .gt0_pll0lock_out       (),
-       .gt0_pll0outclk_out     (),
-       .gt0_pll0outrefclk_out  (),
-       .gt0_pll0refclklost_out (),
-       .gt0_pll1outclk_out     (),
-       .gt0_pll1outrefclk_out  ()
+       .status_vector          (STATUS_VECTOR1[15:0]),  // output: [15:0] Core status.
+       .reset                  (RST),                   // input : Asynchronous reset for entire core
+       .signal_detect          (1'b1),                  // input : Input from PMD to indicate presence of optical input.
+       .gt0_pll0lock_out       (pll0lock            ),  // input : out PLL0 of GT Common has locked
+       .gt0_pll0outclk_out     (pll0outclk          ),  // input : out clock from PLL0
+       .gt0_pll0outrefclk_out  (pll0outrefclk       ),  // input : reference out clock from PLL0
+       .gt0_pll0refclklost_out (pll0refclklost      ),  // input : out reference clock for PLL0 is lost
+       .gt0_pll1outclk_out     (pll1outclk          ),  // input : out clock from PLL1
+       .gt0_pll1outrefclk_out  (pll1outrefclk       )   // input : reference out clock from PLL1
        );
  
-      gig_ethernet_pcs_pma_0 gig_ethernet_pcs_pma_02
+      gig_ethernet_pcs_pma_2 gig_ethernet_pcs_pma_2
       (
        // Transceiver Interface
        //----------------------
-       .gtrefclk_p             (GMII_REF_CLK_P  ),  // input OK :
-       .gtrefclk_n             (GMII_REF_CLK_N  ),  // input OK :
-       .gtrefclk_out           (),                  // output :
-       .gtrefclk_bufg_out      (gtrefclk_out2   ),  // output :
+       //.gtrefclk_p           (gmii_refclk_p2  ),  //
+       //.gtrefclk_n           (gmii_refclk_n2  ),  //
+       .gtrefclk               (gtrefclk_out    ),  // input :125MHz refclk from IBUFDS to transceiver
+       //.gtrefclk_n           (GMII_REF_CLK_N  ),  //
+       //.gtrefclk_out         (),                  //
+       .gtrefclk_bufg          (gtrefclk_bufg_out    ),  // input :refclk for transceiver passed through BUFG
        .txp                    (GMII_TXP[1]     ),  // outputOK : Differential +ve of serial transmission from PMA to PMD.
        .txn                    (GMII_TXN[1]     ),  // outputOK : Differential -ve of serial transmission from PMA to PMD.
        .rxp                    (GMII_RXP[1]     ),  // input OK : Differential +ve for serial reception from PMD to PMA.
        .rxn                    (GMII_RXN[1]     ),  // input OK : Differential -ve for serial reception from PMD to PMA.
        .resetdone              (),                  // output : The GT transceiver has completed its reset cycle
-       .userclk_out            () ,                 // output :
-       .userclk2_out           (userclk2_2      ),  // outputOK :
-       .rxuserclk_out          (),                  // output :
-       .rxuserclk2_out         (),                  // output :
+       .cplllock               (),                  // output : 
+       .mmcm_reset             (),                  // output : 
+       .txoutclk               (),                  // output : 
+       .rxoutclk               (),                  // output : 
+       .userclk                (userclk         ),  // input  :
+       .userclk2               (userclk2        ),  // input  :
+       .rxuserclk              (userclk         ),  // input  :
+       .rxuserclk2             (userclk2        ),  // input  :
        .independent_clock_bufg (CLK160M         ),  // input OK :
-       .pma_reset_out          (),                  // output : transceiver PMA reset signal
-       .mmcm_locked_out        (),                  // output : MMCM Locked
+       .pma_reset              (pma_reset       ),  // input  : transceiver PMA reset signal
+       .mmcm_locked            (mmcm_locked     ),  // input  : MMCM Locked
+
        // GMII Interface
        //---------------
        .sgmii_clk_r            (),           
@@ -1187,15 +1220,16 @@ module ADC_SiTCP_V20(
        // [ 2] : RUDI(/C/)
        // [ 1] : Link Synchronization
        // [ 0] : Link Status
-       .status_vector          (STATUS_VECTOR2[15:0]), // output : [15:0] Core status.
-       .reset                  (RST),                  // input : Asynchronous reset for entire core
-       .signal_detect          (1'b1),                 // input : Input from PMD to indicate presence of optical input.
-       .gt0_pll0lock_out       (),
-       .gt0_pll0outclk_out     (),
-       .gt0_pll0outrefclk_out  (),
-       .gt0_pll0refclklost_out (),
-       .gt0_pll1outclk_out     (),
-       .gt0_pll1outrefclk_out  ()
+       .status_vector          (STATUS_VECTOR2[15:0]),  // output: [15:0] Core status.
+       .reset                  (RST),                   // input : Asynchronous reset for entire core
+       .signal_detect          (1'b1),                  // input : Input from PMD to indicate presence of optical input.
+       .gt0_pll0lock_in        (pll0lock            ),  // input : out PLL0 of GT Common has locked
+       .gt0_pll0outclk_in      (pll0outclk          ),  // input : out clock from PLL0
+       .gt0_pll0outrefclk_in   (pll0outrefclk       ),  // input : reference out clock from PLL0
+       .gt0_pll0refclklost_in  (pll0refclklost      ),  // input : out reference clock for PLL0 is lost
+       .gt0_pll0reset_out      (),                      // output: Reset for PLL from reset FSM
+       .gt0_pll1outclk_in      (pll1outclk          ),  // input : out clock from PLL1
+       .gt0_pll1outrefclk_in   (pll1outrefclk       )   // input : reference out clock from PLL1
        );
  
      wire	[4:1]	intAscSdioIn	;//24ch

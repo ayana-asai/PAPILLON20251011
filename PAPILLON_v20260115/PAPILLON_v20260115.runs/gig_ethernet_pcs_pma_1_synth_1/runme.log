@@ -1,0 +1,1062 @@
+
+*** Running vivado
+    with args -log gig_ethernet_pcs_pma_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source gig_ethernet_pcs_pma_1.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed Jan 28 15:57:51 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source gig_ethernet_pcs_pma_1.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gig_ethernet_pcs_pma_1
+Command: synth_design -top gig_ethernet_pcs_pma_1 -part xc7a100tfgg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.879 ; gain = 467.246
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11065] parameter 'PLL0_FBDIV_IN' becomes localparam in 'gig_ethernet_pcs_pma_1_gt_common' with formal parameter declaration list [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:92]
+WARNING: [Synth 8-11065] parameter 'PLL1_FBDIV_IN' becomes localparam in 'gig_ethernet_pcs_pma_1_gt_common' with formal parameter declaration list [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:94]
+WARNING: [Synth 8-11065] parameter 'PLL0_FBDIV_45_IN' becomes localparam in 'gig_ethernet_pcs_pma_1_gt_common' with formal parameter declaration list [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:95]
+WARNING: [Synth 8-11065] parameter 'PLL1_FBDIV_45_IN' becomes localparam in 'gig_ethernet_pcs_pma_1_gt_common' with formal parameter declaration list [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:96]
+WARNING: [Synth 8-11065] parameter 'PLL0_REFCLK_DIV_IN' becomes localparam in 'gig_ethernet_pcs_pma_1_gt_common' with formal parameter declaration list [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:97]
+WARNING: [Synth 8-11065] parameter 'PLL1_REFCLK_DIV_IN' becomes localparam in 'gig_ethernet_pcs_pma_1_gt_common' with formal parameter declaration list [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:98]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.v:94]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_support' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_support.v:58]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_block' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:95]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_sgmii_adapt' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_sgmii_adapt.v:124]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_reset_sync' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_reset_sync.v:62]
+INFO: [Synth 8-6157] synthesizing module 'FDP' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43115]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'FDP' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43115]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_reset_sync' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_reset_sync.v:62]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_sync_block' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_sync_block.v:62]
+INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:42947]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FD' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:42947]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_sync_block' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_sync_block.v:62]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_clk_gen' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_clk_gen.v:83]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_johnson_cntr' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_johnson_cntr.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_johnson_cntr' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_johnson_cntr.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_clk_gen' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_clk_gen.v:83]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_tx_rate_adapt' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_tx_rate_adapt.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_tx_rate_adapt' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_tx_rate_adapt.v:72]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_rx_rate_adapt' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_rx_rate_adapt.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_rx_rate_adapt' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_rx_rate_adapt.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_sgmii_adapt' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/sgmii_adapt/gig_ethernet_pcs_pma_1_sgmii_adapt.v:124]
+WARNING: [Synth 8-7071] port 's_axi_aclk' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_resetn' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_awaddr' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_awvalid' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_awready' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_wdata' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_wvalid' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_wready' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_bresp' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_bvalid' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_bready' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_araddr' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_arvalid' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_arready' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_rdata' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_rresp' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_rvalid' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7071] port 's_axi_rready' of module 'gig_ethernet_pcs_pma_v16_2_21' is unconnected for instance 'gig_ethernet_pcs_pma_1_core' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+WARNING: [Synth 8-7023] instance 'gig_ethernet_pcs_pma_1_core' of module 'gig_ethernet_pcs_pma_v16_2_21' has 94 connections declared, but only 76 given [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:286]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_transceiver' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_transceiver.v:62]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_reset_wtd_timer' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_reset_wtd_timer.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_reset_wtd_timer' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_reset_wtd_timer.v:65]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard.v:71]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD_init' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_init.v:70]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 5 - type: integer 
+	Parameter EXAMPLE_USE_CHIPSCOPE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD_multi_gt' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_GTWIZARD_multi_gt.v:71]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD_GT' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gt.v:71]
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter TXSYNC_OVRD_IN bound to: 1'b0 
+	Parameter TXSYNC_MULTILANE_IN bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'GTPE2_CHANNEL' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:52375]
+	Parameter ACJTAG_DEBUG_MODE bound to: 1'b0 
+	Parameter ACJTAG_MODE bound to: 1'b0 
+	Parameter ACJTAG_RESET bound to: 1'b0 
+	Parameter ADAPT_CFG0 bound to: 20'b00000000000000000000 
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b0001111111 
+	Parameter ALIGN_COMMA_WORD bound to: 2 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CFOK_CFG bound to: 43'b1001001000000000000000001000000111010000000 
+	Parameter CFOK_CFG2 bound to: 7'b0100000 
+	Parameter CFOK_CFG3 bound to: 7'b0100000 
+	Parameter CFOK_CFG4 bound to: 1'b0 
+	Parameter CFOK_CFG5 bound to: 2'b00 
+	Parameter CFOK_CFG6 bound to: 4'b0000 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_COMMON_SWING bound to: 1'b0 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 36 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 32 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: FALSE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000010000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b000 
+	Parameter LOOPBACK_CFG bound to: 1'b0 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00011001 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_LOOPBACK_CFG bound to: 1'b0 
+	Parameter PMA_RSV bound to: 819 - type: integer 
+	Parameter PMA_RSV2 bound to: 8256 - type: integer 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 4'b0000 
+	Parameter PMA_RSV5 bound to: 1'b0 
+	Parameter PMA_RSV6 bound to: 1'b0 
+	Parameter PMA_RSV7 bound to: 1'b0 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 61 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 8 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 83'b00000000000000000010000011111111110000100000110000000000001000001000001000000010000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b001001 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 9'b000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXLPM_BIAS_STARTUP_DISABLE bound to: 1'b0 
+	Parameter RXLPM_CFG bound to: 4'b0110 
+	Parameter RXLPM_CFG1 bound to: 1'b0 
+	Parameter RXLPM_CM_CFG bound to: 1'b0 
+	Parameter RXLPM_GC_CFG bound to: 9'b111100010 
+	Parameter RXLPM_GC_CFG2 bound to: 3'b001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00001111110000 
+	Parameter RXLPM_HF_CFG2 bound to: 5'b01010 
+	Parameter RXLPM_HF_CFG3 bound to: 4'b0000 
+	Parameter RXLPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXLPM_INCM_CFG bound to: 1'b1 
+	Parameter RXLPM_IPCM_CFG bound to: 1'b0 
+	Parameter RXLPM_LF_CFG bound to: 18'b000000001111110000 
+	Parameter RXLPM_LF_CFG2 bound to: 5'b01010 
+	Parameter RXLPM_OSINT_CFG bound to: 3'b100 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOOB_CLK_CFG bound to: PMA - type: string 
+	Parameter RXOSCALRESET_TIME bound to: 5'b00011 
+	Parameter RXOSCALRESET_TIMEOUT bound to: 5'b00000 
+	Parameter RXOUT_DIV bound to: 4 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b110000000000000000000010 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPI_CFG0 bound to: 3'b000 
+	Parameter RXPI_CFG1 bound to: 1'b1 
+	Parameter RXPI_CFG2 bound to: 1'b1 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RXSYNC_MULTILANE bound to: 1'b0 
+	Parameter RXSYNC_OVRD bound to: 1'b0 
+	Parameter RXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter RX_BIAS_CFG bound to: 16'b0000111100110011 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter RX_CLKMUX_EN bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 4'b1010 
+	Parameter RX_DATA_WIDTH bound to: 20 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 14'b00000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b0101 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SATA_PLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 2.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 15'b100001000010000 
+	Parameter TERM_RCAL_OVRD bound to: 3'b000 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 0 - type: integer 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 9'b000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOOB_CFG bound to: 1'b0 
+	Parameter TXOUT_DIV bound to: 4 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPI_CFG0 bound to: 2'b00 
+	Parameter TXPI_CFG1 bound to: 2'b00 
+	Parameter TXPI_CFG2 bound to: 2'b00 
+	Parameter TXPI_CFG3 bound to: 1'b0 
+	Parameter TXPI_CFG4 bound to: 1'b0 
+	Parameter TXPI_CFG5 bound to: 3'b000 
+	Parameter TXPI_GREY_SEL bound to: 1'b0 
+	Parameter TXPI_INVSTROBE_SEL bound to: 1'b0 
+	Parameter TXPI_PPMCLK_SEL bound to: TXUSRCLK2 - type: string 
+	Parameter TXPI_PPM_CFG bound to: 8'b00000000 
+	Parameter TXPI_SYNFREQ_PPM bound to: 3'b001 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TXSYNC_MULTILANE bound to: 1'b0 
+	Parameter TXSYNC_OVRD bound to: 1'b0 
+	Parameter TXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter TX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter TX_CLKMUX_EN bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 20 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 6'b000000 
+	Parameter TX_DEEMPH1 bound to: 6'b000000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PREDRIVER_MODE bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b01100000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+	Parameter USE_PCS_CLK_PHASE_SEL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_CHANNEL' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:52375]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq.v:70]
+INFO: [Synth 8-226] default block is never used [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq.v:196]
+INFO: [Synth 8-226] default block is never used [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq.v:257]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq.v:70]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_gtwizard_rxpmarst_seq' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gtrxpmarst_seq.v:70]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_reset_sync__parameterized0' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_reset_sync.v:62]
+	Parameter INITIALISE bound to: 2'b00 
+INFO: [Synth 8-6157] synthesizing module 'FDP__parameterized1' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43115]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDP__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:43115]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_reset_sync__parameterized0' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_reset_sync.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_gtwizard_rxpmarst_seq' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gtrxpmarst_seq.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD_GT' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_gt.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD_multi_gt' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_GTWIZARD_multi_gt.v:71]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_TX_STARTUP_FSM' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_tx_startup_fsm.v:73]
+	Parameter STABLE_CLOCK_PERIOD bound to: 5 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter TX_PLL0_USED bound to: TRUE - type: string 
+	Parameter RX_PLL0_USED bound to: TRUE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_TX_STARTUP_FSM' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_tx_startup_fsm.v:73]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_RX_STARTUP_FSM' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_startup_fsm.v:72]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 5 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter TX_PLL0_USED bound to: TRUE - type: string 
+	Parameter RX_PLL0_USED bound to: TRUE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_RX_STARTUP_FSM' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_startup_fsm.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD_init' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard_init.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_GTWIZARD' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_gtwizard.v:71]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_rx_elastic_buffer' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_elastic_buffer.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_rx_elastic_buffer' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_elastic_buffer.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_transceiver' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_transceiver.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_block' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_block.v:95]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_clocking' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_clocking.v:63]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75979]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75979]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 16.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 16.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_clocking' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_clocking.v:63]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_resets' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_resets.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_resets' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_resets.v:63]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_common_reset' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_common_reset.v:74]
+	Parameter STABLE_CLOCK_PERIOD bound to: 5 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_common_reset.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_common_reset' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_common_reset.v:74]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_1_gt_common' [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:71]
+INFO: [Synth 8-6157] synthesizing module 'GTPE2_COMMON' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:53077]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000000000000000000000000000001010000000000000001 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter PLL0_CFG bound to: 27'b000000111110000001111011100 
+	Parameter PLL0_DMON_CFG bound to: 1'b0 
+	Parameter PLL0_FBDIV bound to: 4 - type: integer 
+	Parameter PLL0_FBDIV_45 bound to: 5 - type: integer 
+	Parameter PLL0_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter PLL0_LOCK_CFG bound to: 9'b111101000 
+	Parameter PLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter PLL1_CFG bound to: 27'b000000111110000001111011100 
+	Parameter PLL1_DMON_CFG bound to: 1'b0 
+	Parameter PLL1_FBDIV bound to: 1 - type: integer 
+	Parameter PLL1_FBDIV_45 bound to: 4 - type: integer 
+	Parameter PLL1_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter PLL1_LOCK_CFG bound to: 9'b111101000 
+	Parameter PLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter PLL_CLKOUT_CFG bound to: 8'b00000000 
+	Parameter RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter SIM_PLL0REFCLK_SEL bound to: 3'b001 
+	Parameter SIM_PLL1REFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_VERSION bound to: 2.0 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_COMMON' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:53077]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_gt_common' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_gt_common.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1_support' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_support.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_1' (0#1) [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.v:94]
+WARNING: [Synth 8-6014] Unused sequential element time_out_500us_reg was removed.  [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_startup_fsm.v:392]
+WARNING: [Synth 8-6014] Unused sequential element refclk_stable_reg was removed.  [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_startup_fsm.v:553]
+WARNING: [Synth 8-6014] Unused sequential element refclk_stable_count_reg was removed.  [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_startup_fsm.v:552]
+WARNING: [Synth 8-6014] Unused sequential element mmcm_reset_i_reg was removed.  [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_startup_fsm.v:585]
+WARNING: [Synth 8-6014] Unused sequential element pll_reset_asserted_reg was removed.  [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_rx_startup_fsm.v:589]
+WARNING: [Synth 8-6014] Unused sequential element rxpowerdown_reg_reg was removed.  [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/transceiver/gig_ethernet_pcs_pma_1_transceiver.v:241]
+WARNING: [Synth 8-7129] Port PLL0REFCLKLOST in module gig_ethernet_pcs_pma_1_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1REFCLKLOST in module gig_ethernet_pcs_pma_1_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1LOCK in module gig_ethernet_pcs_pma_1_RX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1REFCLKLOST in module gig_ethernet_pcs_pma_1_TX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PLL1LOCK in module gig_ethernet_pcs_pma_1_TX_STARTUP_FSM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port gtrefclk in module gig_ethernet_pcs_pma_1_transceiver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRUNDISP in module RX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXBUFSTATUS[0] in module RX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXBUFSTATUS[0] in module SYNCHRONISE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXBUFSTATUS[0] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[15] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[14] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[13] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[11] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[10] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[9] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[8] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[7] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[6] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[5] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[4] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[3] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[2] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_ADV_ABILITY[1] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_NP_TX[15] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MR_NP_TX[12] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[9] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[8] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[7] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[6] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[5] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[4] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[3] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[2] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[1] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_BASEX[0] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[9] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[8] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[7] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[6] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[5] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[4] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[3] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[2] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[1] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LINK_TIMER_SGMII[0] in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BASEX_OR_SGMII in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RESET_DONE in module AUTO_NEG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awready in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wready in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[1] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bresp[0] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_bvalid in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arready in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[31] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[30] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[29] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[28] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[27] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[26] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[25] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[24] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[23] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[22] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[21] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[20] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[19] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[18] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[17] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[16] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[15] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[14] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[13] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[12] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[11] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[10] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[9] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[8] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[7] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[6] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[5] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[4] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[3] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[2] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[1] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rdata[0] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[1] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rresp[0] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_rvalid in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[15] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[14] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[13] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[12] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[11] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[10] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[9] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[8] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[7] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[6] in module MANAGEMENT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RX_GT_NOMINAL_LATENCY[5] in module MANAGEMENT is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1214.746 ; gain = 623.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1214.746 ; gain = 623.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1214.746 ; gain = 623.113
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1214.746 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 317 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1_board.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/gig_ethernet_pcs_pma_1_board.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc] for cell 'inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc:42]
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_1/synth/gig_ethernet_pcs_pma_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gig_ethernet_pcs_pma_1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gig_ethernet_pcs_pma_1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/gig_ethernet_pcs_pma_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/gig_ethernet_pcs_pma_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1301.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 316 instances were transformed.
+  FD => FDRE: 240 instances
+  FDP => FDPE: 74 instances
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1301.688 ; gain = 0.168
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1301.688 ; gain = 710.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1301.688 ; gain = 710.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/gig_ethernet_pcs_pma_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1301.688 ; gain = 710.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'MDIO_INTERFACE'
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'SYNCHRONISE'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.TX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+INFO: [Synth 8-802] inferred FSM for state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' in module 'GPCS_PMA_GEN'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'gig_ethernet_pcs_pma_1_gtwizard_rxpmarst_seq'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'gig_ethernet_pcs_pma_1_TX_STARTUP_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'gig_ethernet_pcs_pma_1_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        idle_or_preamble |                      00000010000 |                             0000
+          wait_for_start |                      00001000000 |                             0001
+                opcode_1 |                      00000001000 |                             0010
+                opcode_2 |                      00000000001 |                             0011
+                ld_phyad |                      00000000010 |                             0100
+                ld_regad |                      00000000100 |                             0101
+                    ta_1 |                      10000000000 |                             0110
+                    ta_2 |                      00010000000 |                             0111
+                  data_1 |                      00100000000 |                             1000
+                  data_2 |                      01000000000 |                             1001
+                  data_3 |                      00000100000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'MDIO_INTERFACE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            loss_of_sync |                    0000000000100 |                             0000
+          comma_detect_1 |                    0010000000000 |                             0001
+           aquire_sync_1 |                    0000000010000 |                             0010
+          comma_detect_2 |                    0000000000001 |                             0011
+           aquire_sync_2 |                    0000000000010 |                             0100
+          comma_detect_3 |                    0000000001000 |                             0101
+         sync_acquired_1 |                    1000000000000 |                             0110
+         sync_acquired_2 |                    0001000000000 |                             0111
+        sync_acquired_2a |                    0100000000000 |                             1000
+         sync_acquired_3 |                    0000001000000 |                             1001
+        sync_acquired_3a |                    0000100000000 |                             1010
+         sync_acquired_4 |                    0000010000000 |                             1011
+        sync_acquired_4a |                    0000000100000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'SYNCHRONISE'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  "0000" |                  000000000000001 |                             0000
+                  "0001" |                  000000000000010 |                             0001
+                  "0010" |                  000000000000100 |                             0010
+                  "0011" |                  000000000001000 |                             0011
+                  "0100" |                  000000000010000 |                             0100
+                  "0101" |                  000000000100000 |                             0101
+                  "0110" |                  000000001000000 |                             0110
+                  "0111" |                  000000010000000 |                             0111
+                  "1000" |                  000000100000000 |                             1000
+                  "1001" |                  000001000000000 |                             1001
+                  "1010" |                  000010000000000 |                             1010
+                  "1011" |                  000100000000000 |                             1011
+                  "1100" |                  001000000000000 |                             1100
+                  "1101" |                  010000000000000 |                             1101
+                  iSTATE |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  "0000" |                  000000000000001 |                             0000
+                  "0001" |                  000000000000010 |                             0001
+                  "0010" |                  000000000000100 |                             0010
+                  "0011" |                  000000000001000 |                             0011
+                  "0100" |                  000000000010000 |                             0100
+                  "0101" |                  000000000100000 |                             0101
+                  "0110" |                  000000001000000 |                             0110
+                  "0111" |                  000000010000000 |                             0111
+                  "1000" |                  000000100000000 |                             1000
+                  "1001" |                  000001000000000 |                             1001
+                  "1010" |                  000010000000000 |                             1010
+                  "1011" |                  000100000000000 |                             1011
+                  "1100" |                  001000000000000 |                             1100
+                  "1101" |                  010000000000000 |                             1101
+                  iSTATE |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'USE_ROCKET_IO.TX_RST_SM_reg' using encoding 'one-hot' in module 'GPCS_PMA_GEN'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                         00000010 |                              000
+                  drp_rd |                         10000000 |                              001
+            wait_rd_data |                         01000000 |                              010
+                   wr_16 |                         00100000 |                              011
+           wait_wr_done1 |                         00010000 |                              100
+           wait_pmareset |                         00001000 |                              101
+                   wr_20 |                         00000100 |                              110
+           wait_wr_done2 |                         00000001 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'gig_ethernet_pcs_pma_1_gtwizard_gtrxreset_seq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                        000010000 |                             0000
+                  drp_rd |                        000100000 |                             0001
+            wait_rd_data |                        000001000 |                             0010
+                   wr_16 |                        000000001 |                             0011
+           wait_wr_done1 |                        000000010 |                             0100
+           wait_pmareset |                        000000100 |                             0101
+                   wr_20 |                        100000000 |                             0110
+           wait_wr_done2 |                        001000000 |                             0111
+       wait_rxpmarst_low |                        010000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'gig_ethernet_pcs_pma_1_gtwizard_rxpmarst_seq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+       WAIT_FOR_TXOUTCLK |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_TXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+          RESET_FSM_DONE |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encoding 'sequential' in module 'gig_ethernet_pcs_pma_1_TX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+    VERIFY_RECCLK_STABLE |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_RXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+      MONITOR_DATA_VALID |                             1001 |                             1001
+                FSM_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'gig_ethernet_pcs_pma_1_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1301.688 ; gain = 710.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    6 Bit       Adders := 3     
+	   3 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 26    
++---Registers : 
+	              128 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               36 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 16    
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 26    
+	                6 Bit    Registers := 9     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 338   
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 13    
+	   3 Input   16 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 2     
+	   8 Input   16 Bit        Muxes := 1     
+	   9 Input   16 Bit        Muxes := 1     
+	   3 Input   15 Bit        Muxes := 1     
+	  15 Input   15 Bit        Muxes := 2     
+	   3 Input   14 Bit        Muxes := 1     
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 18    
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 5     
+	   3 Input    9 Bit        Muxes := 1     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 13    
+	   5 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 13    
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 7     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 110   
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 2     
+	  15 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 17    
+	  11 Input    1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (gpcs_pma_inst/FSM_onehot_USE_ROCKET_IO.RX_RST_SM_TXOUTCLK.RX_RST_SM_reg[14]) is unused and will be removed from module gig_ethernet_pcs_pma_v16_2_21.
+INFO: [Synth 8-3332] Sequential element (gpcs_pma_inst/FSM_onehot_USE_ROCKET_IO.TX_RST_SM_reg[14]) is unused and will be removed from module gig_ethernet_pcs_pma_v16_2_21.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rst/reset_sync1) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rst/reset_sync2) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rst/reset_sync3) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rst/reset_sync4) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rst/reset_sync5) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rst/reset_sync6) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rxpmareset_in/reset_sync1) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rxpmareset_in/reset_sync2) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rxpmareset_in/reset_sync3) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rxpmareset_in/reset_sync4) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rxpmareset_in/reset_sync5) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_rxpmareset_in/reset_sync6) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_RXPMARESETDONE/data_sync_reg1) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_RXPMARESETDONE/data_sync_reg2) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_RXPMARESETDONE/data_sync_reg3) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_RXPMARESETDONE/data_sync_reg4) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_RXPMARESETDONE/data_sync_reg5) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/sync_RXPMARESETDONE/data_sync_reg6) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[8]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[7]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[6]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[4]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[3]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[2]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[1]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gtwizard_i/gt0_GTWIZARD_i/rxpmarst_seq_i/FSM_onehot_state_reg[0]) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg1) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg2) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg3) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg4) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg5) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_rxpmaresetdone_rx/data_sync_reg6) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg1) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg2) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg3) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg4) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg5) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync2_pmaresetdone/data_sync_reg6) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg1) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg2) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg3) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg4) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg5) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone/data_sync_reg6) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg1) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg2) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg3) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg4) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg5) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/sync_pmaresetdone_fallingedge_detect/data_sync_reg6) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/reset_sync1_rx) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+INFO: [Synth 8-3332] Sequential element (pcs_pma_block_i/transceiver_inst/gtwizard_inst/inst/gt0_rxresetfsm_i/reset_sync2_rx) is unused and will be removed from module gig_ethernet_pcs_pma_1_support.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1301.688 ; gain = 710.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                      | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-----------------------------------------------------------------+----------------+----------------------+--------------+
+|inst        | pcs_pma_block_i/transceiver_inst/rx_elastic_buffer_inst/ram_reg | User Attribute | 64 x 36              | RAM64M x 12  | 
++------------+-----------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1382.855 ; gain = 791.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1407.453 ; gain = 815.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                      | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-----------------------------------------------------------------+----------------+----------------------+--------------+
+|inst        | pcs_pma_block_i/transceiver_inst/rx_elastic_buffer_inst/ram_reg | User Attribute | 64 x 36              | RAM64M x 12  | 
++------------+-----------------------------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1417.555 ; gain = 825.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                    | RTL Name                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|gig_ethernet_pcs_pma_v16_2_21  | gpcs_pma_inst/RX_GMII_AT_TXOUTCLK.RECEIVER_TXOUTCLK/RXDATA_REG5_reg[7] | 5      | 8     | NO           | NO                 | NO                | 8      | 0       | 
+|gig_ethernet_pcs_pma_1_support | core_gt_common_i/cpllpd_wait_reg[95]                                   | 96     | 1     | NO           | NO                 | YES               | 0      | 3       | 
+|gig_ethernet_pcs_pma_1_support | core_gt_common_i/cpllreset_wait_reg[127]                               | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
++-------------------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     5|
+|2     |CARRY4        |    61|
+|3     |GTPE2_CHANNEL |     1|
+|4     |GTPE2_COMMON  |     1|
+|5     |IBUFDS_GTE2   |     1|
+|6     |LUT1          |    70|
+|7     |LUT2          |    99|
+|8     |LUT3          |   187|
+|9     |LUT4          |   175|
+|10    |LUT5          |   156|
+|11    |LUT6          |   191|
+|12    |MMCME2_ADV    |     1|
+|13    |RAM64M        |    10|
+|14    |SRL16         |     2|
+|15    |SRL16E        |     8|
+|16    |SRLC32E       |     7|
+|17    |FD            |   210|
+|18    |FDCE          |    48|
+|19    |FDP           |    60|
+|20    |FDPE          |     9|
+|21    |FDRE          |   988|
+|22    |FDSE          |    65|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 394 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1609.832 ; gain = 931.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1609.832 ; gain = 1018.199
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1615.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 344 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1622.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 282 instances were transformed.
+  FD => FDRE: 210 instances
+  FDP => FDPE: 60 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 10 instances
+  SRL16 => SRL16E: 2 instances
+
+Synth Design complete | Checksum: f55246f8
+INFO: [Common 17-83] Releasing license: Synthesis
+162 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1622.699 ; gain = 1241.633
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1622.699 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/gig_ethernet_pcs_pma_1_synth_1/gig_ethernet_pcs_pma_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP gig_ethernet_pcs_pma_1, cache-ID = a0ffd78589f349db
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1622.699 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/gig_ethernet_pcs_pma_1_synth_1/gig_ethernet_pcs_pma_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file gig_ethernet_pcs_pma_1_utilization_synth.rpt -pb gig_ethernet_pcs_pma_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 15:58:32 2026...

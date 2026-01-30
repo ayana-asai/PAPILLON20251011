@@ -19,22 +19,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 module ADC_INT(
   SYSCLK,
-	//ENABLE,
+  //ENABLE,
   sRST,
-	DATA_LENGTH,
-	//ADC_PDSTL,
+  DATA_LENGTH,
+  //ADC_PDSTL,
   STRIP_POSITION,
-	REG_INTERLOCK,
+  REG_INTERLOCK,
   WRITE_DATA,
   WRITE_ENABLE,
-	THRESHOLD,
-	THRESHOLD_WIDTH,
+  THRESHOLD,
+  THRESHOLD_WIDTH,
   INT_NUM,
   OFFSET,
   INT_TAG,
   INT_END,
   BEAM_POSITION,
-	BEAM_WIDTH,
+  BEAM_WIDTH,
   INT_INTERLOCK
 );
     input         SYSCLK;//SYSTEM CLOCK

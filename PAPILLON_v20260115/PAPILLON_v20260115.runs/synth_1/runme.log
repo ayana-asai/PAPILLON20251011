@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Tue Jan 27 17:22:40 2026
+  **** Start of session at: Fri Jan 30 16:49:16 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -25,21 +25,21 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 22536
+INFO: [Synth 8-7075] Helper process launched with PID 34332
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1063.039 ; gain = 467.969
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1064.535 ; gain = 469.133
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'delay_locked', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_IF.v:147]
 INFO: [Synth 8-11241] undeclared symbol 'eras_fifo_empty', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_IF.v:304]
 WARNING: [Synth 8-10940] macro 'SYN_DATE' is redefined [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:15]
-INFO: [Synth 8-11241] undeclared symbol 'CLK125M', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:225]
-INFO: [Synth 8-11241] undeclared symbol 'sysDcmLocked', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:229]
-INFO: [Synth 8-11241] undeclared symbol 'sysDcmLocked_2', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:241]
+INFO: [Synth 8-11241] undeclared symbol 'CLK125M', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:226]
+INFO: [Synth 8-11241] undeclared symbol 'sysDcmLocked', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:230]
+INFO: [Synth 8-11241] undeclared symbol 'sysDcmLocked_2', assumed default net type 'wire' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:242]
 INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_V20' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:37]
-INFO: [Synth 8-6157] synthesizing module 'SYSCLK0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/SYSCLK0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SYSCLK0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/SYSCLK0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'SYSCLK2' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/SYSCLK2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'SYSCLK2' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/SYSCLK2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SYSCLK0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/SYSCLK0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SYSCLK0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/SYSCLK0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SYSCLK2' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/SYSCLK2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SYSCLK2' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/SYSCLK2_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'FD' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:42947]
 INFO: [Synth 8-6155] done synthesizing module 'FD' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:42947]
 INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:103072]
@@ -86,25 +86,25 @@ INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2024.2/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFR' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:3015]
 INFO: [Synth 8-6155] done synthesizing module 'SIF_IF2_selectio_wiz_TEST' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/SIF_IF2_selectio_wiz_TEST.v:56]
 INFO: [Synth 8-6155] done synthesizing module 'SIF_IF2_TEST' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/SIF_IF2_TEST.v:56]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/fifo_generator_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/fifo_generator_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_IF' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_IF.v:2]
 INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_RING' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_RING.v:14]
-INFO: [Synth 8-6157] synthesizing module 'mem_8_4K' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mem_8_4K_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mem_8_4K' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mem_8_4K_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mem_8_4K' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mem_8_4K_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_8_4K' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mem_8_4K_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_RING' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_RING.v:14]
 INFO: [Synth 8-6157] synthesizing module 'ADC_SiTCP_RAW' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:16]
 INFO: [Synth 8-6157] synthesizing module 'ADC_INT' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_INT.v:20]
-INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mult_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mult_gen_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'mult_gen_1' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mult_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mult_gen_1' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mult_gen_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/divider_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/divider_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'mult_gen_2' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mult_gen_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mult_gen_2' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/mult_gen_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/cordic_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_1' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_1' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/divider_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/divider_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_2' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mult_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_2' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/mult_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/cordic_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_INT' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_INT.v:20]
 INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_RAW' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:16]
 INFO: [Synth 8-6157] synthesizing module 'WRAP_SiTCP_GMII_XC7A_32K' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/WRAP_SiTCP_GMII_XC7A_32K.V:28]
@@ -119,8 +119,10 @@ INFO: [Synth 8-6157] synthesizing module 'mii_initializer' [C:/Users/daq/Desktop
 INFO: [Synth 8-6155] done synthesizing module 'mii_initializer' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/Downloads/mii_init.v:1]
 INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2686]
 INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-25236-nudaq-win02/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_0' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_0' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/gig_ethernet_pcs_pma_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'gig_ethernet_pcs_pma_2' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/gig_ethernet_pcs_pma_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'gig_ethernet_pcs_pma_2' (0#1) [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/.Xil/Vivado-9004-nudaq-win02/realtime/gig_ethernet_pcs_pma_2_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'LOC_REG' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/LOC_REG.v:28]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/LOC_REG.v:658]
 INFO: [Synth 8-6157] synthesizing module 'AD_ADC_SPI' [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/AD_ADC_SPI.v:11]
@@ -130,12 +132,12 @@ INFO: [Synth 8-6155] done synthesizing module 'ADC_SiTCP_V20' (0#1) [C:/Users/da
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'RST_FD6'. This will prevent further optimization [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_INT.v:1335]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_INT'. This will prevent further optimization [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:199]
 WARNING: [Synth 8-6014] Unused sequential element RegInterlock_reg was removed.  [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_INT.v:1219]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_SiTCP_RAW'. This will prevent further optimization [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:713]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ADC_SiTCP_RAW'. This will prevent further optimization [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:714]
 WARNING: [Synth 8-6014] Unused sequential element irADC_PDSTL_reg was removed.  [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:111]
 WARNING: [Synth 8-6014] Unused sequential element irTrgCunt_reg was removed.  [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:133]
 WARNING: [Synth 8-6014] Unused sequential element readstart_reg was removed.  [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:308]
 WARNING: [Synth 8-7137] Register mdioData_reg in module mii_initializer has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/Downloads/mii_init.v:82]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'LOC_REG'. This will prevent further optimization [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:1210]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'LOC_REG'. This will prevent further optimization [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_V20.v:1244]
 WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[1] driven by constant 0
 WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[0] driven by constant 0
 WARNING: [Synth 8-7129] Port REG_ADC_PDSTL[31] in module LOC_REG is either unconnected or has no load
@@ -240,21 +242,20 @@ WARNING: [Synth 8-7129] Port REG_ADC_PDSTL[158] in module ADC_SiTCP_RAW is eithe
 WARNING: [Synth 8-7129] Port REG_ADC_PDSTL[157] in module ADC_SiTCP_RAW is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1229.172 ; gain = 634.102
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1230.684 ; gain = 635.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1229.172 ; gain = 634.102
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1230.684 ; gain = 635.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1229.172 ; gain = 634.102
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1230.684 ; gain = 635.281
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1229.172 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1230.684 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUF_SGMII1' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUF_SGMII2' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 106 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -426,10 +427,10 @@ Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON
 Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/divider/divider_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalPartBeamWidth'
 Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
 Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'gig_ethernet_pcs_pma_01'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'gig_ethernet_pcs_pma_01'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'gig_ethernet_pcs_pma_02'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'gig_ethernet_pcs_pma_02'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'gig_ethernet_pcs_pma_0'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_in_context.xdc] for cell 'gig_ethernet_pcs_pma_0'
+Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_2/gig_ethernet_pcs_pma_2/gig_ethernet_pcs_pma_2_in_context.xdc] for cell 'gig_ethernet_pcs_pma_2'
+Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_2/gig_ethernet_pcs_pma_2/gig_ethernet_pcs_pma_2_in_context.xdc] for cell 'gig_ethernet_pcs_pma_2'
 Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
 WARNING: [Vivado 12-508] No pins matched '*'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:726]
 Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
@@ -439,14 +440,15 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/ADC_SiTCP_V2
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1310.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1316.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 16 instances were transformed.
-  BUFGCE => BUFGCTRL: 2 instances
+  A total of 15 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instance 
   FD => FDRE: 10 instances
   OBUFDS => OBUFDS: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1310.980 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1316.047 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '16.000' specified during out-of-context synthesis of instance 'gig_ethernet_pcs_pma_2' at clock pin 'rxuserclk2' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC1_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC2_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC3_IF/eras_fifo' at clock pin 'rd_clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
@@ -531,14 +533,14 @@ WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context s
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1310.980 ; gain = 715.910
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1316.047 ; gain = 720.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1310.980 ; gain = 715.910
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1316.047 ; gain = 720.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -630,16 +632,16 @@ Applied set_property KEEP_HIERARCHY = SOFT for ADC_SiTCP_RAW/ADC_INT/SquareBeamP
 Applied set_property KEEP_HIERARCHY = SOFT for ADC_SiTCP_RAW/ADC_INT/CalBeamPosition. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for ADC_SiTCP_RAW/ADC_INT/CalPartBeamWidth. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for ADC_SiTCP_RAW/ADC_INT/CalBeamWidth. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for gig_ethernet_pcs_pma_01. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for gig_ethernet_pcs_pma_02. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gig_ethernet_pcs_pma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gig_ethernet_pcs_pma_2. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1310.980 ; gain = 715.910
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1316.047 ; gain = 720.645
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3936] Found unconnected internal register 'irDelay_reg' and it is trimmed from '16' to '12' bits. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/ADC_SiTCP_RING.v:60]
 WARNING: [Synth 8-3936] Found unconnected internal register 'irMode_reg' and it is trimmed from '2' to '1' bits. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/sources_1/imports/src/ADC_SiTCP_RAW.v:119]
 WARNING: [Synth 8-3936] Found unconnected internal register 'irAddr_reg' and it is trimmed from '11' to '8' bits. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/imports/src/LOC_REG.v:218]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1310.980 ; gain = 715.910
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1316.047 ; gain = 720.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -741,25 +743,25 @@ WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[1] driven by constant 0
 WARNING: [Synth 8-3917] design ADC_SiTCP_V20 has port C[0] driven by constant 0
 WARNING: [Synth 8-3332] Sequential element (RST_FD2) is unused and will be removed from module ADC_SiTCP_V20.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1333.340 ; gain = 738.270
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1337.266 ; gain = 741.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1418.336 ; gain = 823.266
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1422.176 ; gain = 826.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1443.727 ; gain = 848.656
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1446.320 ; gain = 850.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1470.559 ; gain = 875.488
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1473.457 ; gain = 878.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -777,37 +779,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -850,9 +852,10 @@ Report BlackBoxes:
 |6     |divider                 |         2|
 |7     |mult_gen_2              |         1|
 |8     |cordic_0                |         1|
-|9     |gig_ethernet_pcs_pma_0  |         2|
-|10    |fifo_generator_1        |         3|
-|11    |SiTCP_XC7A_32K_BBT_V110 |         2|
+|9     |gig_ethernet_pcs_pma_0  |         1|
+|10    |gig_ethernet_pcs_pma_2  |         1|
+|11    |fifo_generator_1        |         3|
+|12    |SiTCP_XC7A_32K_BBT_V110 |         2|
 +------+------------------------+----------+
 
 Report Cell Usage: 
@@ -866,23 +869,22 @@ Report Cell Usage:
 |6     |divider                 |     2|
 |8     |fifo_generator          |     1|
 |9     |fifo_generator_1        |     2|
-|11    |gig_ethernet_pcs_pma    |     1|
-|12    |gig_ethernet_pcs_pma_0  |     1|
+|11    |gig_ethernet_pcs_pma    |     2|
 |13    |mem_8_4K                |    72|
 |85    |mult_gen                |     3|
-|88    |BUFGCE                  |     2|
+|88    |BUFGCE                  |     1|
 |89    |BUFIO                   |     3|
 |90    |BUFR                    |     3|
 |91    |CARRY4                  |   767|
 |92    |IDELAYCTRL              |     1|
 |93    |IDELAYE2                |    27|
 |94    |ISERDESE2               |    27|
-|95    |LUT1                    |   306|
-|96    |LUT2                    |  2417|
-|97    |LUT3                    |   183|
-|98    |LUT4                    |   208|
-|99    |LUT5                    |   237|
-|100   |LUT6                    |  1082|
+|95    |LUT1                    |   305|
+|96    |LUT2                    |  2416|
+|97    |LUT3                    |   181|
+|98    |LUT4                    |   205|
+|99    |LUT5                    |   235|
+|100   |LUT6                    |  1081|
 |101   |MUXF7                   |   271|
 |102   |MUXF8                   |    73|
 |103   |ODDR                    |     3|
@@ -890,7 +892,7 @@ Report Cell Usage:
 |105   |FD                      |     9|
 |106   |FDCE                    |   969|
 |107   |FDPE                    |    29|
-|108   |FDRE                    |  5576|
+|108   |FDRE                    |  5568|
 |109   |FDSE                    |    28|
 |110   |IBUF                    |    15|
 |111   |IBUFDS                  |    30|
@@ -900,37 +902,36 @@ Report Cell Usage:
 |115   |OBUFT                   |     3|
 +------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 303 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1657.105 ; gain = 980.227
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1657.105 ; gain = 1062.035
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 1662.066 ; gain = 981.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1662.066 ; gain = 1066.664
 INFO: [Project 1-571] Translating synthesized netlist
 Parsing EDIF File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.edf]
 Finished Parsing EDIF File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.edf]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1674.848 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1678.793 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUF_SGMII1' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'BUF_SGMII2' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 1981 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1980 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2023.1.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 3 inverter(s) to 27 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1683.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1687.457 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 34 instances were transformed.
-  BUFGCE => BUFGCTRL: 2 instances
+  A total of 33 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instance 
   FD => FDRE: 9 instances
   IOBUF => IOBUF (IBUF, OBUFT): 3 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   RAM16X1S => RAM32X1S (RAMS32): 16 instances
 
-Synth Design complete | Checksum: 4786a108
+Synth Design complete | Checksum: dc0ad70d
 INFO: [Common 17-83] Releasing license: Synthesis
-102 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+104 Infos, 201 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1683.531 ; gain = 1304.199
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1683.531 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1687.457 ; gain = 1307.961
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1687.457 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file ADC_SiTCP_V20_utilization_synth.rpt -pb ADC_SiTCP_V20_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 17:23:31 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 30 16:50:12 2026...
