@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1769759450">
-  <File Type="ROUTE-PWR" Name="ADC_SiTCP_V20_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1770095822">
   <File Type="PA-TCL" Name="ADC_SiTCP_V20.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="ADC_SiTCP_V20_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="ADC_SiTCP_V20_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="ADC_SiTCP_V20_reports.tcl"/>
   <File Type="INIT-TIMING" Name="ADC_SiTCP_V20_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="ADC_SiTCP_V20_opt.dcp"/>
@@ -11,6 +8,7 @@
   <File Type="OPT-METHODOLOGY-DRC" Name="ADC_SiTCP_V20_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="ADC_SiTCP_V20.hwdef"/>
   <File Type="OPT-TIMING" Name="ADC_SiTCP_V20_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="ADC_SiTCP_V20_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="ADC_SiTCP_V20_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="ADC_SiTCP_V20_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="ADC_SiTCP_V20_timing_summary_pwropted.rpt"/>
@@ -22,16 +20,12 @@
   <File Type="PLACE-CTRL" Name="ADC_SiTCP_V20_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="ADC_SiTCP_V20_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="ADC_SiTCP_V20_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="ADC_SiTCP_V20.bin"/>
   <File Type="PLACE-TIMING" Name="ADC_SiTCP_V20_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="ADC_SiTCP_V20_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="ADC_SiTCP_V20_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="ADC_SiTCP_V20_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="ADC_SiTCP_V20.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="ADC_SiTCP_V20_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="ADC_SiTCP_V20_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="ADC_SiTCP_V20_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="ADC_SiTCP_V20.rbt"/>
   <File Type="PHYSOPT-TIMING" Name="ADC_SiTCP_V20_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="ADC_SiTCP_V20_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="ADC_SiTCP_V20_routed.dcp"/>
@@ -42,7 +36,9 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="ADC_SiTCP_V20_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ADC_SiTCP_V20_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ADC_SiTCP_V20_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="ADC_SiTCP_V20_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ADC_SiTCP_V20_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ADC_SiTCP_V20_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ADC_SiTCP_V20_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="ADC_SiTCP_V20_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="ADC_SiTCP_V20_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="ADC_SiTCP_V20_timing_summary_routed.rpt"/>
@@ -53,15 +49,19 @@
   <File Type="ROUTE-BUS-SKEW" Name="ADC_SiTCP_V20_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="ADC_SiTCP_V20_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="ADC_SiTCP_V20_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="ADC_SiTCP_V20_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="ADC_SiTCP_V20_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ADC_SiTCP_V20_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ADC_SiTCP_V20_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ADC_SiTCP_V20_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ADC_SiTCP_V20_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ADC_SiTCP_V20_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="ADC_SiTCP_V20.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ADC_SiTCP_V20_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ADC_SiTCP_V20_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="ADC_SiTCP_V20.bit"/>
+  <File Type="BG-BIN" Name="ADC_SiTCP_V20.bin"/>
+  <File Type="BITSTR-MSK" Name="ADC_SiTCP_V20.msk"/>
+  <File Type="BITSTR-RBT" Name="ADC_SiTCP_V20.rbt"/>
   <File Type="BITSTR-NKY" Name="ADC_SiTCP_V20.nky"/>
   <File Type="BITSTR-BMM" Name="ADC_SiTCP_V20_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="ADC_SiTCP_V20.mmi"/>
@@ -286,12 +286,12 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="SYSCLK0"/>
   <BlockFileSet Type="BlockSrcs" Name="SYSCLK2"/>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_generator_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mem_8_4K"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mult_gen_2"/>
   <BlockFileSet Type="BlockSrcs" Name="divider"/>
   <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>

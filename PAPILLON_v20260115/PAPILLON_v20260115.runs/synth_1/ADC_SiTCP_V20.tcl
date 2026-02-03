@@ -56,6 +56,9 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tfgg484-1
 
@@ -126,7 +129,7 @@ set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/P
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0_ooc.xdc]
 
-read_ip -quiet c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_2/gig_ethernet_pcs_pma_2.xci
+read_ip -quiet C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/ip/gig_ethernet_pcs_pma_2/gig_ethernet_pcs_pma_2.xci
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_2/gig_ethernet_pcs_pma_2_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_2/synth/gig_ethernet_pcs_pma_2.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/gig_ethernet_pcs_pma_2/synth/gig_ethernet_pcs_pma_2_ooc.xdc]
