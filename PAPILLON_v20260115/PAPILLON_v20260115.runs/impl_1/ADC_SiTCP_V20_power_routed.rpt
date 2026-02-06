@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Tue Feb  3 14:25:08 2026
+| Date             : Tue Feb  3 17:15:07 2026
 | Host             : nudaq-win02 running 64-bit major release  (build 9200)
 | Command          : report_power -file ADC_SiTCP_V20_power_routed.rpt -pb ADC_SiTCP_V20_power_summary_routed.pb -rpx ADC_SiTCP_V20_power_routed.rpx
 | Design           : ADC_SiTCP_V20
@@ -54,7 +54,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.211 |       26 |       --- |             --- |
 | Slice Logic              |     0.221 |    75500 |       --- |             --- |
-|   LUT as Logic           |     0.163 |    21239 |     63400 |           33.50 |
+|   LUT as Logic           |     0.163 |    21240 |     63400 |           33.50 |
 |   CARRY4                 |     0.035 |     3616 |     15850 |           22.81 |
 |   Register               |     0.021 |    42534 |    126800 |           33.54 |
 |   LUT as Shift Register  |    <0.001 |      338 |     19000 |            1.78 |
@@ -63,7 +63,7 @@ Table of Contents
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |     4265 |       --- |             --- |
 |   BUFR                   |     0.000 |        1 |       120 |            0.83 |
-| Signals                  |     0.179 |    52663 |       --- |             --- |
+| Signals                  |     0.180 |    52667 |       --- |             --- |
 | Block RAM                |     0.036 |      101 |       135 |           74.81 |
 | MMCM                     |     0.324 |        3 |         6 |           50.00 |
 | DSPs                     |     0.005 |        8 |       240 |            3.33 |

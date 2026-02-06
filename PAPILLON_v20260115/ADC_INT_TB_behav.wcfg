@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ADC_INT_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ADC_INT_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="1,165.000000001 ms"></ZoomEndTime>
+      <Cursor1Time time="0.000020400 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="289"></NameColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="51" />
+   <wvobject fp_name="/ADC_INT_TB/SYSCLK" type="logic">
+      <obj_property name="ElementShortName">SYSCLK</obj_property>
+      <obj_property name="ObjectShortName">SYSCLK</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/clk_count" type="array">
+      <obj_property name="ElementShortName">clk_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_count[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/ENABLE" type="logic">
+      <obj_property name="ElementShortName">ENABLE</obj_property>
+      <obj_property name="ObjectShortName">ENABLE</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/sRST" type="logic">
+      <obj_property name="ElementShortName">sRST</obj_property>
+      <obj_property name="ObjectShortName">sRST</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/WRITE_ENABLE" type="logic">
+      <obj_property name="ElementShortName">WRITE_ENABLE</obj_property>
+      <obj_property name="ObjectShortName">WRITE_ENABLE</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/REINIT" type="logic">
+      <obj_property name="ElementShortName">REINIT</obj_property>
+      <obj_property name="ObjectShortName">REINIT</obj_property>
+      <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="group426" type="group">
+      <obj_property name="label">initialization and stat_reading</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/initADC_INT" type="logic">
+         <obj_property name="ElementShortName">initADC_INT</obj_property>
+         <obj_property name="ObjectShortName">initADC_INT</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/intwe" type="logic">
+         <obj_property name="ElementShortName">intwe</obj_property>
+         <obj_property name="ObjectShortName">intwe</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group527" type="group">
+      <obj_property name="label">pedestal calcuration</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountClkPed" type="array">
+         <obj_property name="ElementShortName">CountClkPed[1:0]</obj_property>
+         <obj_property name="ObjectShortName">CountClkPed[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/CountCalPed" type="array">
+         <obj_property name="ElementShortName">CountCalPed[16:0]</obj_property>
+         <obj_property name="ObjectShortName">CountCalPed[16:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/RawWD00" type="array">
+         <obj_property name="ElementShortName">RawWD00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">RawWD00[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/SumRawWD00" type="array">
+         <obj_property name="ElementShortName">SumRawWD00[47:0]</obj_property>
+         <obj_property name="ObjectShortName">SumRawWD00[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/pedestal00" type="array">
+         <obj_property name="ElementShortName">pedestal00[12:0]</obj_property>
+         <obj_property name="ObjectShortName">pedestal00[12:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/FinPedCal" type="logic">
+         <obj_property name="ElementShortName">FinPedCal</obj_property>
+         <obj_property name="ObjectShortName">FinPedCal</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_INT_TB/uut/DecidedPed" type="logic">
+         <obj_property name="ElementShortName">DecidedPed</obj_property>
+         <obj_property name="ObjectShortName">DecidedPed</obj_property>
+         <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/IntQNow" type="logic">
+      <obj_property name="ElementShortName">IntQNow</obj_property>
+      <obj_property name="ObjectShortName">IntQNow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/CountClk" type="array">
+      <obj_property name="ElementShortName">CountClk[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CountClk[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/CountCal" type="array">
+      <obj_property name="ElementShortName">CountCal[16:0]</obj_property>
+      <obj_property name="ObjectShortName">CountCal[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/DATA_LENGTH" type="array">
+      <obj_property name="ElementShortName">DATA_LENGTH[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_LENGTH[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/STRIP_POSITION" type="array">
+      <obj_property name="ElementShortName">STRIP_POSITION[383:0]</obj_property>
+      <obj_property name="ObjectShortName">STRIP_POSITION[383:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/REG_INTERLOCK" type="array">
+      <obj_property name="ElementShortName">REG_INTERLOCK[1:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_INTERLOCK[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/WRITE_DATA" type="array">
+      <obj_property name="ElementShortName">WRITE_DATA[287:0]</obj_property>
+      <obj_property name="ObjectShortName">WRITE_DATA[287:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/uut/SumRawWD00" type="array">
+      <obj_property name="ElementShortName">SumRawWD00[47:0]</obj_property>
+      <obj_property name="ObjectShortName">SumRawWD00[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/THRESHOLD" type="array">
+      <obj_property name="ElementShortName">THRESHOLD[15:0]</obj_property>
+      <obj_property name="ObjectShortName">THRESHOLD[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/THRESHOLD_WIDTH" type="array">
+      <obj_property name="ElementShortName">THRESHOLD_WIDTH[23:0]</obj_property>
+      <obj_property name="ObjectShortName">THRESHOLD_WIDTH[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/INT_NUM" type="array">
+      <obj_property name="ElementShortName">INT_NUM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">INT_NUM[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/OFFSET" type="array">
+      <obj_property name="ElementShortName">OFFSET[15:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/INT_TAG" type="logic">
+      <obj_property name="ElementShortName">INT_TAG</obj_property>
+      <obj_property name="ObjectShortName">INT_TAG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/INT_END" type="logic">
+      <obj_property name="ElementShortName">INT_END</obj_property>
+      <obj_property name="ObjectShortName">INT_END</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/BEAM_POSITION" type="array">
+      <obj_property name="ElementShortName">BEAM_POSITION[15:0]</obj_property>
+      <obj_property name="ObjectShortName">BEAM_POSITION[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/BEAM_WIDTH" type="array">
+      <obj_property name="ElementShortName">BEAM_WIDTH[23:0]</obj_property>
+      <obj_property name="ObjectShortName">BEAM_WIDTH[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/INT_INTERLOCK" type="logic">
+      <obj_property name="ElementShortName">INT_INTERLOCK</obj_property>
+      <obj_property name="ObjectShortName">INT_INTERLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0000" type="array">
+      <obj_property name="ElementShortName">data0000[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0000[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0001" type="array">
+      <obj_property name="ElementShortName">data0001[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0001[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0002" type="array">
+      <obj_property name="ElementShortName">data0002[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0002[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0003" type="array">
+      <obj_property name="ElementShortName">data0003[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0003[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0004" type="array">
+      <obj_property name="ElementShortName">data0004[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0004[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0005" type="array">
+      <obj_property name="ElementShortName">data0005[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0005[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0006" type="array">
+      <obj_property name="ElementShortName">data0006[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0006[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0007" type="array">
+      <obj_property name="ElementShortName">data0007[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0007[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0008" type="array">
+      <obj_property name="ElementShortName">data0008[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0008[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0009" type="array">
+      <obj_property name="ElementShortName">data0009[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0009[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0010" type="array">
+      <obj_property name="ElementShortName">data0010[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0010[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0011" type="array">
+      <obj_property name="ElementShortName">data0011[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0011[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0012" type="array">
+      <obj_property name="ElementShortName">data0012[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0012[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0013" type="array">
+      <obj_property name="ElementShortName">data0013[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0013[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0014" type="array">
+      <obj_property name="ElementShortName">data0014[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0014[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0015" type="array">
+      <obj_property name="ElementShortName">data0015[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0015[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0016" type="array">
+      <obj_property name="ElementShortName">data0016[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0016[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0017" type="array">
+      <obj_property name="ElementShortName">data0017[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0017[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0018" type="array">
+      <obj_property name="ElementShortName">data0018[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0018[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0019" type="array">
+      <obj_property name="ElementShortName">data0019[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0019[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0020" type="array">
+      <obj_property name="ElementShortName">data0020[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0020[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0021" type="array">
+      <obj_property name="ElementShortName">data0021[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0021[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0022" type="array">
+      <obj_property name="ElementShortName">data0022[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0022[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/data0023" type="array">
+      <obj_property name="ElementShortName">data0023[0:639][11:0]</obj_property>
+      <obj_property name="ObjectShortName">data0023[0:639][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_INT_TB/STEP" type="other">
+      <obj_property name="ElementShortName">STEP</obj_property>
+      <obj_property name="ObjectShortName">STEP</obj_property>
+   </wvobject>
+</wave_config>

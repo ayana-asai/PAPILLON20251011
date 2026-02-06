@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd,1759988888,vhdl,,,,cordic_0,,,,,,,,
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/divider/sim/divider.vhd,1759988745,vhdl,,,,divider,,,,,,,,
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd,1759988517,vhdl,,,,mult_gen_0,,,,,,,,
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_1/sim/mult_gen_1.vhd,1759988587,vhdl,,,,mult_gen_1,,,,,,,,
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.gen/sources_1/ip/mult_gen_2/sim/mult_gen_2.vhd,1759988650,vhdl,,,,mult_gen_2,,,,,,,,
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sim_1/new/ADC_INT_TB.v,1770361328,verilog,,,,ADC_INT_TB,,,../../../../PAPILLON_v20260115.ip_user_files/ipstatic,,,,,
+C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_INT.v,1770360231,verilog,,C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/sim_1/new/ADC_INT_TB.v,,ADC_INT,,,../../../../PAPILLON_v20260115.ip_user_files/ipstatic,,,,,

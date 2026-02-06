@@ -1,0 +1,9 @@
++====================+===================+==========================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                      |
++====================+===================+==========================================+
+| clk_out1_SYSCLK0   | clk_out1_SYSCLK0  | ADC1_IF/adc/inst/pins[2].idelaye2_bus/LD |
+| clk_out1_SYSCLK0   | clk_out1_SYSCLK0  | ADC1_IF/adc/inst/pins[0].idelaye2_bus/LD |
+| clk_out1_SYSCLK0   | clk_out1_SYSCLK0  | ADC1_IF/adc/inst/pins[1].idelaye2_bus/LD |
+| clk_out1_SYSCLK0   | clk_out1_SYSCLK0  | ADC1_IF/adc/inst/pins[7].idelaye2_bus/LD |
+| clk_out1_SYSCLK0   | clk_out1_SYSCLK0  | ADC1_IF/adc/inst/pins[3].idelaye2_bus/LD |
++--------------------+-------------------+------------------------------------------+

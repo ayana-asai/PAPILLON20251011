@@ -19,35 +19,35 @@
 //////////////////////////////////////////////////////////////////////////////////
 module ADC_INT(
   SYSCLK,
-	//ENABLE,
+  ENABLE,
   sRST,
-	DATA_LENGTH,
-	//ADC_PDSTL,
+  DATA_LENGTH,
+  //ADC_PDSTL,
   STRIP_POSITION,
-	REG_INTERLOCK,
+  REG_INTERLOCK,
   WRITE_DATA,
   WRITE_ENABLE,
-	THRESHOLD,
-	THRESHOLD_WIDTH,
+  THRESHOLD,
+  THRESHOLD_WIDTH,
   INT_NUM,
   OFFSET,
   INT_TAG,
   INT_END,
   BEAM_POSITION,
-	BEAM_WIDTH,
+  BEAM_WIDTH,
   INT_INTERLOCK
 );
     input         SYSCLK;//SYSTEM CLOCK
-	  //input         ENABLE;//Write Data CLOCK
-	  input [287:0] WRITE_DATA;//ADC DATA
+	input         ENABLE;//Write Data CLOCK for sim?
+    input [287:0] WRITE_DATA;//ADC DATA
     input         WRITE_ENABLE; //ADC DATA ENABLE (ON when data writing was started at ADC_SiTCP_RAW)
     input         sRST;//RESET
-    input	[15:0] 	DATA_LENGTH;//DATA LENGTH(<--REG_WINDOW, currently, 640 samples)
+    input [15:0]  DATA_LENGTH;//DATA LENGTH(<--REG_WINDOW, currently, 640 samples)
     //input [191:0] ADC_PDSTL;
-    input	[383:0] STRIP_POSITION;//SSEM strip position (16bit)
-	  input [1:0]   REG_INTERLOCK;//interlock control from UDP
-	  input [15:0]  THRESHOLD;//beam position threshold level
-	  input [23:0]  THRESHOLD_WIDTH;//beam position threshold level
+    input [383:0] STRIP_POSITION;//SSEM strip position (16bit)
+    input [1:0]   REG_INTERLOCK;//interlock control from UDP
+    input [15:0]  THRESHOLD;//beam position threshold level
+    input [23:0]  THRESHOLD_WIDTH;//beam position threshold level
     input [3:0]   INT_NUM; // number exceeds the threshold
     input [15:0]  OFFSET;//beam position offset
 	
@@ -55,8 +55,10 @@ module ADC_INT(
     (* mark_debug = "true" *) output INT_TAG;
     output        INT_END; //end calculation
     output [15:0] BEAM_POSITION;//result of beam position
-	  output [23:0] BEAM_WIDTH;
+    output [23:0] BEAM_WIDTH;
     output        INT_INTERLOCK;//result of interlock
+
+    
 
 
     wire intwe;
@@ -542,7 +544,6 @@ module ADC_INT(
 
 
     always@(posedge SYSCLK) begin
-      //if (initADC_INT) begin
       if (initADC_INT) begin
         WD00[12:0] <= 13'd0;
         WD01[12:0] <= 13'd0;

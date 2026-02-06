@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PAPILLON_v20260115.ip_user_files/ipstatic" \
+"../../../../PAPILLON_v20260115.srcs/sources_1/imports/new/ADC_INT.v" \
+"../../../../PAPILLON_v20260115.srcs/sim_1/new/ADC_INT_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
