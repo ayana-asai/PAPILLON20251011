@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Feb  3 17:15:01 2026
+| Date         : Tue Mar 10 13:44:13 2026
 | Host         : nudaq-win02 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file ADC_SiTCP_V20_timing_summary_routed.rpt -pb ADC_SiTCP_V20_timing_summary_routed.pb -rpx ADC_SiTCP_V20_timing_summary_routed.rpx -warn_on_violation
 | Design       : ADC_SiTCP_V20
@@ -42966,7 +42966,7 @@ Slack:                    inf
 Slack:                    inf
   Source:                 ADC_SiTCP_RAW/ADC_INT/issue_Interlock_reg/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_SYSCLK0  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            NIM_OUT_N
+  Destination:            NIM_OUT_N[2]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
@@ -42996,15 +42996,15 @@ Slack:                    inf
                          net (fo=6, routed)           0.752    -0.187    ADC_SiTCP_RAW/ADC_INT/issue_Interlock
     SLICE_X15Y120        LUT1 (Prop_lut1_I0_O)        0.124    -0.063 r  ADC_SiTCP_RAW/ADC_INT/INT_INTERLOCK_INST_0/O
                          net (fo=5, routed)           5.597     5.533    INTERLOCK_OBUF
-    AB16                 OBUFDS (Prop_obufds_I_OB)    1.808     7.341 r  OBUFDS_inst/OB
-                         net (fo=0)                   0.000     7.341    NIM_OUT_N
-    AB17                                                              r  NIM_OUT_N (OUT)
+    AB16                 OBUFDS (Prop_obufds_I_OB)    1.808     7.341 r  OBUFDS_inst3/OB
+                         net (fo=0)                   0.000     7.341    NIM_OUT_N[2]
+    AB17                                                              r  NIM_OUT_N[2] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
   Source:                 ADC_SiTCP_RAW/ADC_INT/issue_Interlock_reg/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_SYSCLK0  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            NIM_OUT_P
+  Destination:            NIM_OUT_P[2]
                             (output port)
   Path Group:             (none)
   Path Type:              Max at Slow Process Corner
@@ -43034,9 +43034,9 @@ Slack:                    inf
                          net (fo=6, routed)           0.752    -0.187    ADC_SiTCP_RAW/ADC_INT/issue_Interlock
     SLICE_X15Y120        LUT1 (Prop_lut1_I0_O)        0.124    -0.063 r  ADC_SiTCP_RAW/ADC_INT/INT_INTERLOCK_INST_0/O
                          net (fo=5, routed)           5.597     5.533    INTERLOCK_OBUF
-    AB16                 OBUFDS (Prop_obufds_I_O)     1.807     7.340 r  OBUFDS_inst/O
-                         net (fo=0)                   0.000     7.340    NIM_OUT_P
-    AB16                                                              r  NIM_OUT_P (OUT)
+    AB16                 OBUFDS (Prop_obufds_I_O)     1.807     7.340 r  OBUFDS_inst3/O
+                         net (fo=0)                   0.000     7.340    NIM_OUT_P[2]
+    AB16                                                              r  NIM_OUT_P[2] (OUT)
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf

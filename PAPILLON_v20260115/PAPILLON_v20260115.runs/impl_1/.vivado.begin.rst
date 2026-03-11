@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="37704" HostCore="12" HostMemory="033959370752">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="20280" HostCore="12" HostMemory="033959370752">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="38428" HostCore="12" HostMemory="033959370752">
+    <Process Command="vivado.bat" Owner="daq" Host="NUDAQ-WIN02" Pid="21452" HostCore="12" HostMemory="033959370752">
     </Process>
 </ProcessHandle>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1770095822" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1773117336" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp">
   <File Type="REPORTS-TCL" Name="ADC_SiTCP_V20_reports.tcl"/>
   <File Type="RDS-UTIL" Name="ADC_SiTCP_V20_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ADC_SiTCP_V20_utilization_synth.pb"/>
@@ -200,11 +200,11 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="SYSCLK0"/>
   <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="SYSCLK0"/>
   <BlockFileSet Type="BlockSrcs" Name="SYSCLK2"/>
-  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mem_8_4K"/>
   <BlockFileSet Type="BlockSrcs" Name="mult_gen_2"/>
   <BlockFileSet Type="BlockSrcs" Name="divider"/>

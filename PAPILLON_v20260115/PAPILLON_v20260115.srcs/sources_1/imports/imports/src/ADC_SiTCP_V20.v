@@ -140,8 +140,8 @@ module ADC_SiTCP_V20(
 	inout	[3:1]	ADC_SDIO		;
 
 	input	[4:1]	NIM_INn			;
-	output			NIM_OUT_N		;
-	output          NIM_OUT_P       ;
+	output	[2:0]	NIM_OUT_N		;
+	output  [2:0]   NIM_OUT_P       ;
 	input	[3:0]	DIP_SW			;
 	output  [3:0]   X_LED           ;
 	output  [47:0]  ATT_MUX         ;
@@ -158,7 +158,7 @@ module ADC_SiTCP_V20(
 //------------------------------------------------------------------------------
 	//wire			ETH_MDOE		;
 	//wire			ETH_MDOUT		;
-	wire			NIM_OUT			;
+	wire     [2:0]  NIM_OUT			;
     
 	//assign	ETH_MDIO	= (ETH_MDOE	? ETH_MDOUT : 1'bz);
 				//ETH_MDOE?��?��?��^?��Ȃ�ETH_MDIO=MDOUT?��A?��ہ@1'bz 2016/9/13 what's z?9/14 z is high?��@?��C?��?��?��s?��[?��_?��?��?��X
@@ -748,16 +748,28 @@ module ADC_SiTCP_V20(
 	);
 	
 	
-	OBUFDS OBUFDS_inst(
-	    .O(NIM_OUT_P),
-	    .OB(NIM_OUT_N),
-	    .I(NIM_OUT)
+	OBUFDS OBUFDS_inst1(
+	    .O(NIM_OUT_P[0]),
+	    .OB(NIM_OUT_N[0]),
+	    .I(NIM_OUT[0])
 	); 
 	
-	assign	INTERLOCK	= 	RAW_INTERLOCK;
+	OBUFDS OBUFDS_inst2(
+	    .O(NIM_OUT_P[1]),
+	    .OB(NIM_OUT_N[1]),
+	    .I(NIM_OUT[1])
+	); 
+	
+	OBUFDS OBUFDS_inst3(
+	    .O(NIM_OUT_P[2]),
+	    .OB(NIM_OUT_N[2]),
+	    .I(NIM_OUT[2])
+	); 
+	
+	assign	INTERLOCK	=   RAW_INTERLOCK;
     //assign	INTERLOCK	= 	1'b1;
-    assign	X_LED[2]    = 	RAW_INTERLOCK;
-	assign  NIM_OUT		=	RAW_INTERLOCK;
+    assign	X_LED[2]    =   RAW_INTERLOCK;
+	assign  NIM_OUT[2]  =   RAW_INTERLOCK;
 	//assign NIM_OUT=1'b1;
 	
 	

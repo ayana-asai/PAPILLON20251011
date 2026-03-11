@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Mar 10 21:07:23 2026
-# Process ID         : 17600
+# Start of session at: Tue Mar 10 13:01:58 2026
+# Process ID         : 22108
 # Current directory  : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21008 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20260115\PAPILLON_v20260115.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21672 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20260115\PAPILLON_v20260115.xpr
 # Log file           : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/vivado.log
 # Journal file       : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115\vivado.jou
 # Running On         : nudaq-win02
@@ -19,7 +19,7 @@
 # Host memory        : 33959 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36106 MB
-# Available Virtual  : 24288 MB
+# Available Virtual  : 24276 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.xpr
@@ -28,8 +28,19 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1303.871 ; gain = 193.031
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1247.590 ; gain = 133.723
 update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/ADC_SiTCP_V20.dcp
+launch_runs synth_1 -jobs 6
+[Tue Mar 10 13:35:37 2026] Launched synth_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Tue Mar 10 13:36:50 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Mar 10 13:44:36 2026] Launched impl_1...
+Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -54,7 +65,7 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1417.734 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1385.266 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
 set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
@@ -62,14 +73,13 @@ set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/
 set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
 current_hw_device [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
-display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
 set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
-program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1417.734 ; gain = 0.000
+program_hw_devices: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1385.266 ; gain = 0.000
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
 INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
 WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
@@ -79,7 +89,6 @@ The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO c
 Resolution: 
 1. Reprogram device with the correct programming file and associated probes file(s) OR
 2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
 close_hw_manager
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 21:37:45 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 16:15:20 2026...

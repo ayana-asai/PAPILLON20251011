@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Feb  3 17:14:54 2026
+| Date         : Tue Mar 10 13:44:06 2026
 | Host         : nudaq-win02 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ADC_SiTCP_V20_methodology_drc_routed.rpt -pb ADC_SiTCP_V20_methodology_drc_routed.pb -rpx ADC_SiTCP_V20_methodology_drc_routed.rpx
 | Design       : ADC_SiTCP_V20
@@ -1686,247 +1686,247 @@ Related violations: <none>
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_RXBUF/cmpWrAddr_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '44' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 703)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 711)
 Related violations: <none>
 
 XDCB-5#2 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_RXCNT/orMacPause_reg/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '62' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 724)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 732)
 Related violations: <none>
 
 XDCB-5#3 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_RXCNT/orMacTim_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '61' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 723)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 731)
 Related violations: <none>
 
 XDCB-5#4 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/dlyBank0LastWrAddr_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '58' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 719)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 727)
 Related violations: <none>
 
 XDCB-5#5 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/dlyBank1LastWrAddr_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '59' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 720)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 728)
 Related violations: <none>
 
 XDCB-5#6 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/memRdReq_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '60' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 721)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 729)
 Related violations: <none>
 
 XDCB-5#7 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/muxEndTgl_reg/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '46' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 705)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 713)
 Related violations: <none>
 
 XDCB-5#8 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */GMII_TXBUF/orRdAct_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '45' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 704)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 712)
 Related violations: <none>
 
 XDCB-5#9 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT/SiTCP_RESET_OUT_reg*/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '63' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 726)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 734)
 Related violations: <none>
 
 XDCB-5#10 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX10Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '47' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 707)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 715)
 Related violations: <none>
 
 XDCB-5#11 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX12Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '48' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 708)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 716)
 Related violations: <none>
 
 XDCB-5#12 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX13Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '49' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 709)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 717)
 Related violations: <none>
 
 XDCB-5#13 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX14Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '50' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 710)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 718)
 Related violations: <none>
 
 XDCB-5#14 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX15Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '51' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 711)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 719)
 Related violations: <none>
 
 XDCB-5#15 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX16Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '52' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 712)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 720)
 Related violations: <none>
 
 XDCB-5#16 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX17Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '53' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 713)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 721)
 Related violations: <none>
 
 XDCB-5#17 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX18Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '54' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 714)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 722)
 Related violations: <none>
 
 XDCB-5#18 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX19Data_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '55' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 715)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 723)
 Related violations: <none>
 
 XDCB-5#19 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX1AData_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '56' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 716)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 724)
 Related violations: <none>
 
 XDCB-5#20 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hier -filter {name =~ */SiTCP_INT_REG/regX1BData_reg*/C}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '57' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 717)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 725)
 Related violations: <none>
 
 XDCB-5#21 Warning
 Runtime inefficient way to find pin objects  
 The option '-from : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/allx_typeA_match_detection.ltlib_v1_0_2_allx_typeA_inst/DUT/u_srl_drive/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '129' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/.Xil/Vivado-3064-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/.Xil/Vivado-16728-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
 Related violations: <none>
 
 XDCB-5#22 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXBUF/smpWrStatusAddr_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '44' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 703)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 711)
 Related violations: <none>
 
 XDCB-5#23 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/irMacFlowEnb_reg/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '47' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 707)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 715)
 Related violations: <none>
 
 XDCB-5#24 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '54' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 714)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 722)
 Related violations: <none>
 
 XDCB-5#25 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '55' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 715)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 723)
 Related violations: <none>
 
 XDCB-5#26 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '56' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 716)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 724)
 Related violations: <none>
 
 XDCB-5#27 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyIp_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '57' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 717)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 725)
 Related violations: <none>
 
 XDCB-5#28 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '48' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 708)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 716)
 Related violations: <none>
 
 XDCB-5#29 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '49' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 709)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 717)
 Related violations: <none>
 
 XDCB-5#30 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '50' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 710)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 718)
 Related violations: <none>
 
 XDCB-5#31 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '51' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 711)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 719)
 Related violations: <none>
 
 XDCB-5#32 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '52' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 712)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 720)
 Related violations: <none>
 
 XDCB-5#33 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_RXCNT/muxMyMac_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '53' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 713)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 721)
 Related violations: <none>
 
 XDCB-5#34 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/irMemRdReq_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '60' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 721)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 729)
 Related violations: <none>
 
 XDCB-5#35 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/irRdAct_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '45' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 704)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 712)
 Related violations: <none>
 
 XDCB-5#36 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpBank0LastWrAddr_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '58' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 719)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 727)
 Related violations: <none>
 
 XDCB-5#37 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpBank1LastWrAddr_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '59' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 720)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 728)
 Related violations: <none>
 
 XDCB-5#38 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_TXBUF/rsmpMuxTrnsEnd_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '46' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 705)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 713)
 Related violations: <none>
 
 XDCB-5#39 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_TXCNT/irMacPauseExe_reg[0]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '62' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 724)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 732)
 Related violations: <none>
 
 XDCB-5#40 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hier -filter {name =~ */GMII_TXCNT/irMacPauseTime_reg*/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '61' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 723)
+Current XDC: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc (Line: 731)
 Related violations: <none>
 
 XDCB-5#41 Warning
 Runtime inefficient way to find pin objects  
 The option '-to : [get_pins -hierarchical -filter {NAME =~ *ila_core_inst/u_trig/N_DDR_TC.N_DDR_TC_INST[*].U_TC/yes_output_reg.dout_reg_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '129' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/.Xil/Vivado-3064-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
+Current XDC: c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.runs/impl_1/.Xil/Vivado-16728-nudaq-win02/u_ila_0_CV.0/out/ila_early.xdc (Line: 72)
 Related violations: <none>
 
 

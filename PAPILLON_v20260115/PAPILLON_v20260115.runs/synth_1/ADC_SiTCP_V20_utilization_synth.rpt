@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Feb  3 14:18:00 2026
+| Date         : Tue Mar 10 13:36:38 2026
 | Host         : nudaq-win02 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ADC_SiTCP_V20_utilization_synth.rpt -pb ADC_SiTCP_V20_utilization_synth.pb
 | Design       : ADC_SiTCP_V20
@@ -97,7 +97,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |  154 |     0 |          0 |       285 | 54.04 |
+| Bonded IOB                  |  158 |     0 |          0 |       285 | 55.44 |
 | Bonded IPADs                |    0 |     0 |          0 |        14 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         8 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
@@ -181,10 +181,10 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | RAMB36E1   |    18 |        Block Memory |
 | IBUF       |    18 |                  IO |
 | RAMS32     |    16 |  Distributed Memory |
+| OBUFDS     |    12 |                  IO |
 | RAMB18E1   |    10 |        Block Memory |
-| OBUFDS     |     8 |                  IO |
 | OBUFT      |     6 |                  IO |
-| INV        |     4 |                 LUT |
+| INV        |     6 |                 LUT |
 | ODDR       |     3 |                  IO |
 | BUFR       |     3 |               Clock |
 | BUFIO      |     3 |               Clock |
