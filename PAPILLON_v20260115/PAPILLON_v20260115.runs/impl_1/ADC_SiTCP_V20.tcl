@@ -105,7 +105,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 6  }
   open_checkpoint ADC_SiTCP_V20_routed.dcp
   set_property webtalk.parent_dir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20260115/PAPILLON_v20260115.cache/wt [current_project]

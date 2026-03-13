@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Tue Mar 10 13:44:20 2026
+| Date             : Wed Mar 11 13:25:37 2026
 | Host             : nudaq-win02 running 64-bit major release  (build 9200)
 | Command          : report_power -file ADC_SiTCP_V20_power_routed.rpt -pb ADC_SiTCP_V20_power_summary_routed.pb -rpx ADC_SiTCP_V20_power_routed.rpx
 | Design           : ADC_SiTCP_V20
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.698        |
+| Total On-Chip Power (W)  | 1.690        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.578        |
+| Dynamic (W)              | 1.570        |
 | Device Static (W)        | 0.120        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 80.5         |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.211 |       26 |       --- |             --- |
-| Slice Logic              |     0.221 |    75500 |       --- |             --- |
-|   LUT as Logic           |     0.163 |    21240 |     63400 |           33.50 |
+| Clocks                   |     0.208 |       26 |       --- |             --- |
+| Slice Logic              |     0.221 |    75468 |       --- |             --- |
+|   LUT as Logic           |     0.164 |    21239 |     63400 |           33.50 |
 |   CARRY4                 |     0.035 |     3616 |     15850 |           22.81 |
-|   Register               |     0.021 |    42534 |    126800 |           33.54 |
+|   Register               |     0.021 |    42502 |    126800 |           33.52 |
 |   LUT as Shift Register  |    <0.001 |      338 |     19000 |            1.78 |
 |   LUT as Distributed RAM |    <0.001 |      120 |     19000 |            0.63 |
 |   F7/F8 Muxes            |    <0.001 |      570 |     63400 |            0.90 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |     4265 |       --- |             --- |
 |   BUFR                   |     0.000 |        1 |       120 |            0.83 |
-| Signals                  |     0.180 |    52669 |       --- |             --- |
+| Signals                  |     0.175 |    52647 |       --- |             --- |
 | Block RAM                |     0.036 |      101 |       135 |           74.81 |
 | MMCM                     |     0.324 |        3 |         6 |           50.00 |
 | DSPs                     |     0.005 |        8 |       240 |            3.33 |
-| I/O                      |     0.457 |      150 |       285 |           52.63 |
+| I/O                      |     0.457 |      151 |       285 |           52.98 |
 | GTP                      |     0.217 |        2 |       --- |             --- |
 | Static Power             |     0.120 |          |           |                 |
-| Total                    |     1.770 |          |           |                 |
+| Total                    |     1.762 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.711 |       0.691 |      0.020 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.703 |       0.683 |      0.020 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.261 |       0.243 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.101 |       0.097 |      0.004 |       NA    | Unspecified | NA         |
@@ -167,56 +167,56 @@ Table of Contents
 +-----------------------------------+-----------+
 | Name                              | Power (W) |
 +-----------------------------------+-----------+
-| ADC_SiTCP_V20                     |     1.650 |
+| ADC_SiTCP_V20                     |     1.642 |
 |   ADC1_IF                         |     0.087 |
 |     adc                           |     0.078 |
 |       inst                        |     0.078 |
 |     eras_fifo                     |     0.006 |
 |       U0                          |     0.006 |
-|   ADC2_IF                         |     0.086 |
+|   ADC2_IF                         |     0.087 |
 |     adc                           |     0.078 |
 |       inst                        |     0.078 |
 |     eras_fifo                     |     0.006 |
 |       U0                          |     0.006 |
-|   ADC3_IF                         |     0.087 |
+|   ADC3_IF                         |     0.086 |
 |     adc                           |     0.078 |
 |       inst                        |     0.078 |
 |     eras_fifo                     |     0.006 |
 |       U0                          |     0.006 |
-|   ADC_SiTCP_RAW                   |     0.463 |
-|     ADC_INT                       |     0.458 |
-|       CalBeamPosition             |     0.183 |
-|       CalBeamWidth                |     0.030 |
-|       CalPartBeamWidth            |     0.211 |
+|   ADC_SiTCP_RAW                   |     0.455 |
+|     ADC_INT                       |     0.450 |
+|       CalBeamPosition             |     0.182 |
+|       CalBeamWidth                |     0.029 |
+|       CalPartBeamWidth            |     0.207 |
 |       multiplier_0                |     0.003 |
 |       multiplier_1                |     0.003 |
 |   ADC_SiTCP_RING                  |     0.002 |
-|   LOC_REG                         |     0.007 |
+|   LOC_REG                         |     0.006 |
 |   SYSCLK0                         |     0.128 |
 |     inst                          |     0.128 |
 |   SYSCLK2                         |     0.097 |
 |     inst                          |     0.097 |
 |   SiTCP1                          |     0.052 |
-|     SiTCP                         |     0.052 |
+|     SiTCP                         |     0.051 |
 |       GMII                        |     0.012 |
-|       SiTCP                       |     0.031 |
+|       SiTCP                       |     0.030 |
 |       SiTCP_INT                   |     0.009 |
-|   SiTCP2                          |     0.047 |
-|     SiTCP                         |     0.047 |
+|   SiTCP2                          |     0.046 |
+|     SiTCP                         |     0.046 |
 |       GMII                        |     0.012 |
 |       SiTCP                       |     0.028 |
 |       SiTCP_INT                   |     0.006 |
 |   dbg_hub                         |     0.003 |
 |     inst                          |     0.003 |
 |       BSCANID.u_xsdbm_id          |     0.003 |
-|   gig_ethernet_pcs_pma_0          |     0.228 |
-|     inst                          |     0.228 |
+|   gig_ethernet_pcs_pma_0          |     0.229 |
+|     inst                          |     0.229 |
 |       core_clocking_i             |     0.107 |
-|       pcs_pma_block_i             |     0.121 |
-|   gig_ethernet_pcs_pma_2          |     0.122 |
-|     inst                          |     0.122 |
+|       pcs_pma_block_i             |     0.122 |
+|   gig_ethernet_pcs_pma_2          |     0.123 |
+|     inst                          |     0.123 |
 |       gig_ethernet_pcs_pma_2_core |     0.004 |
-|       transceiver_inst            |     0.117 |
+|       transceiver_inst            |     0.118 |
 |   u_ila_0                         |     0.012 |
 |     inst                          |     0.012 |
 |       ila_core_inst               |     0.012 |

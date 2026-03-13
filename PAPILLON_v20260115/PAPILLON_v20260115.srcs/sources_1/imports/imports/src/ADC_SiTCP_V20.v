@@ -164,8 +164,10 @@ module ADC_SiTCP_V20(
 				//ETH_MDOE?��?��?��^?��Ȃ�ETH_MDIO=MDOUT?��A?��ہ@1'bz 2016/9/13 what's z?9/14 z is high?��@?��C?��?��?��s?��[?��_?��?��?��X
 				
 	wire			FORCE_DEFAULTn	;
+	wire			FORCE_DEFAULT2n	;
 
 	assign	FORCE_DEFAULTn	= DIP_SW[0];
+	assign	FORCE_DEFAULT2n	= DIP_SW[3];
 				//DIP?��X?��C?��b?��`?��̈��?��?��?��?��?��?��?��Z?��b?��g?��̃X?��C?��b?��`?��Ƃ�?��Ďw?��?��
 				
 //test pin input trgger or NIM trigger SW				
@@ -843,10 +845,15 @@ module ADC_SiTCP_V20(
  		 .TIM_1US               (),
  	     // Configuration parameters
  		 .FORCE_DEFAULTn        (FORCE_DEFAULTn ),    // in : Load default parameters
+ 		 //.EXT_IP_ADDR           (32'd0),              // in : External IP address[31:0]
+ 		 //.EXT_TCP_PORT          (16'd0),              // in : TCP port #[15:0]
+ 		 //.EXT_RBCP_PORT         (16'd0),              // in : RBCP port #[15:0]
+ 		 //.PHY_ADDR              (5'd0 ),              // in : PHY-device MIF address[4:0]
  		 .EXT_IP_ADDR           (32'hc0a80a0a   ),    // in : External IP address[31:0]
  		 .EXT_TCP_PORT          (16'h18         ),    // in : TCP port #[15:0]
  		 .EXT_RBCP_PORT         (16'h1234       ),    // in : RBCP port #[15:0]
  		 .PHY_ADDR              (5'd0),               // in : PHY-device MIF address[4:0]
+
  	     // EEPROM
  		 .EEPROM_CS             (EEPROM_CS      ),    // out: Chip select
  		 .EEPROM_SK             (EEPROM_SK      ),    // out: Serial data clock
@@ -913,7 +920,7 @@ module ADC_SiTCP_V20(
  		 .TIM_1MS               (TIM_1MS        ),    // out:
  		 .TIM_1US               (TIM_1US        ),
  	     // Configuration parameters
- 		 .FORCE_DEFAULTn        (FORCE_DEFAULTn ),    // in : Load default parameters
+ 		 .FORCE_DEFAULTn        (FORCE_DEFAULT2n ),    // in : Load default parameters
  		 .EXT_IP_ADDR           (32'd0),              // in : External IP address[31:0]
  		 .EXT_TCP_PORT          (16'd0),              // in : TCP port #[15:0]
  		 .EXT_RBCP_PORT         (16'd0),              // in : RBCP port #[15:0]

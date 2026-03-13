@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1773117336" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1773202491" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp">
+  <File Type="PA-TCL" Name="ADC_SiTCP_V20.tcl"/>
   <File Type="REPORTS-TCL" Name="ADC_SiTCP_V20_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ADC_SiTCP_V20.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="ADC_SiTCP_V20_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="ADC_SiTCP_V20_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ADC_SiTCP_V20_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="ADC_SiTCP_V20.tcl"/>
-  <File Type="RDS-RDS" Name="ADC_SiTCP_V20.vds"/>
   <File Type="RDS-DCP" Name="ADC_SiTCP_V20.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ADC_SiTCP_V20_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ADC_SiTCP_V20_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/SiTCP_Netlist_for_Artix7-master/SiTCP_XC7A_32K_BBT_V110.edf">
@@ -200,12 +203,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="SYSCLK0"/>
   <BlockFileSet Type="BlockSrcs" Name="SYSCLK2"/>
-  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_generator_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mem_8_4K"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mult_gen_2"/>
   <BlockFileSet Type="BlockSrcs" Name="divider"/>
   <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>

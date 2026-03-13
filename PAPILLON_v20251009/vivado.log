@@ -3,15 +3,15 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri Dec 12 12:58:01 2025
-# Process ID         : 14620
+# Start of session at: Tue Mar 10 16:15:32 2026
+# Process ID         : 3576
 # Current directory  : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10476 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251009\PAPILLON_v20251009.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent2460 C:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251009\PAPILLON_v20251009.xpr
 # Log file           : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/vivado.log
 # Journal file       : C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009\vivado.jou
 # Running On         : nudaq-win02
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 26100
+# Operating System   : 26200
 # Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz
 # CPU Frequency      : 2592 MHz
 # CPU Physical cores : 6
@@ -19,7 +19,7 @@
 # Host memory        : 33959 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36106 MB
-# Available Virtual  : 28876 MB
+# Available Virtual  : 24761 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.xpr
@@ -28,493 +28,69 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1275.020 ; gain = 161.707
 update_compile_order -fileset sources_1
-save_project_as PAPILLON_v20251212 C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212 -force
-WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.cache/ip 
-save_project_as: Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 1231.539 ; gain = 0.559
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-INFO: [Device 21-403] Loading part xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : SGMII
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : SGMII
-create_ip -name gig_ethernet_pcs_pma -vendor xilinx.com -library ip -version 16.2 -module_name gig_ethernet_pcs_pma_0
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : 1000BASEX
-set_property -dict [list \
-  CONFIG.Standard {SGMII} \
-  CONFIG.SupportLevel {Include_Shared_Logic_in_Core} \
-] [get_ips gig_ethernet_pcs_pma_0]
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: ARCHITECTURE : artix7
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: PART : xc7a100tfgg484-1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: SPEEDGRADE : -1
-INFO: [xilinx.com:ip:gig_ethernet_pcs_pma:16.2-98989] gig_ethernet_pcs_pma_0: Standard : SGMII
-generate_target {instantiation_template} [get_files c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gig_ethernet_pcs_pma_0'...
-update_compile_order -fileset sources_1
-generate_target all [get_files  c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gig_ethernet_pcs_pma_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gig_ethernet_pcs_pma_0'...
-INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'gig_ethernet_pcs_pma_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gig_ethernet_pcs_pma_0'...
-catch { config_ip_cache -export [get_ips -all gig_ethernet_pcs_pma_0] }
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gig_ethernet_pcs_pma_0
-export_ip_user_files -of_objects [get_files c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci]
-launch_runs gig_ethernet_pcs_pma_0_synth_1 -jobs 6
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: gig_ethernet_pcs_pma_0
-[Fri Dec 12 14:11:31 2025] Launched gig_ethernet_pcs_pma_0_synth_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/gig_ethernet_pcs_pma_0_synth_1/runme.log
-export_simulation -lib_map_path [list {modelsim=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.cache/compile_simlib/modelsim} {questa=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.cache/compile_simlib/questa} {riviera=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.cache/compile_simlib/riviera} {activehdl=C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.cache/compile_simlib/activehdl}] -of_objects [get_files c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.xci] -directory C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.ip_user_files -ipstatic_source_dir C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251212\PAPILLON_v20251212.gen\sources_1\ip\gig_ethernet_pcs_pma_0\gig_ethernet_pcs_pma_0.veo:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251212\PAPILLON_v20251212.gen\sources_1\ip\gig_ethernet_pcs_pma_0\gig_ethernet_pcs_pma_0.veo:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251212\PAPILLON_v20251212.gen\sources_1\ip\gig_ethernet_pcs_pma_0\gig_ethernet_pcs_pma_0.veo:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251212\PAPILLON_v20251212.gen\sources_1\ip\gig_ethernet_pcs_pma_0\gig_ethernet_pcs_pma_0.veo:]
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/ADC_SiTCP_V20.dcp
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251212\PAPILLON_v20251212.gen\sources_1\ip\gig_ethernet_pcs_pma_0\gig_ethernet_pcs_pma_0.veo:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\daq\Desktop\PAPILLON_asai\PAPILLON_v20251212\PAPILLON_v20251212.gen\sources_1\ip\gig_ethernet_pcs_pma_0\gig_ethernet_pcs_pma_0.veo:]
-launch_runs synth_1 -jobs 6
-[Fri Dec 12 14:28:55 2025] Launched synth_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/runme.log
-import_files -norecurse C:/Users/daq/Downloads/mii_init.v
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-[Fri Dec 12 14:35:08 2025] Launched synth_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a100tfgg484-1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0.dcp' for cell 'SYSCLK0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2.dcp' for cell 'SYSCLK2'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0.dcp' for cell 'gig_ethernet_pcs_pma_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.dcp' for cell 'ADC1_IF/eras_fifo'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mem_8_4K/mem_8_4K.dcp' for cell 'ADC_SiTCP_RAW/mem_generate[0].ADC_MEM_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/divider/divider.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamPosition'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/cordic_0/cordic_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/CalBeamWidth'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mult_gen_2/mult_gen_2.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/SquareBeamPosition'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/mult_gen_1/mult_gen_1.dcp' for cell 'ADC_SiTCP_RAW/ADC_INT/multiplier_1'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1673.855 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4161 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0_board.xdc] for cell 'SYSCLK0/inst'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc:54]
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK0/SYSCLK0.xdc] for cell 'SYSCLK0/inst'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2_board.xdc] for cell 'SYSCLK2/inst'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2.xdc] for cell 'SYSCLK2/inst'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC1_IF/eras_fifo/U0'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC2_IF/eras_fifo/U0'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc] for cell 'ADC3_IF/eras_fifo/U0'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/gig_ethernet_pcs_pma_0_board.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc:42]
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/gig_ethernet_pcs_pma_0/synth/gig_ethernet_pcs_pma_0.xdc] for cell 'gig_ethernet_pcs_pma_0/inst'
-Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[7]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:250]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:250]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[6]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:251]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:251]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[5]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:252]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:252]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[4]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:253]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:253]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[3]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:254]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:254]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[2]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:255]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:255]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[1]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:256]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:256]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[0]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:257]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:257]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[7]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:258]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:258]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[6]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:259]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:259]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[5]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:260]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:260]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[4]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:261]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:261]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[3]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:262]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:262]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[2]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:263]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:263]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[1]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:264]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:264]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[0]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:265]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:265]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[6]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:278]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:278]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_ER'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:279]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:279]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_EN'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:280]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:280]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[6]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:281]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:281]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[3]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:282]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:282]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[5]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:283]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:283]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[0]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:284]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:284]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[2]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:286]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:286]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_DV'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:287]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:287]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_COL'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:292]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:292]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_CRS'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:293]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:293]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_MDC'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:294]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:294]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_MDIO'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:295]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:295]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:297]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:297]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_DV'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:298]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:298]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_ER'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:299]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:299]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_EN'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:300]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:300]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_ER'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:301]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:301]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:302]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:302]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'GTX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:313]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:313]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'GTX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:314]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:314]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[1]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:339]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:339]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[7]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:340]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:340]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[4]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:341]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:341]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[0]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:342]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:342]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[1]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:343]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:343]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[2]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:344]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:344]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[4]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:345]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:345]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[5]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:346]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:346]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[7]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:347]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:347]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_CRS'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:348]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:348]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_COL'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:349]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:349]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_ER'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:350]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:350]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:351]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:351]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:352]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:352]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_MDIO'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:353]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:353]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_MDC'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:354]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:354]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[3]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:369]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:369]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_COL'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:407]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:407]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[0]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:410]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:410]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[1]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:413]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:413]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[2]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:416]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:416]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RXD[3]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:419]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:419]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:422]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:422]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_RX_ER'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:425]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:425]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_1000'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:494]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:494]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_1000'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:495]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:495]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:705]
-WARNING: [Vivado 12-584] No ports matched 'ETH_MDC'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:822]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:822]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_MDIO'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:823]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:823]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_EN'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:825]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:825]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TX_ER'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:826]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:826]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'GTX_CLK'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:827]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:827]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[7]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:841]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:841]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[6]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:842]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:842]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[5]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:843]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:843]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[4]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:844]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:844]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[3]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:845]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:845]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[2]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:846]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:846]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[1]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:847]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:847]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ETH_TXD[0]'. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:848]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc:848]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc]
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/SYSCLK2/SYSCLK2_late.xdc] for cell 'SYSCLK2/inst'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC1_IF/eras_fifo/U0'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC2_IF/eras_fifo/U0'
-Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
-Finished Parsing XDC File [c:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_clocks.xdc] for cell 'ADC3_IF/eras_fifo/U0'
-INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-1687] 10 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2466.477 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 25 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
-  OBUFDS => OBUFDS: 4 instances
-  RAM16X1S => RAM32X1S (RAMS32): 8 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 10 instances
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
 
-open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2692.707 ; gain = 1171.543
-place_ports GMII_REF_CLK_P F6
-set_property package_pin "" [get_ports [list  GMII_RXN]]
-place_ports GMII_RXP B8
-set_property target_constrs_file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/constrs_1/imports/papillon_24ch/constrs_1.xdc [current_fileset -constrset]
-save_constraints -force
-close_design
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/ADC_SiTCP_V20.dcp
-launch_runs synth_1 -jobs 6
-[Fri Dec 12 15:12:52 2025] Launched synth_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-[Fri Dec 12 15:14:32 2025] Launched impl_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/ADC_SiTCP_V20.dcp
-launch_runs synth_1 -jobs 6
-[Fri Dec 12 15:53:49 2025] Launched synth_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-[Fri Dec 12 15:59:37 2025] Launched impl_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/ADC_SiTCP_V20.dcp
-launch_runs synth_1 -jobs 6
-[Fri Dec 12 16:11:54 2025] Launched synth_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-[Fri Dec 12 16:13:00 2025] Launched impl_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.srcs/utils_1/imports/synth_1/ADC_SiTCP_V20.dcp with file C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/ADC_SiTCP_V20.dcp
-launch_runs synth_1 -jobs 6
-[Fri Dec 12 16:19:32 2025] Launched synth_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 6
-[Fri Dec 12 16:20:35 2025] Launched impl_1...
-Run output will be captured here: C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251212/PAPILLON_v20251212.runs/impl_1/runme.log
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2749.848 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4087 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 2749.848 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2936.328 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2936.328 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2949.352 ; gain = 13.023
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2949.352 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.366 . Memory (MB): peak = 2960.160 ; gain = 10.809
-Read Physdb Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2960.160 ; gain = 23.832
-Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2960.160 ; gain = 23.832
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2960.160 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 109 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
-  RAM16X1S => RAM32X1S (RAMS32): 8 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 10 instances
-  SRLC32E => SRL16E: 2 instances
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
-open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 2995.238 ; gain = 245.391
-open_report: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 3413.664 ; gain = 394.582
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-close_design
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3880.484 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4087 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 3880.484 ; gain = 0.000
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 3880.484 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3880.484 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3880.484 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3880.484 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 3880.484 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3880.484 ; gain = 0.000
-Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3880.484 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3880.484 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 109 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
-  RAM16X1S => RAM32X1S (RAMS32): 8 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 10 instances
-  SRLC32E => SRL16E: 2 instances
 
-open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 3880.484 ; gain = 0.000
-open_report: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 3880.484 ; gain = 0.000
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-03:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1307.348 ; gain = 19.746
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.runs/impl_1/ADC_SiTCP_V20.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3222] Mismatch between the design programmed into the device xc7a100t (JTAG device index = 0) and the probes file(s) C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.runs/impl_1/ADC_SiTCP_V20.ltx.
+ The hw_probe  in the probes file has port index 5. This port does not exist in the ILA core at location (uuid_23E7D65A79BC59F7BC47406C1714DFAE).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/daq/Desktop/PAPILLON_asai/PAPILLON_v20251009/PAPILLON_v20251009.runs/impl_1/ADC_SiTCP_V20.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1384.246 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013b3e6d701
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7a100t_0 and the probes file(s) .
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Dec 12 16:43:06 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 21:07:10 2026...
